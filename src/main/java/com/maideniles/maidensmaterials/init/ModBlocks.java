@@ -89,7 +89,7 @@ public class ModBlocks {
             () -> new MaidenSaplingBlock(new SilverbellTreeGrower(),BlockBehaviour.Properties.of(Material.PLANT).strength(2.0F).noOcclusion().instabreak().noCollission().sound(SoundType.CROP)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PALM_SAPLING = registerBlock("palm_sapling",
-            () -> new MaidenSaplingBlock(new PalmTreeGrower(),BlockBehaviour.Properties.of(Material.PLANT).strength(2.0F).noOcclusion().instabreak().noCollission().sound(SoundType.CROP)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+           () -> new MaidenSaplingBlock(new PalmTreeGrower(),BlockBehaviour.Properties.of(Material.PLANT).strength(2.0F).noOcclusion().instabreak().noCollission().sound(SoundType.CROP)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CEDAR_SAPLING = registerBlock("cedar_sapling",
             () -> new MaidenSaplingBlock(new CedarTreeGrower(),BlockBehaviour.Properties.of(Material.PLANT).strength(2.0F).noOcclusion().instabreak().noCollission().sound(SoundType.CROP)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);

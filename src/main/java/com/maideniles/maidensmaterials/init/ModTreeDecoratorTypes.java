@@ -1,18 +1,21 @@
 package com.maideniles.maidensmaterials.init;
 
+import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.util.Registration;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.leaf.*;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.trunk.*;
 import com.mojang.serialization.Codec;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModTreeDecoratorTypes  {
-    private static <T extends TreeDecorator> RegistryObject<?> register(String p_236877_0_, Codec<T> p_236877_1_) {
-        return Registration.TREE_DECORATORS.register(p_236877_0_,
-                () -> new TreeDecoratorType<>(p_236877_1_));
-    }
+
+    public static final DeferredRegister<TreeDecoratorType<?>> TREE_DECORATORS
+            = DeferredRegister.create(ForgeRegistries.TREE_DECORATOR_TYPES, MarvelousMaterials.MOD_ID);
+
 
     public static final RegistryObject<TreeDecoratorType<CrabappleLeafVineDecorator>> CRABAPPLE_LEAF_VINE =
             (RegistryObject<TreeDecoratorType<CrabappleLeafVineDecorator>>) register("crabapple_leaf_vine_decorator",
@@ -95,7 +98,10 @@ public class ModTreeDecoratorTypes  {
                    CedarTrunkVineDecorator.CODEC);
 
 
-
+ private static <T extends TreeDecorator> RegistryObject<?> register(String p_236877_0_, Codec<T> p_236877_1_) {
+  return TREE_DECORATORS.register(p_236877_0_,
+          () -> new TreeDecoratorType<>(p_236877_1_));
+ }
 
 
 

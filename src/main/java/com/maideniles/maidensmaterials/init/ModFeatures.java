@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.init;
 
 import com.google.common.collect.ImmutableList;
+import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.util.Registration;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.PalmTreeFeature;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.leaf.*;
@@ -25,10 +26,16 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStatePr
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 
 public class ModFeatures {
+
+
+    public static final DeferredRegister<Feature<?>> FEATURES =
+            DeferredRegister.create(ForgeRegistries.FEATURES, MarvelousMaterials.MOD_ID);
 
       public static final  Holder<ConfiguredFeature<TreeConfiguration, ?>> CRABAPPLE_CONFIG = FeatureUtils.register("crabapple_tree",
             Feature.TREE,((new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()), new
@@ -260,7 +267,7 @@ public class ModFeatures {
                     new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
                     new TwoLayersFeatureSize(0, 0, 0)).ignoreVines().build())));
 
-    public static final RegistryObject<PalmTreeFeature> PALM_TREE = Registration.FEATURES.register("palm_tree",
+    public static final RegistryObject<PalmTreeFeature> PALM_TREE = FEATURES.register("palm_tree",
             () -> new PalmTreeFeature(NoneFeatureConfiguration.CODEC));
 
     public static final Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> PALM_TREE_CONFIG = FeatureUtils.register("palm_tree", ModFeatures.PALM_TREE.get());

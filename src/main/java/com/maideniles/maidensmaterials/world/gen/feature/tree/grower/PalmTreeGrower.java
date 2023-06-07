@@ -9,9 +9,7 @@ import javax.annotation.Nullable;
 import java.util.Random;
 
 public class PalmTreeGrower extends AbstractTreeGrower {
-    /**
-     * @return a {@link net.minecraft.world.level.levelgen.feature.ConfiguredFeature} of this tree
-     */
+
     @Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random pRandom, boolean p_60015_) {

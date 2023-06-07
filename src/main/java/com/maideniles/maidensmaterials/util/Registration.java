@@ -9,7 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class Registration {
-
+/*
     public static final DeferredRegister<TreeDecoratorType<?>> TREE_DECORATORS
             = DeferredRegister.create(ForgeRegistries.TREE_DECORATOR_TYPES, MarvelousMaterials.MOD_ID);
 
@@ -17,9 +17,11 @@ public class Registration {
             DeferredRegister.create(ForgeRegistries.FEATURES, MarvelousMaterials.MOD_ID);
 
 
-    public static void register(){
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public static void register(IEventBus eventBus){
+
         TREE_DECORATORS.register(eventBus);
         FEATURES.register(eventBus);
     }
+}
+*/
 }

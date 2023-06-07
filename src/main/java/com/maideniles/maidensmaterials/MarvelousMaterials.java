@@ -47,12 +47,16 @@ public class MarvelousMaterials {
     public MarvelousMaterials() {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        IEventBus forgeBus = MinecraftForge.EVENT_BUS;
+
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         RenderLayers.safeRunClient();
-        Registration.register();
+//Registration.register(eventBus);
+
+        ModFeatures.FEATURES.register(eventBus);
+        ModTreeDecoratorTypes.TREE_DECORATORS.register(eventBus);
+
         ModTreeDecoratorTypes.register();
 
 
