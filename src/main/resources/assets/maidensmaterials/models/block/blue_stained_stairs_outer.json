@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "maidensmaterials:block/blue_stained_planks",
-        "top": "maidensmaterials:block/blue_stained_planks",
-        "side": "maidensmaterials:block/blue_stained_planks"
-    }
-}

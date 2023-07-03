@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "side": "maidensmaterials:block/amethyst_1",
+    "bottom": "maidensmaterials:block/amethyst_1",
+    "top": "maidensmaterials:block/amethyst_1"
+  }
+}

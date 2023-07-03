@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "side": "maidensmaterials:block/aventurine_1",
+    "bottom": "maidensmaterials:block/aventurine_1",
+    "top": "maidensmaterials:block/aventurine_1"
+  }
+}

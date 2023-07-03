@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "maidensmaterials:block/mica_1_slab_top"
+    },
+    "type=bottom": {
+      "model": "maidensmaterials:block/mica_1_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/mica_1"
+    }
+  }
+}

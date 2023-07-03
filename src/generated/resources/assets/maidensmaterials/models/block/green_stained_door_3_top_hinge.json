@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "bottom": "maidensmaterials:block/green_stained_door_3_top",
+    "top": "maidensmaterials:block/green_stained_door_3_top"
+  }
+}

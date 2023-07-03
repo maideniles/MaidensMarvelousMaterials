@@ -2,10 +2,7 @@ package com.maideniles.maidensmaterials;
 
 
 import com.maideniles.maidensmaterials.client.RenderLayers;
-import com.maideniles.maidensmaterials.init.ModBlocks;
-import com.maideniles.maidensmaterials.init.ModFeatures;
-import com.maideniles.maidensmaterials.init.ModItems;
-import com.maideniles.maidensmaterials.init.ModTreeDecoratorTypes;
+import com.maideniles.maidensmaterials.init.*;
 import com.maideniles.maidensmaterials.util.Registration;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -48,16 +45,17 @@ public class MarvelousMaterials {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-
+        Registration.register(eventBus);
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         RenderLayers.safeRunClient();
-//Registration.register(eventBus);
 
-        ModFeatures.FEATURES.register(eventBus);
-        ModTreeDecoratorTypes.TREE_DECORATORS.register(eventBus);
+
+      //  ModFeatures.FEATURES.register(eventBus);
+      //  ModTreeDecoratorTypes.TREE_DECORATORS.register(eventBus);
 
         ModTreeDecoratorTypes.register();
+        ModEnchantments.register();
 
 
         eventBus.addListener(this::setup);

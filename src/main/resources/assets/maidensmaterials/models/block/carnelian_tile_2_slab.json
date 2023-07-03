@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "maidensmaterials:block/carnelian_2",
-        "top": "maidensmaterials:block/carnelian_2",
-        "side": "maidensmaterials:block/carnelian_2"
-    }
-}

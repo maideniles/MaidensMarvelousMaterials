@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "maidensmaterials:block/purple_stained_planks",
-        "top": "maidensmaterials:block/purple_stained_planks",
-        "side": "maidensmaterials:block/purple_stained_planks"
-    }
-}

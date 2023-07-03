@@ -53,22 +53,6 @@ public class ModTreeGen {
             event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,ModPlacements.CEDAR_VINES_PLACEMENT);
         }
 
-        if(event.getCategory() == Biome.BiomeCategory.FOREST){
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.APPLE_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.CHERRY_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.GRAPEFRUIT_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.LEMON_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.LIME_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.ORANGE_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.PEACH_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.PEAR_TREE_PLACEMENT);
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.PLUM_TREE_PLACEMENT);
-
-        }
-
-        if(event.getCategory() == Biome.BiomeCategory.BEACH){
-            event.getGeneration().addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,ModPlacements.PALM_TREE_PLACEMENT);
-        }
 
 
     }

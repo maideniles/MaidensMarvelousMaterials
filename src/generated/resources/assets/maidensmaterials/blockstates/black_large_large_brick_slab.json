@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "maidensmaterials:block/black_large_large_brick_slab_top"
+    },
+    "type=bottom": {
+      "model": "maidensmaterials:block/black_large_large_brick_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/black_large_brick_block"
+    }
+  }
+}

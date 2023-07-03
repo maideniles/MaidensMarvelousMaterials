@@ -1,8 +1,0 @@
-{
-    "parent": "block/stairs",
-    "textures": {
-        "bottom": "maidensmaterials:block/aventurine_5",
-        "top": "maidensmaterials:block/aventurine_5",
-        "side": "maidensmaterials:block/aventurine_5"
-    }
-}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/button_pressed",
-    "textures": {
-        "texture": "maidensmaterials:block/orange_stained_planks"
-    }
-}

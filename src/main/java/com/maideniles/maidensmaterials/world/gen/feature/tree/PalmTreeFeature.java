@@ -17,7 +17,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 
 import java.util.Random;
-
+/*
 public class PalmTreeFeature extends Feature<NoneFeatureConfiguration> {
 
 
@@ -228,4 +228,4 @@ public class PalmTreeFeature extends Feature<NoneFeatureConfiguration> {
         }
     }
 */
-}
+

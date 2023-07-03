@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "side": "maidensmaterials:block/green_large_brick_block",
+    "bottom": "maidensmaterials:block/green_large_brick_block",
+    "top": "maidensmaterials:block/green_large_brick_block"
+  }
+}

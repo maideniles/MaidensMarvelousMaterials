@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "maidensmaterials:block/mica_4",
-        "top": "maidensmaterials:block/mica_4",
-        "side": "maidensmaterials:block/mica_4"
-    }
-}

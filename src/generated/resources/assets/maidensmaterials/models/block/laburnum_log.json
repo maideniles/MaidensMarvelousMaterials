@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "maidensmaterials:block/laburnum_log",
+    "end": "maidensmaterials:block/laburnum_top"
+  }
+}

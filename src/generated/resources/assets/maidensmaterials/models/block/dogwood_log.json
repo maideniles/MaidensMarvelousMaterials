@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "maidensmaterials:block/dogwood_log",
+    "end": "maidensmaterials:block/dogwood_top"
+  }
+}

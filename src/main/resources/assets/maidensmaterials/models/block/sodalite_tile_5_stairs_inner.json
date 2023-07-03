@@ -1,8 +1,0 @@
-{
-    "parent": "block/inner_stairs",
-    "textures": {
-        "bottom": "maidensmaterials:block/sodalite_5",
-        "top": "maidensmaterials:block/sodalite_5",
-        "side": "maidensmaterials:block/sodalite_5"
-    }
-}

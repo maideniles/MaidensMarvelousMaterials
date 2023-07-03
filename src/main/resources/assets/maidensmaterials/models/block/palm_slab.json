@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "maidensmaterials:block/palm_planks",
-        "top": "maidensmaterials:block/palm_planks",
-        "side": "maidensmaterials:block/palm_planks"
-    }
-}

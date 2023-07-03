@@ -25,7 +25,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Random;
-
+/*
 public class GrowingFruitLeavesBlock extends BushBlock implements BonemealableBlock {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
     private static final VoxelShape FRUIT_LEAVES = Block.box(0, 0.0D, 0, 16.0D, 16.0D, 16.0D);
@@ -167,4 +167,4 @@ public class GrowingFruitLeavesBlock extends BushBlock implements BonemealableBl
 
     }
 
-
+*/

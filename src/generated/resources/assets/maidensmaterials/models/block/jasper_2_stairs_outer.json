@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "side": "maidensmaterials:block/jasper_2",
+    "bottom": "maidensmaterials:block/jasper_2",
+    "top": "maidensmaterials:block/jasper_2"
+  }
+}

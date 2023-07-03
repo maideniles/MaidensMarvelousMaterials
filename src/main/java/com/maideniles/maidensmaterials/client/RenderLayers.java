@@ -16,6 +16,7 @@ public class RenderLayers {
 
 
         //vines
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WALK_FLOWERS.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRABAPPLE_VINE.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POINCIANA_VINE.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LABURNUM_VINE.get(), RenderType.cutoutMipped());
@@ -57,26 +58,6 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.DOGWOOD_SAPLING.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVERBELL_SAPLING.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_SAPLING.get(), RenderType.cutoutMipped());
-
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.APPLE_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEAR_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PLUM_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PEACH_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAPEFRUIT_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LEMON_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIME_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_LEAVES.get(), RenderType.cutoutMipped());
-
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_APPLE_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_PEAR_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_PLUM_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_PEACH_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_ORANGE_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_GRAPEFRUIT_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_LEMON_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_LIME_LEAVES.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GROWING_CHERRY_LEAVES.get(), RenderType.cutoutMipped());
 
     //VASES//
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.VASE_RED.get(), RenderType.cutoutMipped());

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "maidensmaterials:block/carnelian_3_slab_top"
+    },
+    "type=bottom": {
+      "model": "maidensmaterials:block/carnelian_3_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/carnelian_3"
+    }
+  }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "maidensmaterials:block/test_fruit_stage3"
-    }
-}

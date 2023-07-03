@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab",
-    "textures": {
-        "bottom": "maidensmaterials:block/sodalite_3",
-        "top": "maidensmaterials:block/sodalite_3",
-        "side": "maidensmaterials:block/sodalite_3"
-    }
-}

@@ -149,7 +149,7 @@ public class ModPlacements {
                             BlockPos.ZERO)), BiomeFilter.biome());
 
 
-
+/*
     public static final Holder <PlacedFeature> APPLE_TREE_PLACEMENT = PlacementUtils.register("apple_placement",
             ModFeatures. APPLE_CONFIG,(PlacementUtils.countExtra(1, 0.05F, 1)),
                     InSquarePlacement.spread(), VegetationPlacements.TREE_THRESHOLD, PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,
@@ -212,7 +212,7 @@ public class ModPlacements {
             BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(Blocks.CACTUS.defaultBlockState(),
                     BlockPos.ZERO)), BiomeFilter.biome());
 
-
+*/
 
 
 

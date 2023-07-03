@@ -2,25 +2,18 @@ package com.maideniles.maidensmaterials.init;
 
 import com.google.common.collect.ImmutableList;
 import com.maideniles.maidensmaterials.MarvelousMaterials;
-import com.maideniles.maidensmaterials.util.Registration;
-import com.maideniles.maidensmaterials.world.gen.feature.tree.PalmTreeFeature;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.leaf.*;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.trunk.*;
-import com.mojang.serialization.Codec;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
@@ -28,14 +21,13 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlace
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 
 
 public class ModFeatures {
 
 
-    public static final DeferredRegister<Feature<?>> FEATURES =
-            DeferredRegister.create(ForgeRegistries.FEATURES, MarvelousMaterials.MOD_ID);
+  //  public static final DeferredRegister<Feature<?>> FEATURES =
+  //          DeferredRegister.create(ForgeRegistries.FEATURES, MarvelousMaterials.MOD_ID);
 
       public static final  Holder<ConfiguredFeature<TreeConfiguration, ?>> CRABAPPLE_CONFIG = FeatureUtils.register("crabapple_tree",
             Feature.TREE,((new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()), new
@@ -194,7 +186,8 @@ public class ModFeatures {
                     new TwoLayersFeatureSize(0, 0, 0)).decorators(ImmutableList.of(SilverbellTrunkVineDecorator.INSTANCE,
                     SilverbellLeafVineDecorator.INSTANCE)).build())));
 
-
+//FRUIT TREES//
+ /*
     public static final  Holder<ConfiguredFeature<TreeConfiguration, ?>>APPLE_CONFIG = FeatureUtils.register("apple_tree",
             Feature.TREE,((new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.CEDAR_LOG.get()), new
                     FancyTrunkPlacer(4, 2, 2),
@@ -273,7 +266,7 @@ public class ModFeatures {
     public static final Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> PALM_TREE_CONFIG = FeatureUtils.register("palm_tree", ModFeatures.PALM_TREE.get());
 
 
-
+*/
 
     public static final  Holder<ConfiguredFeature<TreeConfiguration, ?>> CEDAR_VINES_CONFIG = FeatureUtils.register("paulownia_vines_tree",
             Feature.TREE,((new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.CEDAR_LOG.get()), new

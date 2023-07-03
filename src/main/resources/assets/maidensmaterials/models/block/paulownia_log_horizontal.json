@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "maidensmaterials:block/paulownia_log_top",
-    "side": "maidensmaterials:block/paulownia_log"
-  }
-}

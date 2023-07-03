@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "side": "maidensmaterials:block/dogwood_planks",
+    "bottom": "maidensmaterials:block/dogwood_planks",
+    "top": "maidensmaterials:block/dogwood_planks"
+  }
+}

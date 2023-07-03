@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "side": "maidensmaterials:block/lime_large_brick_block",
+    "bottom": "maidensmaterials:block/lime_large_brick_block",
+    "top": "maidensmaterials:block/lime_large_brick_block"
+  }
+}

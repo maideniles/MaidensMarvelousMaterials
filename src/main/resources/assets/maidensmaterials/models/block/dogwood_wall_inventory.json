@@ -1,6 +1,0 @@
-{
-    "parent": "block/wall_inventory",
-    "textures": {
-        "wall": "maidensmaterials:block/dogwood_planks"
-    }
-}

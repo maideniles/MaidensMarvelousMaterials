@@ -1,5 +1,6 @@
 package com.maideniles.maidensmaterials.blocks.tree;
 
+import com.maideniles.maidensmaterials.init.ModBlocks;
 import com.maideniles.maidensmaterials.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
@@ -18,18 +19,17 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 public class MaidensLeafBlock extends LeavesBlock {
 
-    private final RegistryObject<Item> blossom;
-    public MaidensLeafBlock(Properties properties, RegistryObject<Item> blossom) {
+
+    public MaidensLeafBlock( Properties properties) {
         super(Properties.of(Material.LEAVES).noOcclusion().strength(2.5F).sound(SoundType.FLOWERING_AZALEA));
-        this.blossom = blossom;
+
     }
 
-    public RegistryObject<Item> getBlossom() {
-        return this.blossom;
-    }
+
 
     private static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 16.0, 16);
 
@@ -46,7 +46,42 @@ public class MaidensLeafBlock extends LeavesBlock {
         if (shears.is(ModItems.PRUNING_SHEARS.get())) {
 
             shears.setDamageValue(1);
-                popResource(p_57276_, p_57277_, new ItemStack(this.getBlossom().get(), 1));
+
+            if(leaves == ModBlocks.CRABAPPLE_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.CRABAPPLE_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.POINCIANA_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.POINCIANA_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.LABURNUM_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.LABURNUM_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.JADE_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.JADE_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.PAULOWNIA_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.PAULOWNIA_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.WISTERIA_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.WISTERIA_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.JACARANDA_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.JACARANDA_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.DOGWOOD_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.DOGWOOD_BLOSSOMS.get(), 1));
+            }
+
+            if(leaves == ModBlocks.SILVERBELL_LEAVES.get()) {
+                popResource(p_57276_, p_57277_, new ItemStack(ModItems.SILVERBELL_BLOSSOMS.get(), 1));
+            }
                 p_57276_.playSound((Player)null, p_57277_, SoundEvents.AZALEA_HIT, SoundSource.BLOCKS, 1.0F, 0.8F + p_57276_.random.nextFloat() * 0.4F);
 
 

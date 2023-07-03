@@ -1,8 +1,0 @@
-{
-    "parent": "block/outer_stairs",
-    "textures": {
-        "bottom": "maidensmaterials:block/mica_2",
-        "top": "maidensmaterials:block/mica_2",
-        "side": "maidensmaterials:block/mica_2"
-    }
-}

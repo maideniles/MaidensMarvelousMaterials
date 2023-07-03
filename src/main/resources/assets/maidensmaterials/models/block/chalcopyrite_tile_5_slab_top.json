@@ -1,8 +1,0 @@
-{
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "maidensmaterials:block/chalcopyrite_5",
-        "top": "maidensmaterials:block/chalcopyrite_5",
-        "side": "maidensmaterials:block/chalcopyrite_5"
-    }
-}

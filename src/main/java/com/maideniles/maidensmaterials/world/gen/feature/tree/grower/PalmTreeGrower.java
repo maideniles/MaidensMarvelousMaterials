@@ -8,15 +8,15 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class PalmTreeGrower extends AbstractTreeGrower {
+//public class PalmTreeGrower extends AbstractTreeGrower {
 
-    @Nullable
-    @Override
-    protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random pRandom, boolean p_60015_) {
+//    @Nullable
+//    @Override
+  //  protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random pRandom, boolean p_60015_) {
 
 
 
-        return ModFeatures.PALM_TREE_CONFIG;
-    }
+ //       return ModFeatures.PALM_TREE_CONFIG;
+ //   }
 
-}
+//}
