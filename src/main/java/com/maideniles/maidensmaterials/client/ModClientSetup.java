@@ -24,7 +24,7 @@ public class ModClientSetup {
         busMod.addGenericListener(Item.class, ModChestItem::registerBlockItems);
     }
 
-    @Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE, modid = MarvelousMaterials.   MOD_ID)
+    @Mod.EventBusSubscriber(value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD, modid = MarvelousMaterials.   MOD_ID)
     public static class ForgeEvents {
 
 
