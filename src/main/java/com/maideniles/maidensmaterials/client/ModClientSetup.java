@@ -38,7 +38,7 @@ public class ModClientSetup {
 
 
             evt.enqueueWork(() -> {
-                 Sheets.addWoodType(ModBlocks.CRABAPPLE);
+             //    Sheets.addWoodType(ModBlocks.CRABAPPLE);
                 //  Sheets.addWoodType(TFBlocks.CANOPY);
                 //  Sheets.addWoodType(TFBlocks.MANGROVE);
                 //  Sheets.addWoodType(TFBlocks.DARKWOOD);

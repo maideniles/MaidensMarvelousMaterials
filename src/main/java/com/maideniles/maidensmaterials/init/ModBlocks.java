@@ -34,7 +34,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MarvelousMaterials.MOD_ID);
 
-    public static final WoodType CRABAPPLE = WoodType.create(MarvelousMaterials.prefix("crabapple").toString());
+   // public static final WoodType CRABAPPLE = WoodType.create(MarvelousMaterials.prefix("crabapple").toString());
 
 
 
