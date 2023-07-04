@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#minecraft:logs_that_burn",
+    "#minecraft:crimson_stems",
+    "#minecraft:warped_stems",
+	"maidensmaterials:crabapple_log",
+	"maidensmaterials:poinciana_log",
+	"maidensmaterials:laburnum_log",
+	"maidensmaterials:jade_log",
+	"maidensmaterials:paulownia_log",
+	"maidensmaterials:wisteria_log",
+	"maidensmaterials:dogwood_log",
+	"maidensmaterials:silverbell_log",
+	"maidensmaterials:cedar_log"
+	
+  ]
+}
