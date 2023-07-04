@@ -3,21 +3,23 @@ package com.maideniles.maidensmaterials;
 
 import com.maideniles.maidensmaterials.client.RenderLayers;
 import com.maideniles.maidensmaterials.init.*;
+import com.maideniles.maidensmaterials.item.ModChestItem;
 import com.maideniles.maidensmaterials.util.Registration;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Locale;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MarvelousMaterials.MOD_ID)
@@ -57,6 +59,9 @@ public class MarvelousMaterials {
         ModTreeDecoratorTypes.register();
         ModEnchantments.register();
 
+        ModBlockEntities.BLOCK_ENTITIES.register(eventBus);
+
+
 
         eventBus.addListener(this::setup);
 
@@ -68,7 +73,11 @@ public class MarvelousMaterials {
 
     private void setup(final FMLCommonSetupEvent event) {
 
+
+
         event.enqueueWork(() -> {
+
+
 
 
 
@@ -81,6 +90,8 @@ public class MarvelousMaterials {
     }
 
 
-
+    public static ResourceLocation prefix(String name) {
+        return new ResourceLocation(MOD_ID, name.toLowerCase(Locale.ROOT));
+    }
 
 }

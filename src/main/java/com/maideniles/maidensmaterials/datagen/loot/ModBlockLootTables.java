@@ -1030,6 +1030,43 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.VASE_BLACK.get());
         this.dropSelf(ModBlocks.VASE_BROWN.get());
 
+        //CHESTS//
+        this.dropSelf(ModBlocks.ACACIA_CHEST.get());
+        this.dropSelf(ModBlocks.BIRCH_CHEST.get());
+        this.dropSelf(ModBlocks.OAK_CHEST.get());
+        this.dropSelf(ModBlocks.SPRUCE_CHEST.get());
+        this.dropSelf(ModBlocks.DARK_OAK_CHEST.get());
+        this.dropSelf(ModBlocks.JUNGLE_CHEST.get());
+        this.dropSelf(ModBlocks.CRIMSON_CHEST.get());
+        this.dropSelf(ModBlocks.WARPED_CHEST.get());
+
+        this.dropSelf(ModBlocks.CRABAPPLE_CHEST.get());
+        this.dropSelf(ModBlocks.POINCIANA_CHEST.get());
+        this.dropSelf(ModBlocks.LABURNUM_CHEST.get());
+        this.dropSelf(ModBlocks.JADE_CHEST.get());
+        this.dropSelf(ModBlocks.PAULOWNIA_CHEST.get());
+        this.dropSelf(ModBlocks.WISTERIA_CHEST.get());
+        this.dropSelf(ModBlocks.JACARANDA_CHEST.get());
+        this.dropSelf(ModBlocks.DOGWOOD_CHEST.get());
+        this.dropSelf(ModBlocks.SILVERBELL_CHEST.get());
+        this.dropSelf(ModBlocks.CEDAR_CHEST.get());
+
+        this.dropSelf(ModBlocks.RED_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.ORANGE_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.YELLOW_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.LIME_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.GREEN_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.CYAN_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.LIGHT_BLUE_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.BLUE_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.PURPLE_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.MAGENTA_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.PINK_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.WHITE_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.LIGHT_GRAY_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.GRAY_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.BLACK_STAINED_CHEST.get());
+        this.dropSelf(ModBlocks.BROWN_STAINED_CHEST.get());
 
 
 

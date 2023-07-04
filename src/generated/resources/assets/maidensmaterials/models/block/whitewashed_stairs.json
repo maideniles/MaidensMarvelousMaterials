@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "side": "maidensmaterials:block/whitewashed_planks",
+    "bottom": "maidensmaterials:block/whitewashed_planks",
+    "top": "maidensmaterials:block/whitewashed_planks"
+  }
+}

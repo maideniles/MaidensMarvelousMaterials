@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/chest",
+  "textures": {
+    "particle": "maidensmaterials:block/black_stained_door_1_top"
+  }
+}

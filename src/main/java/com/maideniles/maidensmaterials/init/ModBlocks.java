@@ -5,22 +5,26 @@ import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.blocks.FlowerGrassBlock;
 import com.maideniles.maidensmaterials.blocks.OrnamentalGrassBlock;
 import com.maideniles.maidensmaterials.blocks.VineTieBlock;
+import com.maideniles.maidensmaterials.blocks.chest.ModChestBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidenSaplingBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidensLeafBlock;
 import com.maideniles.maidensmaterials.blocks.tree.vine.CrabappleVineBlock;
 import com.maideniles.maidensmaterials.blocks.tree.vine.PoincianaVineBlock;
 import com.maideniles.maidensmaterials.blocks.vase.VaseBlock;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.grower.*;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +33,9 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MarvelousMaterials.MOD_ID);
+
+    public static final WoodType CRABAPPLE = WoodType.create(MarvelousMaterials.prefix("crabapple").toString());
+
 
 
     public static final RegistryObject<Block> CRABAPPLE_LOG = registerBlock("crabapple_log",
@@ -2902,6 +2909,93 @@ public static final RegistryObject<Block> VASE_ORANGE = registerBlock("vase_oran
     public static final RegistryObject<Block> VASE_BROWN = registerBlock("vase_brown",
             () -> new VaseBlock(BlockBehaviour.Properties.of(Material.CLAY).noOcclusion().instabreak()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    //CHESTS//
+public static final RegistryObject<ModChestBlock> ACACIA_CHEST = registerBlock("acacia_chest",
+        () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> BIRCH_CHEST = registerBlock("birch_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> OAK_CHEST = registerBlock("oak_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> SPRUCE_CHEST = registerBlock("spruce_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> DARK_OAK_CHEST = registerBlock("dark_oak_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> JUNGLE_CHEST = registerBlock("jungle_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> CRIMSON_CHEST = registerBlock("crimson_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> WARPED_CHEST = registerBlock("warped_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+//FOREST WOODS//
+public static final RegistryObject<ModChestBlock> CRABAPPLE_CHEST = registerBlock("crabapple_chest",
+        ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CRABAPPLE_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> POINCIANA_CHEST = registerBlock("poinciana_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.POINCIANA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> LABURNUM_CHEST = registerBlock("laburnum_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LABURNUM_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> JADE_CHEST = registerBlock("jade_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.JADE_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> PAULOWNIA_CHEST = registerBlock("paulownia_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PAULOWNIA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> WISTERIA_CHEST = registerBlock("wisteria_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.WISTERIA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> JACARANDA_CHEST = registerBlock("jacaranda_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.JACARANDA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> DOGWOOD_CHEST = registerBlock("dogwood_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.DOGWOOD_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> SILVERBELL_CHEST = registerBlock("silverbell_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.SILVERBELL_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> CEDAR_CHEST = registerBlock("cedar_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CEDAR_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    //STAINED WOODS//
+    public static final RegistryObject<ModChestBlock> RED_STAINED_CHEST = registerBlock("red_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.RED_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> ORANGE_STAINED_CHEST = registerBlock("orange_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.ORANGE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> YELLOW_STAINED_CHEST = registerBlock("yellow_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.YELLOW_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> LIME_STAINED_CHEST = registerBlock("lime_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIME_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> GREEN_STAINED_CHEST = registerBlock("green_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.GREEN_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> CYAN_STAINED_CHEST = registerBlock("cyan_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CYAN_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> LIGHT_BLUE_STAINED_CHEST = registerBlock("light_blue_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIGHT_BLUE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> BLUE_STAINED_CHEST = registerBlock("blue_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BLUE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> PURPLE_STAINED_CHEST = registerBlock("purple_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PURPLE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> MAGENTA_STAINED_CHEST = registerBlock("magenta_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.MAGENTA_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> PINK_STAINED_CHEST = registerBlock("pink_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PINK_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> WHITE_STAINED_CHEST = registerBlock("white_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.WHITE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> LIGHT_GRAY_STAINED_CHEST = registerBlock("light_gray_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIGHT_GRAY_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> GRAY_STAINED_CHEST = registerBlock("gray_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.GRAY_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> BLACK_STAINED_CHEST = registerBlock("black_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BLACK_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<ModChestBlock> BROWN_STAINED_CHEST = registerBlock("brown_stained_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BROWN_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -2924,6 +3018,9 @@ public static final RegistryObject<Block> VASE_ORANGE = registerBlock("vase_oran
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(MarvelousMaterials.MAIDENS_BLOCKS_GROUP)));
     }
+
+
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

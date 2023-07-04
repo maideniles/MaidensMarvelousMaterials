@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "textures": {
+    "particle": "maidensmaterials:block/paulownia_door_1_top"
+  }
+}

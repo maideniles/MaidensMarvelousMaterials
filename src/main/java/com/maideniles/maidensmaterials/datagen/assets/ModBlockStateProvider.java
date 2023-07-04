@@ -7,6 +7,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -14,8 +15,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         super(gen, MarvelousMaterials.MOD_ID, exFileHelper);
     }
 
+
+    private void builtInEntity(Block b, String particle) {
+        simpleBlock(b, models().getBuilder(b.getRegistryName().getPath())
+                .parent(new ModelFile.UncheckedModelFile("builtin/entity"))
+                .texture("particle", particle));
+    }
     @Override
     protected void registerStatesAndModels() {
+
+
 
     //LOGS//
         axisBlock((RotatedPillarBlock) ModBlocks.CRABAPPLE_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crabapple_log"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crabapple_top"));
@@ -75,9 +84,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.CEDAR_LEAVES.get());
     //VINES//
 
+        //ESSENCES//
+        simpleBlock(ModBlocks.EARTHEN_ESSENCE_BLOCK.get());
+        simpleBlock(ModBlocks.FLORAL_ESSENCE_BLOCK.get());
 
     //WOOD CRAFTABLES//
-
+        simpleBlock(ModBlocks.WHITEWASHED_PLANKS.get());
+        stairsBlock((StairBlock) ModBlocks.WHITEWASHED_STAIRS.get(),blockTexture(ModBlocks.WHITEWASHED_PLANKS.get()));
+        slabBlock((SlabBlock) ModBlocks.WHITEWASHED_SLAB.get(), blockTexture(ModBlocks.WHITEWASHED_PLANKS.get()),blockTexture(ModBlocks.WHITEWASHED_PLANKS.get()));
+        fenceBlock((FenceBlock) ModBlocks.WHITEWASHED_FENCE.get(),blockTexture(ModBlocks.WHITEWASHED_PLANKS.get()));
+        fenceGateBlock((FenceGateBlock) ModBlocks.WHITEWASHED_FENCE_GATE.get(),blockTexture(ModBlocks.WHITEWASHED_PLANKS.get()));
+        pressurePlateBlock((PressurePlateBlock) ModBlocks.WHITEWASHED_PRESSURE_PLATE.get(),blockTexture(ModBlocks.WHITEWASHED_PLANKS.get()));
+        buttonBlock((ButtonBlock) ModBlocks.WHITEWASHED_BUTTON.get(),blockTexture(ModBlocks.WHITEWASHED_PLANKS.get()));
         //PLANKS//
         simpleBlock(ModBlocks.CRABAPPLE_PLANKS.get());
         simpleBlock(ModBlocks.POINCIANA_PLANKS.get());
@@ -957,7 +975,44 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlock((TrapDoorBlock) ModBlocks.GRAY_STAINED_TRAPDOOR_3.get(),blockTexture(ModBlocks.GRAY_STAINED_TRAPDOOR_3.get()), true);
         trapdoorBlock((TrapDoorBlock) ModBlocks.BLACK_STAINED_TRAPDOOR_3.get(),blockTexture(ModBlocks.BLACK_STAINED_TRAPDOOR_3.get()), true);
         trapdoorBlock((TrapDoorBlock) ModBlocks.BROWN_STAINED_TRAPDOOR_3.get(),blockTexture(ModBlocks.BROWN_STAINED_TRAPDOOR_3.get()), true);
+//CHESTS//
 
+        builtInEntity(ModBlocks.ACACIA_CHEST.get(),"block/acacia_planks");
+        builtInEntity(ModBlocks.BIRCH_CHEST.get(),"block/birch_planks");
+        builtInEntity(ModBlocks.OAK_CHEST.get(),"block/oak_planks");
+        builtInEntity(ModBlocks.SPRUCE_CHEST.get(),"block/spruce_planks");
+        builtInEntity(ModBlocks.DARK_OAK_CHEST.get(),"block/dark_oak_planks");
+        builtInEntity(ModBlocks.JUNGLE_CHEST.get(),"block/jungle_planks");
+        builtInEntity(ModBlocks.CRIMSON_CHEST.get(),"block/crimson_planks");
+        builtInEntity(ModBlocks.WARPED_CHEST.get(),"block/warped_planks");
+
+        builtInEntity(ModBlocks.CRABAPPLE_CHEST.get(),"maidensmaterials:block/crabapple_planks");
+        builtInEntity(ModBlocks.POINCIANA_CHEST.get(),"maidensmaterials:block/poinciana_planks");
+        builtInEntity(ModBlocks.LABURNUM_CHEST.get(),"maidensmaterials:block/laburnum_planks");
+        builtInEntity(ModBlocks.JADE_CHEST.get(),"maidensmaterials:block/jade_planks");
+        builtInEntity(ModBlocks.PAULOWNIA_CHEST.get(),"maidensmaterials:block/paulownia_door_1_top");
+        builtInEntity(ModBlocks.WISTERIA_CHEST.get(),"maidensmaterials:block/wisteria_planks");
+        builtInEntity(ModBlocks.JACARANDA_CHEST.get(),"maidensmaterials:block/jacaranda_planks");
+        builtInEntity(ModBlocks.DOGWOOD_CHEST.get(),"maidensmaterials:block/dogwood_planks");
+        builtInEntity(ModBlocks.SILVERBELL_CHEST.get(),"maidensmaterials:block/silverbell_planks");
+        builtInEntity(ModBlocks.CEDAR_CHEST.get(),"maidensmaterials:block/cedar_planks");
+
+        builtInEntity(ModBlocks.RED_STAINED_CHEST.get(),"maidensmaterials:block/red_stained_planks");
+        builtInEntity(ModBlocks.ORANGE_STAINED_CHEST.get(),"maidensmaterials:block/orange_stained_planks");
+        builtInEntity(ModBlocks.YELLOW_STAINED_CHEST.get(),"maidensmaterials:block/laburnum_planks");
+        builtInEntity(ModBlocks.LIME_STAINED_CHEST.get(),"maidensmaterials:block/lime_stained_planks");
+        builtInEntity(ModBlocks.GREEN_STAINED_CHEST.get(),"maidensmaterials:block/green_stained_door_1_top");
+        builtInEntity(ModBlocks.CYAN_STAINED_CHEST.get(),"maidensmaterials:block/cyan_stained_planks");
+        builtInEntity(ModBlocks.LIGHT_BLUE_STAINED_CHEST.get(),"maidensmaterials:block/light_blue_stained_planks");
+        builtInEntity(ModBlocks.BLUE_STAINED_CHEST.get(),"maidensmaterials:block/blue_stained_planks");
+        builtInEntity(ModBlocks.PURPLE_STAINED_CHEST.get(),"maidensmaterials:block/purple_stained_planks");
+        builtInEntity(ModBlocks.MAGENTA_STAINED_CHEST.get(),"maidensmaterials:block/magenta_stained_planks");
+        builtInEntity(ModBlocks.PINK_STAINED_CHEST.get(),"maidensmaterials:block/pink_stained_planks");
+        builtInEntity(ModBlocks.WHITE_STAINED_CHEST.get(),"maidensmaterials:block/white_stained_planks");
+        builtInEntity(ModBlocks.LIGHT_GRAY_STAINED_CHEST.get(),"maidensmaterials:block/light_gray_stained_planks");
+        builtInEntity(ModBlocks.GRAY_STAINED_CHEST.get(),"maidensmaterials:block/gray_stained_planks");
+        builtInEntity(ModBlocks.BLACK_STAINED_CHEST.get(),"maidensmaterials:block/black_stained_door_1_top");
+        builtInEntity(ModBlocks.BROWN_STAINED_CHEST.get(),"maidensmaterials:block/brown_stained_planks");
 
     }
 

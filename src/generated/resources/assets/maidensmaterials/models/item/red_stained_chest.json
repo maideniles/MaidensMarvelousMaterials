@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/chest",
+  "textures": {
+    "particle": "maidensmaterials:block/red_stained_planks"
+  }
+}
