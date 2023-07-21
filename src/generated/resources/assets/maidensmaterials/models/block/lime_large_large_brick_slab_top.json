@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "side": "maidensmaterials:block/lime_large_brick_block",
-    "bottom": "maidensmaterials:block/lime_large_brick_block",
-    "top": "maidensmaterials:block/lime_large_brick_block"
-  }
-}

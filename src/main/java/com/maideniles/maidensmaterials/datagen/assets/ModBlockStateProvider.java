@@ -31,7 +31,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock((RotatedPillarBlock) ModBlocks.POINCIANA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.LABURNUM_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.JADE_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_top"));
-        axisBlock((RotatedPillarBlock) ModBlocks.PAULOWNIA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.PAULOWNIA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.WISTERIA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.JACARANDA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.DOGWOOD_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_top"));
@@ -53,7 +53,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_POINCIANA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_poinciana_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_poinciana_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_LABURNUM_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_laburnum_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_laburnum_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_JADE_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_jade_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_jade_top"));
-        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_PAULOWNIA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_paulownia_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_paulownia_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_PAULOWNIA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_paulownia_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_paulownia_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_WISTERIA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_wisteria_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_wisteria_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_JACARANDA_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_jacaranda_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_jacaranda_top"));
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_DOGWOOD_LOG.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_dogwood_log"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/stripped_dogwood_top"));
@@ -184,7 +184,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.POINCIANA_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.LABURNUM_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.JADE_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_1_top"));
-        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_1_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.WISTERIA_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.JACARANDA_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.DOGWOOD_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_1_top"));
@@ -195,7 +195,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.POINCIANA_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.LABURNUM_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.JADE_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_2_top"));
-        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_2_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.WISTERIA_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.JACARANDA_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.DOGWOOD_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_2_top"));
@@ -206,7 +206,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.POINCIANA_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.LABURNUM_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.JADE_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_3_top"));
-        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_3_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.WISTERIA_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.JACARANDA_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.DOGWOOD_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_3_top"));
@@ -217,7 +217,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.POINCIANA_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.LABURNUM_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.JADE_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_4_top"));
-        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_4_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.WISTERIA_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.JACARANDA_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.DOGWOOD_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_4_top"));
@@ -228,7 +228,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.POINCIANA_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.LABURNUM_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.JADE_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_5_top"));
-        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_5_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.WISTERIA_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.JACARANDA_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.DOGWOOD_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_5_top"));
@@ -239,12 +239,69 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.POINCIANA_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/poinciana_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.LABURNUM_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.JADE_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jade_door_6_top"));
-        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_6_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.PAULOWNIA_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/paulownia_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.WISTERIA_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/wisteria_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.JACARANDA_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jacaranda_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.DOGWOOD_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dogwood_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.SILVERBELL_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/silverbell_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/silverbell_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.CEDAR_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cedar_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cedar_door_6_top"));
+
+
+        doorBlock((DoorBlock) ModBlocks.ACACIA_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_1_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.BIRCH_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.OAK_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.SPRUCE_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.DARK_OAK_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.JUNGLE_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.CRIMSON_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.WARPED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_1_top"));
+
+
+        doorBlock((DoorBlock) ModBlocks.ACACIA_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_2_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.BIRCH_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.OAK_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.SPRUCE_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.DARK_OAK_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.JUNGLE_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.CRIMSON_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.WARPED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID, "block/warped_door_2_top"));
+
+                doorBlock((DoorBlock) ModBlocks.ACACIA_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_3_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.BIRCH_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.OAK_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.SPRUCE_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.DARK_OAK_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.JUNGLE_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.CRIMSON_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.WARPED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID, "block/warped_door_3_top"));
+
+                doorBlock((DoorBlock) ModBlocks.ACACIA_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_4_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.BIRCH_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.OAK_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.SPRUCE_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.DARK_OAK_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.JUNGLE_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.CRIMSON_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.WARPED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID, "block/warped_door_4_top"));
+
+                doorBlock((DoorBlock) ModBlocks.ACACIA_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_5_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.BIRCH_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.OAK_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.SPRUCE_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.DARK_OAK_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.JUNGLE_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.CRIMSON_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.WARPED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID, "block/warped_door_5_top"));
+
+                doorBlock((DoorBlock) ModBlocks.ACACIA_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_6_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/acacia_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.BIRCH_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/birch_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.OAK_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/oak_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.SPRUCE_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/spruce_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.DARK_OAK_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/dark_oak_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.JUNGLE_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/jungle_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.CRIMSON_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/crimson_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.WARPED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/warped_door_6_top"));
+
 
         //TRAPDOORS//
         trapdoorBlock((TrapDoorBlock) ModBlocks.CRABAPPLE_TRAPDOOR_1.get(),blockTexture(ModBlocks.CRABAPPLE_TRAPDOOR_1.get()), true);
@@ -280,6 +337,34 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlock((TrapDoorBlock) ModBlocks.SILVERBELL_TRAPDOOR_3.get(),blockTexture(ModBlocks.SILVERBELL_TRAPDOOR_3.get()), true);
         trapdoorBlock((TrapDoorBlock) ModBlocks.CEDAR_TRAPDOOR_3.get(),blockTexture(ModBlocks.CEDAR_TRAPDOOR_3.get()), true);
 
+
+        trapdoorBlock((TrapDoorBlock) ModBlocks.ACACIA_TRAPDOOR_1.get(),blockTexture(ModBlocks.ACACIA_TRAPDOOR_1.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.BIRCH_TRAPDOOR_1.get(),blockTexture(ModBlocks.BIRCH_TRAPDOOR_1.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.OAK_TRAPDOOR_1.get(),blockTexture(ModBlocks.OAK_TRAPDOOR_1.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.SPRUCE_TRAPDOOR_1.get(),blockTexture(ModBlocks.SPRUCE_TRAPDOOR_1.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.DARK_OAK_TRAPDOOR_1.get(),blockTexture(ModBlocks.DARK_OAK_TRAPDOOR_1.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.JUNGLE_TRAPDOOR_1.get(),blockTexture(ModBlocks.JUNGLE_TRAPDOOR_1.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.CRIMSON_TRAPDOOR_1.get(),blockTexture(ModBlocks.CRIMSON_TRAPDOOR_1.get()), true);
+          trapdoorBlock((TrapDoorBlock) ModBlocks.WARPED_TRAPDOOR_1.get(),blockTexture(ModBlocks.WARPED_TRAPDOOR_1.get()), true);
+
+
+        trapdoorBlock((TrapDoorBlock) ModBlocks.ACACIA_TRAPDOOR_2.get(),blockTexture(ModBlocks.ACACIA_TRAPDOOR_2.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.BIRCH_TRAPDOOR_2.get(),blockTexture(ModBlocks.BIRCH_TRAPDOOR_2.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.OAK_TRAPDOOR_2.get(),blockTexture(ModBlocks.OAK_TRAPDOOR_2.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.SPRUCE_TRAPDOOR_2.get(),blockTexture(ModBlocks.SPRUCE_TRAPDOOR_2.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.DARK_OAK_TRAPDOOR_2.get(),blockTexture(ModBlocks.DARK_OAK_TRAPDOOR_2.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.JUNGLE_TRAPDOOR_2.get(),blockTexture(ModBlocks.JUNGLE_TRAPDOOR_2.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.CRIMSON_TRAPDOOR_2.get(),blockTexture(ModBlocks.CRIMSON_TRAPDOOR_2.get()), true);
+         trapdoorBlock((TrapDoorBlock) ModBlocks.WARPED_TRAPDOOR_2.get(),blockTexture(ModBlocks.WARPED_TRAPDOOR_2.get()), true);
+
+        trapdoorBlock((TrapDoorBlock) ModBlocks.ACACIA_TRAPDOOR_3.get(),blockTexture(ModBlocks.ACACIA_TRAPDOOR_3.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.BIRCH_TRAPDOOR_3.get(),blockTexture(ModBlocks.BIRCH_TRAPDOOR_3.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.OAK_TRAPDOOR_3.get(),blockTexture(ModBlocks.OAK_TRAPDOOR_3.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.SPRUCE_TRAPDOOR_3.get(),blockTexture(ModBlocks.SPRUCE_TRAPDOOR_3.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.DARK_OAK_TRAPDOOR_3.get(),blockTexture(ModBlocks.DARK_OAK_TRAPDOOR_3.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.JUNGLE_TRAPDOOR_3.get(),blockTexture(ModBlocks.JUNGLE_TRAPDOOR_3.get()), true);
+        trapdoorBlock((TrapDoorBlock) ModBlocks.CRIMSON_TRAPDOOR_3.get(),blockTexture(ModBlocks.CRIMSON_TRAPDOOR_3.get()), true);
+          trapdoorBlock((TrapDoorBlock) ModBlocks.WARPED_TRAPDOOR_3.get(),blockTexture(ModBlocks.WARPED_TRAPDOOR_3.get()), true);
 
         //CLAY BLOCKS//
         simpleBlock(ModBlocks.RED_CLAY_BLOCK.get());
@@ -448,7 +533,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.AMETHYST_ORE.get());
         simpleBlock(ModBlocks.ROSE_QUARTZ_ORE.get());
         simpleBlock(ModBlocks.MICA_ORE.get());
-
+//DEEPSLATE//
+        simpleBlock(ModBlocks.DEEPSLATE_JASPER_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_CARNELIAN_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_CITRINE_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_AVENTURINE_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_JADE_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_LABRADORITE_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_MOONSTONE_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_SODALITE_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_AMETHYST_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get());
+        simpleBlock(ModBlocks.DEEPSLATE_MICA_ORE.get());
     //GEM BLOCKS//
         simpleBlock(ModBlocks.JASPER_BLOCK.get());
         simpleBlock(ModBlocks.CARNELIAN_BLOCK.get());
@@ -824,9 +921,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         //DOORS//
         doorBlock((DoorBlock) ModBlocks.RED_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_1_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.ORANGE_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_1_top"));
-        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.LIME_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_1_top"));
-        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_1_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.CYAN_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_BLUE_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.BLUE_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_1_top"));
@@ -836,14 +933,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.WHITE_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_GRAY_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.GRAY_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_1_top"));
-        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_1_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_1_top"));
+        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_1_top"));
         doorBlock((DoorBlock) ModBlocks.BROWN_STAINED_DOOR_1.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_1_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_1_top"));
 
         doorBlock((DoorBlock) ModBlocks.RED_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_2_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.ORANGE_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_2_top"));
-        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.LIME_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_2_top"));
-        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_2_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.CYAN_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_BLUE_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.BLUE_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_2_top"));
@@ -853,14 +950,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.WHITE_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_GRAY_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.GRAY_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_2_top"));
-        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_2_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_2_top"));
+        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_2_top"));
         doorBlock((DoorBlock) ModBlocks.BROWN_STAINED_DOOR_2.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_2_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_2_top"));
 
         doorBlock((DoorBlock) ModBlocks.RED_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_3_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.ORANGE_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_3_top"));
-        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.LIME_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_3_top"));
-        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_3_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.CYAN_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_BLUE_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.BLUE_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_3_top"));
@@ -870,14 +967,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.WHITE_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_GRAY_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.GRAY_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_3_top"));
-        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_3_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_3_top"));
+        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_3_top"));
         doorBlock((DoorBlock) ModBlocks.BROWN_STAINED_DOOR_3.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_3_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_3_top"));
 
         doorBlock((DoorBlock) ModBlocks.RED_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_4_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.ORANGE_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_4_top"));
-        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.LIME_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_4_top"));
-        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_4_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.CYAN_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_BLUE_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.BLUE_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_4_top"));
@@ -887,14 +984,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.WHITE_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_GRAY_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.GRAY_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_4_top"));
-        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_4_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_4_top"));
+        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_4_top"));
         doorBlock((DoorBlock) ModBlocks.BROWN_STAINED_DOOR_4.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_4_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_4_top"));
 
         doorBlock((DoorBlock) ModBlocks.RED_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_5_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.ORANGE_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_5_top"));
-        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.LIME_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_5_top"));
-        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_5_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.CYAN_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_BLUE_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.BLUE_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_5_top"));
@@ -904,14 +1001,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.WHITE_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_GRAY_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.GRAY_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_5_top"));
-        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_5_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_5_top"));
+        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_5_top"));
         doorBlock((DoorBlock) ModBlocks.BROWN_STAINED_DOOR_5.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_5_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_5_top"));
 
         doorBlock((DoorBlock) ModBlocks.RED_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_6_bottom"), new ResourceLocation(MarvelousMaterials.MOD_ID,"block/red_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.ORANGE_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/orange_stained_door_6_top"));
-        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/laburnum_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.YELLOW_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/yellow_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.LIME_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/lime_stained_door_6_top"));
-        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_6_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.GREEN_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/green_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.CYAN_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/cyan_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_BLUE_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_blue_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.BLUE_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/blue_stained_door_6_top"));
@@ -921,7 +1018,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlock((DoorBlock) ModBlocks.WHITE_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/white_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.LIGHT_GRAY_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/light_gray_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.GRAY_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/gray_stained_door_6_top"));
-        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_6_top"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_6_top"));
+        doorBlock((DoorBlock) ModBlocks.BLACK_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/black_stained_door_6_top"));
         doorBlock((DoorBlock) ModBlocks.BROWN_STAINED_DOOR_6.get(),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_6_bottom"),new ResourceLocation(MarvelousMaterials.MOD_ID,"block/brown_stained_door_6_top"));
 
         //TRAPDOORS//
@@ -990,7 +1087,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         builtInEntity(ModBlocks.POINCIANA_CHEST.get(),"maidensmaterials:block/poinciana_planks");
         builtInEntity(ModBlocks.LABURNUM_CHEST.get(),"maidensmaterials:block/laburnum_planks");
         builtInEntity(ModBlocks.JADE_CHEST.get(),"maidensmaterials:block/jade_planks");
-        builtInEntity(ModBlocks.PAULOWNIA_CHEST.get(),"maidensmaterials:block/paulownia_door_1_top");
+        builtInEntity(ModBlocks.PAULOWNIA_CHEST.get(),"maidensmaterials:block/paulownia_planks");
         builtInEntity(ModBlocks.WISTERIA_CHEST.get(),"maidensmaterials:block/wisteria_planks");
         builtInEntity(ModBlocks.JACARANDA_CHEST.get(),"maidensmaterials:block/jacaranda_planks");
         builtInEntity(ModBlocks.DOGWOOD_CHEST.get(),"maidensmaterials:block/dogwood_planks");

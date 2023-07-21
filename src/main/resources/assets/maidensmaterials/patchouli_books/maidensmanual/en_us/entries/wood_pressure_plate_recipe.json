@@ -1,0 +1,41 @@
+{
+    "name": "Wood Pressure Plate Recipe",
+    "icon": "maidensmaterials:cedar_pressure_plate",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_pressure_plate",
+		"recipe2": "maidensmaterials:poinciana_pressure_plate"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_pressure_plate",
+		 "recipe2": "maidensmaterials:jade_pressure_plate"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_pressure_plate",
+		"recipe2": "maidensmaterials:wisteria_pressure_plate"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_pressure_plate",
+		"recipe2": "maidensmaterials:dogwood_pressure_plate"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_pressure_plate",
+		 "recipe2": "maidensmaterials:cedar_pressure_plate"
+	}
+	
+	
+	
+	
+    ]
+}

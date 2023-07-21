@@ -29,7 +29,7 @@ public class ModBlockEntities {
 
                     ModBlocks.RED_STAINED_CHEST.get(),ModBlocks.ORANGE_STAINED_CHEST.get(),ModBlocks.YELLOW_STAINED_CHEST.get(),
                     ModBlocks.LIME_STAINED_CHEST.get(),ModBlocks.GREEN_STAINED_CHEST.get(),ModBlocks.CYAN_STAINED_CHEST.get(),
-                    ModBlocks.LIGHT_BLUE_STAINED_CHEST.get(),ModBlocks.BLACK_STAINED_CHEST.get(),ModBlocks.PURPLE_STAINED_CHEST.get(),
+                    ModBlocks.LIGHT_BLUE_STAINED_CHEST.get(),ModBlocks.BLUE_STAINED_CHEST.get(),ModBlocks.PURPLE_STAINED_CHEST.get(),
                     ModBlocks.MAGENTA_STAINED_CHEST.get(),ModBlocks.PINK_STAINED_CHEST.get(),ModBlocks.WHITE_STAINED_CHEST.get(),
                     ModBlocks.LIGHT_GRAY_STAINED_CHEST.get(),ModBlocks.GRAY_STAINED_CHEST.get(),ModBlocks.BLACK_STAINED_CHEST.get(),
                     ModBlocks.BROWN_STAINED_CHEST.get() ).build(null));

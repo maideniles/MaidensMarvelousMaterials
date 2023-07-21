@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/chest",
+  "parent": "maidensmaterials:block/chest_inventory",
   "textures": {
-    "particle": "maidensmaterials:block/black_stained_door_1_top"
+    "chest_tex": "maidensmaterials:model/chest/black_stained_chest/black_stained_chest"
   }
 }

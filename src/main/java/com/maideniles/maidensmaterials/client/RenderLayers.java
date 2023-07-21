@@ -14,6 +14,9 @@ public class RenderLayers {
     public static void onClientSetup(FMLClientSetupEvent event) {
 
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORNAMENTAL_MUSHROOM.get(),RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_ORNAMENTAL_MUSHROOM.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.FAIRY_GLOW_CUP.get(), RenderType.cutoutMipped());
 
         //vines
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WALK_FLOWERS.get(), RenderType.cutoutMipped());
@@ -76,7 +79,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.VASE_GRAY.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.VASE_BLACK.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.VASE_BROWN.get(), RenderType.cutoutMipped());
-    /*    //doors//
+        //doors//
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_STAINED_DOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_STAINED_DOOR_1.get(), RenderType.cutoutMipped());
@@ -192,11 +195,11 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ACACIA_DOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIRCH_DOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.OAK_DOOR_1.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.DARK_OAKDOOR_1.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.DARK_OAK_DOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_DOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_DOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_DOOR_1.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_DOOR_1.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRABAPPLE_DOOR_2.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POINCIANA_DOOR_2.get(), RenderType.cutoutMipped());
@@ -214,7 +217,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_DOOR_2.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_DOOR_2.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_DOOR_2.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_DOOR_2.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRABAPPLE_DOOR_3.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POINCIANA_DOOR_3.get(), RenderType.cutoutMipped());
@@ -232,7 +235,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_DOOR_3.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_DOOR_3.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_DOOR_3.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_DOOR_3.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRABAPPLE_DOOR_4.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POINCIANA_DOOR_4.get(), RenderType.cutoutMipped());
@@ -250,7 +253,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_DOOR_4.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_DOOR_4.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_DOOR_4.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_DOOR_4.get(), RenderType.cutoutMipped());
+
 
 
 
@@ -270,7 +273,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_DOOR_5.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_DOOR_5.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_DOOR_5.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_DOOR_5.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRABAPPLE_DOOR_6.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POINCIANA_DOOR_6.get(), RenderType.cutoutMipped());
@@ -288,7 +291,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_DOOR_6.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_DOOR_6.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_DOOR_6.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_DOOR_6.get(), RenderType.cutoutMipped());
+
 
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRABAPPLE_TRAPDOOR_1.get(), RenderType.cutoutMipped());
@@ -307,7 +310,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_TRAPDOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_TRAPDOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_TRAPDOOR_1.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_TRAPDOOR_1.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_STAINED_TRAPDOOR_1.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_STAINED_TRAPDOOR_1.get(), RenderType.cutoutMipped());
@@ -342,7 +345,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_TRAPDOOR_2.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_TRAPDOOR_2.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_TRAPDOOR_2.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_TRAPDOOR_2.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_STAINED_TRAPDOOR_2.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_STAINED_TRAPDOOR_2.get(), RenderType.cutoutMipped());
@@ -377,7 +380,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_TRAPDOOR_3.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_TRAPDOOR_3.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_TRAPDOOR_3.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_TRAPDOOR_3.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_STAINED_TRAPDOOR_3.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_STAINED_TRAPDOOR_3.get(), RenderType.cutoutMipped());
@@ -412,7 +415,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.SPRUCE_TRAPDOOR_4.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.JUNGLE_TRAPDOOR_4.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CEDAR_TRAPDOOR_4.get(), RenderType.cutoutMipped());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PALM_TRAPDOOR_4.get(), RenderType.cutoutMipped());
+
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_STAINED_TRAPDOOR_4.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_STAINED_TRAPDOOR_4.get(), RenderType.cutoutMipped());
@@ -450,7 +453,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRIMSON_TRAPDOOR_3.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WARPED_TRAPDOOR_4.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRIMSON_TRAPDOOR_4.get(), RenderType.cutoutMipped());
-*/
+
     }
 
     public static void safeRunClient() {

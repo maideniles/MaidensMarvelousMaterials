@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/chest",
+  "parent": "maidensmaterials:block/chest_inventory",
   "textures": {
-    "particle": "maidensmaterials:block/crimson_planks"
+    "chest_tex": "maidensmaterials:model/chest/crimson_chest/crimson_chest"
   }
 }

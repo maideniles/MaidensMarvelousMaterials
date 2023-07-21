@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.blocks.tree;
 
 import com.maideniles.maidensmaterials.init.ModBlocks;
+import com.maideniles.maidensmaterials.init.ModEffects;
 import com.maideniles.maidensmaterials.init.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
@@ -25,7 +26,7 @@ public class MaidensLeafBlock extends LeavesBlock {
 
 
     public MaidensLeafBlock( Properties properties) {
-        super(Properties.of(Material.LEAVES).noOcclusion().strength(2.5F).sound(SoundType.FLOWERING_AZALEA));
+        super(Properties.of(Material.LEAVES).noOcclusion().strength(0.2F).sound(SoundType.FLOWERING_AZALEA));
 
     }
 
@@ -38,12 +39,12 @@ public class MaidensLeafBlock extends LeavesBlock {
         return SHAPE;
     }
 
-    public InteractionResult use(BlockState state, Level p_57276_, BlockPos p_57277_, Player p_57278_, InteractionHand p_57279_, BlockHitResult p_57280_) {
+    public InteractionResult use(BlockState state, Level p_57276_, BlockPos p_57277_, Player player, InteractionHand p_57279_, BlockHitResult p_57280_) {
 
         Block leaves = state.getBlock();
-        ItemStack shears = p_57278_.getItemInHand(p_57279_);
+        ItemStack shears = player.getItemInHand(p_57279_);
 
-        if (shears.is(ModItems.PRUNING_SHEARS.get())) {
+        if (shears.is(ModItems.PRUNING_SHEARS.get()) || player.hasEffect(ModEffects.FLORAL_FORTUNE_EFFECT.get())) {
 
             shears.setDamageValue(1);
 
@@ -95,7 +96,7 @@ public class MaidensLeafBlock extends LeavesBlock {
 
 
          else {
-            return super.use(state, p_57276_, p_57277_, p_57278_, p_57279_, p_57280_);
+            return super.use(state, p_57276_, p_57277_, player, p_57279_, p_57280_);
         }
     }
 

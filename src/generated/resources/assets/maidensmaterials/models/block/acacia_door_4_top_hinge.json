@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "bottom": "maidensmaterials:block/acacia_door_4_bottom",
+    "top": "maidensmaterials:block/acacia_door_4_top"
+  }
+}

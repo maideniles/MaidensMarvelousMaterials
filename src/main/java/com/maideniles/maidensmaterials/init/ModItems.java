@@ -1,7 +1,6 @@
 package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MarvelousMaterials;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,10 +11,14 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MarvelousMaterials.MOD_ID);
 
- //   public static final RegistryObject<Item> MARVELOUS_MANUAL = ITEMS.register("marvelous_manual",
- //           ()-> new MarvelousManualItem(new Item.Properties().tab(null).maxStackSize(1)));
+  //  public static final RegistryObject<Item> MARVELOUS_MANUAL = ITEMS.register("marvelous_manual",
+ //           ()-> new MarvelousManualItem(new Item.Properties().tab(null).stacksTo(1)));
 
+    public static final RegistryObject<Item> EARTHEN_POTION_FOR_BOOK = ITEMS.register("earthen_potion_item",
+            () -> new Item(new Item.Properties().tab(null)));
 
+    public static final RegistryObject<Item> FLORAL_POTION_FOR_BOOK = ITEMS.register("floral_potion_item",
+            () -> new Item(new Item.Properties().tab(null)));
     //TOOLS//
     public static final RegistryObject<Item> MORTAR_AND_PESTLE = ITEMS.register("mortar_and_pestle",
             () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));

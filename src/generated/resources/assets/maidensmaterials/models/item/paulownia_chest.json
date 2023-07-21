@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/chest",
+  "parent": "maidensmaterials:block/chest_inventory",
   "textures": {
-    "particle": "maidensmaterials:block/paulownia_door_1_top"
+    "chest_tex": "maidensmaterials:model/chest/paulownia_chest/paulownia_chest"
   }
 }

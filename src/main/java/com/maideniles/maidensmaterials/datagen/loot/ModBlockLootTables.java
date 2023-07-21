@@ -1,7 +1,9 @@
 package com.maideniles.maidensmaterials.datagen.loot;
 
 import com.maideniles.maidensmaterials.init.ModBlocks;
+import com.maideniles.maidensmaterials.init.ModItems;
 import net.minecraft.data.loot.BlockLoot;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.RegistryObject;
@@ -99,9 +101,34 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropOther(ModBlocks.WALK_FLOWERS.get(), Blocks.AIR);
         this.dropSelf(ModBlocks.VINE_TIE.get());
         this.dropOther(ModBlocks.ORNAMENTAL_PATH.get(),Blocks.DIRT);
-        this.dropOther(ModBlocks.ORNAMENTAL_GRASS.get(), Blocks.GRASS_BLOCK);
+        this.dropOther(ModBlocks.ORNAMENTAL_GRASS.get(), Blocks.AIR);
+        this.dropSelf(ModBlocks.ORNAMENTAL_MUSHROOM.get());
+        this.dropOther(ModBlocks.POTTED_ORNAMENTAL_MUSHROOM.get(),Blocks.FLOWER_POT);
+        this.dropOther(ModBlocks.FAIRY_GLOW_CUP.get(), Items.GLOWSTONE_DUST);
 
     //WOOD CRAFTABLES//
+
+        //BOOKSHELVES//
+        this.dropOther(ModBlocks.CRABAPPLE_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.POINCIANA_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.LABURNUM_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.JADE_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.PAULOWNIA_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.WISTERIA_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.JACARANDA_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.DOGWOOD_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.SILVERBELL_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.CEDAR_BOOKSHELF.get(), Items.BOOK);
+
+
+        this.dropOther(ModBlocks.ACACIA_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.BIRCH_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.OAK_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.SPRUCE_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.DARK_OAK_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.JUNGLE_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.CRIMSON_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.WARPED_BOOKSHELF.get(), Items.BOOK);
         //TREE WOODS//
 
         this.dropSelf(ModBlocks.CRABAPPLE_PLANKS.get());
@@ -247,6 +274,97 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.SILVERBELL_DOOR_6.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.CEDAR_DOOR_6.get(),BlockLoot::createDoorTable);
 
+        this.add(ModBlocks.ACACIA_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.BIRCH_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.OAK_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.SPRUCE_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.DARK_OAK_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.JUNGLE_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.CRIMSON_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.WARPED_DOOR_1.get(),BlockLoot::createDoorTable);
+
+        this.add(ModBlocks.ACACIA_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.BIRCH_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.OAK_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.SPRUCE_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.DARK_OAK_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.JUNGLE_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.CRIMSON_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.WARPED_DOOR_2.get(),BlockLoot::createDoorTable);
+
+        this.add(ModBlocks.ACACIA_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.BIRCH_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.OAK_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.SPRUCE_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.DARK_OAK_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.JUNGLE_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.CRIMSON_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.WARPED_DOOR_3.get(),BlockLoot::createDoorTable);
+
+        this.add(ModBlocks.ACACIA_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.BIRCH_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.OAK_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.SPRUCE_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.DARK_OAK_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.JUNGLE_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.CRIMSON_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.WARPED_DOOR_4.get(),BlockLoot::createDoorTable);
+
+        this.add(ModBlocks.ACACIA_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.BIRCH_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.OAK_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.SPRUCE_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.DARK_OAK_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.JUNGLE_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.CRIMSON_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.WARPED_DOOR_5.get(),BlockLoot::createDoorTable);
+
+        this.add(ModBlocks.ACACIA_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.BIRCH_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.OAK_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.SPRUCE_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.DARK_OAK_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.JUNGLE_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.CRIMSON_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.WARPED_DOOR_6.get(),BlockLoot::createDoorTable);
+
+        this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.OAK_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.SPRUCE_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.DARK_OAK_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.WARPED_TRAPDOOR_1.get());
+
+        this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.OAK_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.SPRUCE_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.DARK_OAK_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.WARPED_TRAPDOOR_2.get());
+
+        this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.OAK_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.SPRUCE_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.DARK_OAK_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.WARPED_TRAPDOOR_3.get());
+
+        this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.OAK_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.SPRUCE_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.DARK_OAK_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.WARPED_TRAPDOOR_4.get());
+
+
 
         this.dropSelf(ModBlocks.CRABAPPLE_TRAPDOOR_1.get());
         this.dropSelf(ModBlocks.POINCIANA_TRAPDOOR_1.get());
@@ -312,6 +430,22 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.BLACK_STAINED_PLANKS.get());
         this.dropSelf(ModBlocks.BROWN_STAINED_PLANKS.get());
 
+        this.dropOther(ModBlocks.RED_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.ORANGE_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.YELLOW_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.LIME_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.GREEN_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.CYAN_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.LIGHT_BLUE_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.BLUE_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.PURPLE_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.MAGENTA_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.PINK_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.WHITE_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.LIGHT_GRAY_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.GRAY_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.BLACK_STAINED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.BROWN_STAINED_BOOKSHELF.get(), Items.BOOK);
             //STAIRS//
         this.dropSelf(ModBlocks.WHITEWASHED_STAIRS.get());
         this.dropSelf(ModBlocks.RED_STAINED_STAIRS.get());
@@ -747,18 +881,31 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.BROWN_LARGE_BRICK_SLAB.get());
 
 //ORES//
-        this.dropSelf(ModBlocks.JASPER_ORE.get());
-        this.dropSelf(ModBlocks.CARNELIAN_ORE.get());
-        this.dropSelf(ModBlocks.CITRINE_ORE.get());
-        this.dropSelf(ModBlocks.AVENTURINE_ORE.get());
-        this.dropSelf(ModBlocks.JADE_ORE.get());
-        this.dropSelf(ModBlocks.CHALCOPYRITE_ORE.get());
-        this.dropSelf(ModBlocks.LABRADORITE_ORE.get());
-        this.dropSelf(ModBlocks.MOONSTONE_ORE.get());
-        this.dropSelf(ModBlocks.SODALITE_ORE.get());
-        this.dropSelf(ModBlocks.AMETHYST_ORE.get());
-        this.dropSelf(ModBlocks.ROSE_QUARTZ_ORE.get());
-        this.dropSelf(ModBlocks.MICA_ORE.get());
+        this.dropOther(ModBlocks.JASPER_ORE.get(), ModItems.JASPER_FRAGMENTS.get());
+        this.dropOther(ModBlocks.CARNELIAN_ORE.get(), ModItems.CARNELIAN_FRAGMENTS.get());
+        this.dropOther(ModBlocks.CITRINE_ORE.get(), ModItems.CITRINE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.AVENTURINE_ORE.get(), ModItems.AVENTURINE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.JADE_ORE.get(), ModItems.JADE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.CHALCOPYRITE_ORE.get(), ModItems.CHALCOPYRITE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.LABRADORITE_ORE.get(), ModItems.LABRADORITE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.MOONSTONE_ORE.get(), ModItems.MOONSTONE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.SODALITE_ORE.get(), ModItems.SODALITE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.AMETHYST_ORE.get(), ModItems.AMETHYST_FRAGMENTS.get());
+        this.dropOther(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ_FRAGMENTS.get());
+        this.dropOther(ModBlocks.MICA_ORE.get(), ModItems.MICA_FRAGMENTS.get());
+
+        this.dropOther(ModBlocks.DEEPSLATE_JASPER_ORE.get(), ModItems.JASPER_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_CARNELIAN_ORE.get(), ModItems.CARNELIAN_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_CITRINE_ORE.get(), ModItems.CITRINE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_AVENTURINE_ORE.get(), ModItems.AVENTURINE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_JADE_ORE.get(), ModItems.JADE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get(), ModItems.CHALCOPYRITE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_LABRADORITE_ORE.get(), ModItems.LABRADORITE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_MOONSTONE_ORE.get(), ModItems.MOONSTONE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_SODALITE_ORE.get(), ModItems.SODALITE_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_AMETHYST_ORE.get(), ModItems.AMETHYST_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ_FRAGMENTS.get());
+        this.dropOther(ModBlocks.DEEPSLATE_MICA_ORE.get(), ModItems.MICA_FRAGMENTS.get());
 
 //GEM BLOCKS//
         this.dropSelf(ModBlocks.JASPER_BLOCK.get());

@@ -535,6 +535,60 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(Item.byBlock(ModBlocks.SILVERBELL_DOOR_1.get()));
         simpleItem(Item.byBlock(ModBlocks.CEDAR_DOOR_1.get()));
 
+        simpleItem(Item.byBlock(ModBlocks.ACACIA_DOOR_1.get()));
+        simpleItem(Item.byBlock(ModBlocks.BIRCH_DOOR_1.get()));
+        simpleItem(Item.byBlock(ModBlocks.OAK_DOOR_1.get()));
+        simpleItem(Item.byBlock(ModBlocks.SPRUCE_DOOR_1.get()));
+        simpleItem(Item.byBlock(ModBlocks.DARK_OAK_DOOR_1.get()));
+        simpleItem(Item.byBlock(ModBlocks.JUNGLE_DOOR_1.get()));
+        simpleItem(Item.byBlock(ModBlocks.CRIMSON_DOOR_1.get()));
+        simpleItem(Item.byBlock(ModBlocks.WARPED_DOOR_1.get()));
+
+        simpleItem(Item.byBlock(ModBlocks.ACACIA_DOOR_2.get()));
+        simpleItem(Item.byBlock(ModBlocks.BIRCH_DOOR_2.get()));
+        simpleItem(Item.byBlock(ModBlocks.OAK_DOOR_2.get()));
+        simpleItem(Item.byBlock(ModBlocks.SPRUCE_DOOR_2.get()));
+        simpleItem(Item.byBlock(ModBlocks.DARK_OAK_DOOR_2.get()));
+        simpleItem(Item.byBlock(ModBlocks.JUNGLE_DOOR_2.get()));
+        simpleItem(Item.byBlock(ModBlocks.CRIMSON_DOOR_2.get()));
+        simpleItem(Item.byBlock(ModBlocks.WARPED_DOOR_2.get()));
+
+        simpleItem(Item.byBlock(ModBlocks.ACACIA_DOOR_3.get()));
+        simpleItem(Item.byBlock(ModBlocks.BIRCH_DOOR_3.get()));
+        simpleItem(Item.byBlock(ModBlocks.OAK_DOOR_3.get()));
+        simpleItem(Item.byBlock(ModBlocks.SPRUCE_DOOR_3.get()));
+        simpleItem(Item.byBlock(ModBlocks.DARK_OAK_DOOR_3.get()));
+        simpleItem(Item.byBlock(ModBlocks.JUNGLE_DOOR_3.get()));
+        simpleItem(Item.byBlock(ModBlocks.CRIMSON_DOOR_3.get()));
+        simpleItem(Item.byBlock(ModBlocks.WARPED_DOOR_3.get()));
+
+        simpleItem(Item.byBlock(ModBlocks.ACACIA_DOOR_4.get()));
+        simpleItem(Item.byBlock(ModBlocks.BIRCH_DOOR_4.get()));
+        simpleItem(Item.byBlock(ModBlocks.OAK_DOOR_4.get()));
+        simpleItem(Item.byBlock(ModBlocks.SPRUCE_DOOR_4.get()));
+        simpleItem(Item.byBlock(ModBlocks.DARK_OAK_DOOR_4.get()));
+        simpleItem(Item.byBlock(ModBlocks.JUNGLE_DOOR_4.get()));
+        simpleItem(Item.byBlock(ModBlocks.CRIMSON_DOOR_4.get()));
+        simpleItem(Item.byBlock(ModBlocks.WARPED_DOOR_4.get()));
+
+        simpleItem(Item.byBlock(ModBlocks.ACACIA_DOOR_5.get()));
+        simpleItem(Item.byBlock(ModBlocks.BIRCH_DOOR_5.get()));
+        simpleItem(Item.byBlock(ModBlocks.OAK_DOOR_5.get()));
+        simpleItem(Item.byBlock(ModBlocks.SPRUCE_DOOR_5.get()));
+        simpleItem(Item.byBlock(ModBlocks.DARK_OAK_DOOR_5.get()));
+        simpleItem(Item.byBlock(ModBlocks.JUNGLE_DOOR_5.get()));
+        simpleItem(Item.byBlock(ModBlocks.CRIMSON_DOOR_5.get()));
+        simpleItem(Item.byBlock(ModBlocks.WARPED_DOOR_5.get()));
+
+        simpleItem(Item.byBlock(ModBlocks.ACACIA_DOOR_6.get()));
+        simpleItem(Item.byBlock(ModBlocks.BIRCH_DOOR_6.get()));
+        simpleItem(Item.byBlock(ModBlocks.OAK_DOOR_6.get()));
+        simpleItem(Item.byBlock(ModBlocks.SPRUCE_DOOR_6.get()));
+        simpleItem(Item.byBlock(ModBlocks.DARK_OAK_DOOR_6.get()));
+        simpleItem(Item.byBlock(ModBlocks.JUNGLE_DOOR_6.get()));
+        simpleItem(Item.byBlock(ModBlocks.CRIMSON_DOOR_6.get()));
+        simpleItem(Item.byBlock(ModBlocks.WARPED_DOOR_6.get()));
+
         simpleItem(Item.byBlock(ModBlocks.CRABAPPLE_DOOR_2.get()));
         simpleItem(Item.byBlock(ModBlocks.POINCIANA_DOOR_2.get()));
         simpleItem(Item.byBlock(ModBlocks.LABURNUM_DOOR_2.get()));
@@ -993,6 +1047,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         toBlock(ModBlocks.ROSE_QUARTZ_ORE.get());
         toBlock(ModBlocks.MICA_ORE.get());
 
+        toBlock(ModBlocks.DEEPSLATE_JASPER_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_CARNELIAN_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_CITRINE_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_AVENTURINE_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_JADE_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_LABRADORITE_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_MOONSTONE_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_SODALITE_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_AMETHYST_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get());
+        toBlock(ModBlocks.DEEPSLATE_MICA_ORE.get());
+
 //GEM BLOCKS//
         toBlock(ModBlocks.JASPER_BLOCK.get());
         toBlock(ModBlocks.CARNELIAN_BLOCK.get());
@@ -1259,7 +1326,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModBlocks.POINCIANA_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/poinciana_planks"));
         withExistingParent(ModBlocks.LABURNUM_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/laburnum_planks"));
         withExistingParent(ModBlocks.JADE_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/jade_planks"));
-        withExistingParent(ModBlocks.PAULOWNIA_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/paulownia_door_1_top"));
+        withExistingParent(ModBlocks.PAULOWNIA_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/paulownia_planks"));
         withExistingParent(ModBlocks.WISTERIA_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/wisteria_planks"));
         withExistingParent(ModBlocks.JACARANDA_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/jacaranda_planks"));
         withExistingParent(ModBlocks.DOGWOOD_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/dogwood_planks"));
@@ -1270,7 +1337,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModBlocks.ORANGE_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/orange_stained_planks"));
         withExistingParent(ModBlocks.YELLOW_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/laburnum_planks"));
         withExistingParent(ModBlocks.LIME_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/lime_stained_planks"));
-        withExistingParent(ModBlocks.GREEN_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/green_stained_door_1_top"));
+        withExistingParent(ModBlocks.GREEN_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/green_stained_planks"));
         withExistingParent(ModBlocks.CYAN_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/cyan_stained_planks"));
         withExistingParent(ModBlocks.LIGHT_BLUE_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/light_blue_stained_planks"));
         withExistingParent(ModBlocks.BLUE_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/blue_stained_planks"));
@@ -1280,7 +1347,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModBlocks.WHITE_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/white_stained_planks"));
         withExistingParent(ModBlocks.LIGHT_GRAY_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/light_gray_stained_planks"));
         withExistingParent(ModBlocks.GRAY_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/gray_stained_planks"));
-        withExistingParent(ModBlocks.BLACK_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/black_stained_door_1_top"));
+        withExistingParent(ModBlocks.BLACK_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/black_stained_planks"));
         withExistingParent(ModBlocks.BROWN_STAINED_CHEST.getId().toString(), "item/chest").texture("particle", prefix("block/brown_stained_planks"));
 
 

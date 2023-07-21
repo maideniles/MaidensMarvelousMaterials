@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/chest",
+  "parent": "maidensmaterials:block/chest_inventory",
   "textures": {
-    "particle": "maidensmaterials:block/cedar_planks"
+    "chest_tex": "maidensmaterials:model/chest/cedar_chest/cedar_chest"
   }
 }

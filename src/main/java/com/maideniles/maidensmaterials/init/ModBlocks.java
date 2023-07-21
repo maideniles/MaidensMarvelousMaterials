@@ -2,23 +2,21 @@ package com.maideniles.maidensmaterials.init;
 
 
 import com.maideniles.maidensmaterials.MarvelousMaterials;
-import com.maideniles.maidensmaterials.blocks.FlowerGrassBlock;
-import com.maideniles.maidensmaterials.blocks.OrnamentalGrassBlock;
-import com.maideniles.maidensmaterials.blocks.VineTieBlock;
+import com.maideniles.maidensmaterials.blocks.*;
 import com.maideniles.maidensmaterials.blocks.chest.ModChestBlock;
+import com.maideniles.maidensmaterials.blocks.tree.FairyGlowCupBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidenSaplingBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidensLeafBlock;
 import com.maideniles.maidensmaterials.blocks.tree.vine.CrabappleVineBlock;
 import com.maideniles.maidensmaterials.blocks.tree.vine.PoincianaVineBlock;
 import com.maideniles.maidensmaterials.blocks.vase.VaseBlock;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.grower.*;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -192,74 +190,70 @@ public class ModBlocks {
     public static final RegistryObject<Block> SILVERBELL_SAPLING = registerBlock("silverbell_sapling",
             () -> new MaidenSaplingBlock(new SilverbellTreeGrower(),BlockBehaviour.Properties.of(Material.PLANT).strength(2.0F).noOcclusion().instabreak().noCollission().sound(SoundType.CROP)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-
     public static final RegistryObject<Block> CEDAR_SAPLING = registerBlock("cedar_sapling",
             () -> new MaidenSaplingBlock(new CedarTreeGrower(),BlockBehaviour.Properties.of(Material.PLANT).strength(2.0F).noOcclusion().instabreak().noCollission().sound(SoundType.CROP)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
-
-
     public static final RegistryObject<Block> CRABAPPLE_LEAVES = registerBlock("crabapple_leaves",
-            () -> new MaidensLeafBlock(BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> POINCIANA_LEAVES = registerBlock("poinciana_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABURNUM_LEAVES = registerBlock("laburnum_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JADE_LEAVES = registerBlock("jade_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PAULOWNIA_LEAVES = registerBlock("paulownia_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WISTERIA_LEAVES = registerBlock("wisteria_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JACARANDA_LEAVES = registerBlock("jacaranda_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DOGWOOD_LEAVES = registerBlock("dogwood_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SILVERBELL_LEAVES = registerBlock("silverbell_leaves",
-            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.2F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MaidensLeafBlock( BlockBehaviour.Properties.of(Material.LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CEDAR_LEAVES = registerBlock("cedar_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.of(Material.LEAVES).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new LeavesBlock(BlockBehaviour.Properties.of(Material.LEAVES).strength(1F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     //VINES-FLOWERING//
     public static final RegistryObject<Block> CRABAPPLE_VINE = registerBlock("crabapple_vine",
-            () -> new CrabappleVineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new CrabappleVineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> POINCIANA_VINE = registerBlock("poinciana_vine",
-            () -> new PoincianaVineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new PoincianaVineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABURNUM_VINE = registerBlock("laburnum_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PAULOWNIA_VINE = registerBlock("paulownia_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WISTERIA_VINE = registerBlock("wisteria_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JACARANDA_VINE = registerBlock("jacaranda_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DOGWOOD_VINE = registerBlock("dogwood_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SILVERBELL_VINE = registerBlock("silverbell_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JADE_VINE = registerBlock("jade_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CEDAR_VINE = registerBlock("cedar_vine",
-            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(2F).noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
+            () -> new VineBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(.2F).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> RED_CLAY_BLOCK = registerBlock("red_clay_block",
             ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -563,49 +557,49 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_CLAY_SLAB = registerBlock("red_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.RED_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ORANGE_CLAY_SLAB = registerBlock("orange_large_brick_slab",
+    public static final RegistryObject<Block> ORANGE_CLAY_SLAB = registerBlock("orange_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.ORANGE_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> YELLOW_CLAY_SLAB = registerBlock("yellow_large_brick_slab",
+    public static final RegistryObject<Block> YELLOW_CLAY_SLAB = registerBlock("yellow_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.YELLOW_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> LIME_CLAY_SLAB = registerBlock("lime_large_brick_slab",
+    public static final RegistryObject<Block> LIME_CLAY_SLAB = registerBlock("lime_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.LIME_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> GREEN_CLAY_SLAB = registerBlock("green_large_brick_slab",
+    public static final RegistryObject<Block> GREEN_CLAY_SLAB = registerBlock("green_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.GREEN_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CYAN_CLAY_SLAB = registerBlock("cyan_large_brick_slab",
+    public static final RegistryObject<Block> CYAN_CLAY_SLAB = registerBlock("cyan_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.CYAN_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> LIGHT_BLUE_CLAY_SLAB = registerBlock("light_blue_large_brick_slab",
+    public static final RegistryObject<Block> LIGHT_BLUE_CLAY_SLAB = registerBlock("light_blue_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.LIGHT_BLUE_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> BLUE_CLAY_SLAB = registerBlock("blue_large_brick_slab",
+    public static final RegistryObject<Block> BLUE_CLAY_SLAB = registerBlock("blue_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.BLUE_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> PURPLE_CLAY_SLAB = registerBlock("purple_large_brick_slab",
+    public static final RegistryObject<Block> PURPLE_CLAY_SLAB = registerBlock("purple_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.PURPLE_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> MAGENTA_CLAY_SLAB = registerBlock("magenta_large_brick_slab",
+    public static final RegistryObject<Block> MAGENTA_CLAY_SLAB = registerBlock("magenta_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.MAGENTA_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> PINK_CLAY_SLAB = registerBlock("pink_large_brick_slab",
+    public static final RegistryObject<Block> PINK_CLAY_SLAB = registerBlock("pink_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.PINK_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> WHITE_CLAY_SLAB = registerBlock("white_large_brick_slab",
+    public static final RegistryObject<Block> WHITE_CLAY_SLAB = registerBlock("white_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.WHITE_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> LIGHT_GRAY_CLAY_SLAB = registerBlock("light_gray_large_brick_slab",
+    public static final RegistryObject<Block> LIGHT_GRAY_CLAY_SLAB = registerBlock("light_gray_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.LIGHT_GRAY_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> GRAY_CLAY_SLAB = registerBlock("gray_large_brick_slab",
+    public static final RegistryObject<Block> GRAY_CLAY_SLAB = registerBlock("gray_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.GRAY_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> BLACK_CLAY_SLAB = registerBlock("black_large_brick_slab",
+    public static final RegistryObject<Block> BLACK_CLAY_SLAB = registerBlock("black_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.BLACK_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> BROWN_CLAY_SLAB = registerBlock("brown_large_brick_slab",
+    public static final RegistryObject<Block> BROWN_CLAY_SLAB = registerBlock("brown_clay_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.BROWN_CLAY_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
@@ -661,49 +655,49 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_LARGE_BRICK_SLAB = registerBlock("red_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.RED_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ORANGE_LARGE_BRICK_SLAB = registerBlock("orange_large_large_brick_slab",
+    public static final RegistryObject<Block> ORANGE_LARGE_BRICK_SLAB = registerBlock("orange_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.ORANGE_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> YELLOW_LARGE_BRICK_SLAB = registerBlock("yellow_large_large_brick_slab",
+    public static final RegistryObject<Block> YELLOW_LARGE_BRICK_SLAB = registerBlock("yellow_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.YELLOW_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> LIME_LARGE_BRICK_SLAB = registerBlock("lime_large_large_brick_slab",
+    public static final RegistryObject<Block> LIME_LARGE_BRICK_SLAB = registerBlock("lime_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.LIME_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> GREEN_LARGE_BRICK_SLAB = registerBlock("green_large_large_brick_slab",
+    public static final RegistryObject<Block> GREEN_LARGE_BRICK_SLAB = registerBlock("green_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.GREEN_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CYAN_LARGE_BRICK_SLAB = registerBlock("cyan_large_large_brick_slab",
+    public static final RegistryObject<Block> CYAN_LARGE_BRICK_SLAB = registerBlock("cyan_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.CYAN_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> LIGHT_BLUE_LARGE_BRICK_SLAB = registerBlock("light_blue_large_large_brick_slab",
+    public static final RegistryObject<Block> LIGHT_BLUE_LARGE_BRICK_SLAB = registerBlock("light_blue_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.LIGHT_BLUE_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> BLUE_LARGE_BRICK_SLAB = registerBlock("blue_large_large_brick_slab",
+    public static final RegistryObject<Block> BLUE_LARGE_BRICK_SLAB = registerBlock("blue_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.BLUE_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> PURPLE_LARGE_BRICK_SLAB = registerBlock("purple_large_large_brick_slab",
+    public static final RegistryObject<Block> PURPLE_LARGE_BRICK_SLAB = registerBlock("purple_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.PURPLE_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> MAGENTA_LARGE_BRICK_SLAB = registerBlock("magenta_large_large_brick_slab",
+    public static final RegistryObject<Block> MAGENTA_LARGE_BRICK_SLAB = registerBlock("magenta_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.MAGENTA_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> PINK_LARGE_BRICK_SLAB = registerBlock("pink_large_large_brick_slab",
+    public static final RegistryObject<Block> PINK_LARGE_BRICK_SLAB = registerBlock("pink_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.PINK_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> WHITE_LARGE_BRICK_SLAB = registerBlock("white_large_large_brick_slab",
+    public static final RegistryObject<Block> WHITE_LARGE_BRICK_SLAB = registerBlock("white_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.WHITE_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> LIGHT_GRAY_LARGE_BRICK_SLAB = registerBlock("light_gray_large_large_brick_slab",
+    public static final RegistryObject<Block> LIGHT_GRAY_LARGE_BRICK_SLAB = registerBlock("light_gray_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.LIGHT_GRAY_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> GRAY_LARGE_BRICK_SLAB = registerBlock("gray_large_large_brick_slab",
+    public static final RegistryObject<Block> GRAY_LARGE_BRICK_SLAB = registerBlock("gray_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.GRAY_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> BLACK_LARGE_BRICK_SLAB = registerBlock("black_large_large_brick_slab",
+    public static final RegistryObject<Block> BLACK_LARGE_BRICK_SLAB = registerBlock("black_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.BLACK_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> BROWN_LARGE_BRICK_SLAB = registerBlock("brown_large_large_brick_slab",
+    public static final RegistryObject<Block> BROWN_LARGE_BRICK_SLAB = registerBlock("brown_large_brick_slab",
             ()-> new SlabBlock(Block.Properties.copy(ModBlocks.BROWN_LARGE_BRICK_BLOCK.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
@@ -746,6 +740,42 @@ public class ModBlocks {
     public static final RegistryObject<Block> MICA_ORE = registerBlock("mica_ore",
             ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+//DEEPSLATE ORES//
+public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("deepslate_jasper_ore",
+        ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_CARNELIAN_ORE = registerBlock("deepslate_carnelian_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_AVENTURINE_ORE = registerBlock("deepslate_aventurine_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_JADE_ORE = registerBlock("deepslate_jade_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_CHALCOPYRITE_ORE = registerBlock("deepslate_chalcopyrite_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_LABRADORITE_ORE = registerBlock("deepslate_labradorite_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_MOONSTONE_ORE = registerBlock("deepslate_moonstone_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_SODALITE_ORE = registerBlock("deepslate_sodalite_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_AMETHYST_ORE = registerBlock("deepslate_amethyst_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_ROSE_QUARTZ_ORE = registerBlock("deepslate_rose_quartz_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DEEPSLATE_MICA_ORE = registerBlock("deepslate_mica_ore",
+            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
 //GEMSTONE BLOCKS//
@@ -1464,6 +1494,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORNAMENTAL_PATH = registerBlock("ornamental_path",
             ()-> new Block(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS).strength(0.5f)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> ORNAMENTAL_MUSHROOM = registerBlock("ornamental_mushroom",
+            () -> new FlowerBlock(MobEffects.NIGHT_VISION, 6,Block.Properties.of(Material.PLANT).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> FAIRY_GLOW_CUP = registerBlock("fairy_glow_cup",
+            ()-> new FairyGlowCupBlock(BlockBehaviour.Properties.of(Material.PLANT).lightLevel((p_50872_) -> {
+                return 15;}).instabreak().noCollission().noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> POTTED_ORNAMENTAL_MUSHROOM = registerBlock("potted_ornamental_mushroom",
+            () -> new FlowerPotBlock(null, ModBlocks.ORNAMENTAL_MUSHROOM,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
     public static final RegistryObject<Block> WALK_FLOWERS = registerBlock("flower_grass",
             ()-> new FlowerGrassBlock(BlockBehaviour.Properties.of(Material.GRASS).instabreak().noCollission().noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
@@ -1546,55 +1587,105 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROWN_STAINED_PLANKS = registerBlock("brown_stained_planks",
             ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+
+    //STAINED BOOKSHELVES//
+    public static final RegistryObject<Block> RED_STAINED_BOOKSHELF = registerBlock("red_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ORANGE_STAINED_BOOKSHELF = registerBlock("orange_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> YELLOW_STAINED_BOOKSHELF = registerBlock("yellow_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> LIME_STAINED_BOOKSHELF = registerBlock("lime_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> GREEN_STAINED_BOOKSHELF = registerBlock("green_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CYAN_STAINED_BOOKSHELF = registerBlock("cyan_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> LIGHT_BLUE_STAINED_BOOKSHELF = registerBlock("light_blue_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BLUE_STAINED_BOOKSHELF = registerBlock("blue_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> PURPLE_STAINED_BOOKSHELF = registerBlock("purple_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MAGENTA_STAINED_BOOKSHELF = registerBlock("magenta_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> PINK_STAINED_BOOKSHELF = registerBlock("pink_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WHITE_STAINED_BOOKSHELF = registerBlock("white_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> LIGHT_GRAY_STAINED_BOOKSHELF = registerBlock("light_gray_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> GRAY_STAINED_BOOKSHELF = registerBlock("gray_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BLACK_STAINED_BOOKSHELF = registerBlock("black_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BROWN_STAINED_BOOKSHELF = registerBlock("brown_stained_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     //STAINED STAIRS//
 
     public static final RegistryObject<Block> RED_STAINED_STAIRS = registerBlock("red_stained_stairs",
-            ()-> new StairBlock(ModBlocks.RED_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.RED_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ORANGE_STAINED_STAIRS = registerBlock("orange_stained_stairs",
-            ()-> new StairBlock(ModBlocks.ORANGE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.ORANGE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> YELLOW_STAINED_STAIRS = registerBlock("yellow_stained_stairs",
-            ()-> new StairBlock(ModBlocks.YELLOW_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.YELLOW_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIME_STAINED_STAIRS = registerBlock("lime_stained_stairs",
-            ()-> new StairBlock(ModBlocks.LIME_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIME_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GREEN_STAINED_STAIRS = registerBlock("green_stained_stairs",
-            ()-> new StairBlock(ModBlocks.GREEN_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GREEN_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CYAN_STAINED_STAIRS = registerBlock("cyan_stained_stairs",
-            ()-> new StairBlock(ModBlocks.CYAN_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.CYAN_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_BLUE_STAINED_STAIRS = registerBlock("light_blue_stained_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLUE_STAINED_STAIRS = registerBlock("blue_stained_stairs",
-            ()-> new StairBlock(ModBlocks.BLUE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLUE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PURPLE_STAINED_STAIRS = registerBlock("purple_stained_stairs",
-            ()-> new StairBlock(ModBlocks.PURPLE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PURPLE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MAGENTA_STAINED_STAIRS = registerBlock("magenta_stained_stairs",
-            ()-> new StairBlock(ModBlocks.MAGENTA_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.MAGENTA_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PINK_STAINED_STAIRS = registerBlock("pink_stained_stairs",
-            ()-> new StairBlock(ModBlocks.PINK_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PINK_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WHITE_STAINED_STAIRS = registerBlock("white_stained_stairs",
-            ()-> new StairBlock(ModBlocks.WHITE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.WHITE_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_GRAY_STAINED_STAIRS = registerBlock("light_gray_stained_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GRAY_STAINED_STAIRS = registerBlock("gray_stained_stairs",
-            ()-> new StairBlock(ModBlocks.GRAY_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GRAY_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLACK_STAINED_STAIRS = registerBlock("black_stained_stairs",
-            ()-> new StairBlock(ModBlocks.BLACK_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLACK_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BROWN_STAINED_STAIRS = registerBlock("brown_stained_stairs",
-            ()-> new StairBlock(ModBlocks.BROWN_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BROWN_STAINED_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     //STAINED SLABS//
 
@@ -2369,36 +2460,93 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CEDAR_PLANKS = registerBlock("cedar_planks",
             ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(2.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-//WOOD STAIRS//
+
+    //WOOD BOOKSHELVES//
+    public static final RegistryObject<Block> CRABAPPLE_BOOKSHELF = registerBlock("crabapple_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> POINCIANA_BOOKSHELF = registerBlock("poinciana_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> LABURNUM_BOOKSHELF = registerBlock("laburnum_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_BOOKSHELF = registerBlock("jade_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> PAULOWNIA_BOOKSHELF = registerBlock("paulownia_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WISTERIA_BOOKSHELF = registerBlock("wisteria_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JACARANDA_BOOKSHELF = registerBlock("jacaranda_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DOGWOOD_BOOKSHELF = registerBlock("dogwood_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SILVERBELL_BOOKSHELF = registerBlock("silverbell_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CEDAR_BOOKSHELF = registerBlock("cedar_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_BOOKSHELF = registerBlock("acacia_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_BOOKSHELF = registerBlock("oak_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_BOOKSHELF = registerBlock("dark_oak_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_BOOKSHELF = registerBlock("jungle_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_BOOKSHELF = registerBlock("crimson_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
+    //WOOD STAIRS//
 public static final RegistryObject<Block> CRABAPPLE_STAIRS = registerBlock("crabapple_stairs",
-        ()-> new StairBlock(ModBlocks.CRABAPPLE_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+        ()-> new StairBlock(ModBlocks.CRABAPPLE_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> POINCIANA_STAIRS = registerBlock("poinciana_stairs",
-            ()-> new StairBlock(ModBlocks.POINCIANA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.POINCIANA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABURNUM_STAIRS = registerBlock("laburnum_stairs",
-            ()-> new StairBlock(ModBlocks.LABURNUM_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LABURNUM_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JADE_STAIRS = registerBlock("jade_stairs",
-            ()-> new StairBlock(ModBlocks.JADE_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.JADE_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PAULOWNIA_STAIRS = registerBlock("paulownia_stairs",
-            ()-> new StairBlock(ModBlocks.PAULOWNIA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PAULOWNIA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WISTERIA_STAIRS = registerBlock("wisteria_stairs",
-            ()-> new StairBlock(ModBlocks.WISTERIA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.WISTERIA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JACARANDA_STAIRS = registerBlock("jacaranda_stairs",
-            ()-> new StairBlock(ModBlocks.JACARANDA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.JACARANDA_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DOGWOOD_STAIRS = registerBlock("dogwood_stairs",
-            ()-> new StairBlock(ModBlocks.DOGWOOD_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.DOGWOOD_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SILVERBELL_STAIRS = registerBlock("silverbell_stairs",
-            ()-> new StairBlock(ModBlocks.SILVERBELL_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.SILVERBELL_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CEDAR_STAIRS = registerBlock("cedar_stairs",
-            ()-> new StairBlock(ModBlocks.CEDAR_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.CEDAR_PLANKS.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(2.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 //WOOD SLABS//
 public static final RegistryObject<Block> CRABAPPLE_SLAB = registerBlock("crabapple_slab",
         ()-> new SlabBlock(Block.Properties.copy(ModBlocks.CRABAPPLE_PLANKS.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2583,6 +2731,34 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
 
     public static final RegistryObject<Block> CEDAR_DOOR_1 = registerBlock("cedar_door_1",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_DOOR_1 = registerBlock("acacia_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_DOOR_1 = registerBlock("birch_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_DOOR_1 = registerBlock("oak_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_1 = registerBlock("spruce_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_1 = registerBlock("dark_oak_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_1 = registerBlock("jungle_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_1 = registerBlock("crimson_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_DOOR_1 = registerBlock("warped_door_1",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_DOOR_2 = registerBlock("acacia_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     //DOOR 2//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_2 = registerBlock("crabapple_door_2",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2613,6 +2789,28 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
 
     public static final RegistryObject<Block> CEDAR_DOOR_2 = registerBlock("cedar_door_2",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_DOOR_2 = registerBlock("birch_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_DOOR_2 = registerBlock("oak_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_2 = registerBlock("spruce_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_2 = registerBlock("dark_oak_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_2 = registerBlock("jungle_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_2 = registerBlock("crimson_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_DOOR_2 = registerBlock("warped_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     //DOOR 3//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_3 = registerBlock("crabapple_door_3",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2643,6 +2841,32 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
 
     public static final RegistryObject<Block> CEDAR_DOOR_3 = registerBlock("cedar_door_3",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_DOOR_3 = registerBlock("acacia_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_DOOR_3 = registerBlock("birch_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_DOOR_3 = registerBlock("oak_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_3 = registerBlock("spruce_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_3 = registerBlock("dark_oak_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_3 = registerBlock("jungle_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_3 = registerBlock("crimson_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_DOOR_3 = registerBlock("warped_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
     //DOOR 4//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_4 = registerBlock("crabapple_door_4",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2672,6 +2896,30 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CEDAR_DOOR_4 = registerBlock("cedar_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_DOOR_4 = registerBlock("acacia_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_DOOR_4 = registerBlock("birch_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_DOOR_4 = registerBlock("oak_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_4 = registerBlock("spruce_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_4 = registerBlock("dark_oak_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_4 = registerBlock("jungle_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_4 = registerBlock("crimson_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_DOOR_4 = registerBlock("warped_door_4",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     //DOOR 5//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_5 = registerBlock("crabapple_door_5",
@@ -2703,6 +2951,32 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
 
     public static final RegistryObject<Block> CEDAR_DOOR_5 = registerBlock("cedar_door_5",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_DOOR_5 = registerBlock("acacia_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_DOOR_5 = registerBlock("birch_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_DOOR_5 = registerBlock("oak_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_5 = registerBlock("spruce_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_5 = registerBlock("dark_oak_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_5 = registerBlock("jungle_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_5 = registerBlock("crimson_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_DOOR_5 = registerBlock("warped_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
     //DOOR 6//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_6 = registerBlock("crabapple_door_6",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2733,8 +3007,34 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
 
     public static final RegistryObject<Block> CEDAR_DOOR_6 = registerBlock("cedar_door_6",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-//TRAPDOORS//
-//TRAPDOORS//
+
+
+    public static final RegistryObject<Block> ACACIA_DOOR_6 = registerBlock("acacia_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_DOOR_6 = registerBlock("birch_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_DOOR_6 = registerBlock("oak_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_DOOR_6 = registerBlock("spruce_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_DOOR_6 = registerBlock("dark_oak_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_DOOR_6 = registerBlock("jungle_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_DOOR_6 = registerBlock("crimson_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_DOOR_6 = registerBlock("warped_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    //TRAPDOORS//
+
 //TRAPDOOR 1//
 public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("crabapple_trapdoor_1",
         ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2765,6 +3065,35 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
 
     public static final RegistryObject<Block> CEDAR_TRAPDOOR_1 = registerBlock("cedar_trapdoor_1",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_1 = registerBlock("acacia_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_1 = registerBlock("birch_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_1 = registerBlock("oak_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_1 = registerBlock("spruce_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_1 = registerBlock("dark_oak_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_1 = registerBlock("jungle_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_1 = registerBlock("crimson_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_1 = registerBlock("warped_trapdoor_1",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_2 = registerBlock("acacia_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
     //TRAPDOOR 2//
     public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_2 = registerBlock("crabapple_trapdoor_2",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2795,6 +3124,28 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
 
     public static final RegistryObject<Block> CEDAR_TRAPDOOR_2 = registerBlock("cedar_trapdoor_2",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_2 = registerBlock("birch_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_2 = registerBlock("oak_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_2 = registerBlock("spruce_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_2 = registerBlock("dark_oak_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_2 = registerBlock("jungle_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_2 = registerBlock("crimson_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_2 = registerBlock("warped_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     //TRAPDOOR 3//
     public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_3 = registerBlock("crabapple_trapdoor_3",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2825,6 +3176,31 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
 
     public static final RegistryObject<Block> CEDAR_TRAPDOOR_3 = registerBlock("cedar_trapdoor_3",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_3 = registerBlock("acacia_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_3 = registerBlock("birch_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_3 = registerBlock("oak_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_3 = registerBlock("spruce_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_3 = registerBlock("dark_oak_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_3 = registerBlock("jungle_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_3 = registerBlock("crimson_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_3 = registerBlock("warped_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     //TRAPDOOR 4//
     public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_4 = registerBlock("crabapple_trapdoor_4",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2854,6 +3230,31 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CEDAR_TRAPDOOR_4 = registerBlock("cedar_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_4 = registerBlock("acacia_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> BIRCH_TRAPDOOR_4 = registerBlock("birch_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> OAK_TRAPDOOR_4 = registerBlock("oak_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> SPRUCE_TRAPDOOR_4 = registerBlock("spruce_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> DARK_OAK_TRAPDOOR_4 = registerBlock("dark_oak_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JUNGLE_TRAPDOOR_4 = registerBlock("jungle_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CRIMSON_TRAPDOOR_4 = registerBlock("crimson_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> WARPED_TRAPDOOR_4 = registerBlock("warped_trapdoor_4",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
@@ -2910,92 +3311,92 @@ public static final RegistryObject<Block> VASE_ORANGE = registerBlock("vase_oran
             () -> new VaseBlock(BlockBehaviour.Properties.of(Material.CLAY).noOcclusion().instabreak()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     //CHESTS//
-public static final RegistryObject<ModChestBlock> ACACIA_CHEST = registerBlock("acacia_chest",
-        () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> ACACIA_CHEST = registerBlock("acacia_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> BIRCH_CHEST = registerBlock("birch_chest",
-            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> OAK_CHEST = registerBlock("oak_chest",
-            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> SPRUCE_CHEST = registerBlock("spruce_chest",
-            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> DARK_OAK_CHEST = registerBlock("dark_oak_chest",
-            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> JUNGLE_CHEST = registerBlock("jungle_chest",
-            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> CRIMSON_CHEST = registerBlock("crimson_chest",
-            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> WARPED_CHEST = registerBlock("warped_chest",
-            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-//FOREST WOODS//
-public static final RegistryObject<ModChestBlock> CRABAPPLE_CHEST = registerBlock("crabapple_chest",
-        ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CRABAPPLE_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    //FOREST WOODS//
+    public static final RegistryObject<ModChestBlock> CRABAPPLE_CHEST = registerBlock("crabapple_chest",
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CRABAPPLE_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> POINCIANA_CHEST = registerBlock("poinciana_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.POINCIANA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.POINCIANA_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> LABURNUM_CHEST = registerBlock("laburnum_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LABURNUM_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LABURNUM_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> JADE_CHEST = registerBlock("jade_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.JADE_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.JADE_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> PAULOWNIA_CHEST = registerBlock("paulownia_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PAULOWNIA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PAULOWNIA_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> WISTERIA_CHEST = registerBlock("wisteria_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.WISTERIA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.WISTERIA_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> JACARANDA_CHEST = registerBlock("jacaranda_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.JACARANDA_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.JACARANDA_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> DOGWOOD_CHEST = registerBlock("dogwood_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.DOGWOOD_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.DOGWOOD_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> SILVERBELL_CHEST = registerBlock("silverbell_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.SILVERBELL_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.SILVERBELL_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> CEDAR_CHEST = registerBlock("cedar_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CEDAR_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CEDAR_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     //STAINED WOODS//
     public static final RegistryObject<ModChestBlock> RED_STAINED_CHEST = registerBlock("red_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.RED_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.RED_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> ORANGE_STAINED_CHEST = registerBlock("orange_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.ORANGE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.ORANGE_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> YELLOW_STAINED_CHEST = registerBlock("yellow_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.YELLOW_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.YELLOW_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> LIME_STAINED_CHEST = registerBlock("lime_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIME_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIME_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> GREEN_STAINED_CHEST = registerBlock("green_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.GREEN_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.GREEN_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> CYAN_STAINED_CHEST = registerBlock("cyan_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CYAN_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CYAN_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> LIGHT_BLUE_STAINED_CHEST = registerBlock("light_blue_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIGHT_BLUE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIGHT_BLUE_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> BLUE_STAINED_CHEST = registerBlock("blue_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BLUE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BLUE_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> PURPLE_STAINED_CHEST = registerBlock("purple_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PURPLE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PURPLE_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> MAGENTA_STAINED_CHEST = registerBlock("magenta_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.MAGENTA_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.MAGENTA_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> PINK_STAINED_CHEST = registerBlock("pink_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PINK_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.PINK_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> WHITE_STAINED_CHEST = registerBlock("white_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.WHITE_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.WHITE_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> LIGHT_GRAY_STAINED_CHEST = registerBlock("light_gray_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIGHT_GRAY_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.LIGHT_GRAY_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> GRAY_STAINED_CHEST = registerBlock("gray_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.GRAY_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.GRAY_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> BLACK_STAINED_CHEST = registerBlock("black_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BLACK_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BLACK_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<ModChestBlock> BROWN_STAINED_CHEST = registerBlock("brown_stained_chest",
-            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BROWN_STAINED_PLANKS.get()).strength(2.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BROWN_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -3027,5 +3428,6 @@ public static final RegistryObject<ModChestBlock> CRABAPPLE_CHEST = registerBloc
 
 
     public static final List<Block> GRASS= new ArrayList<Block>();
+    public static List<Block> VALID_BLOCKS = new ArrayList<>();
 
 }

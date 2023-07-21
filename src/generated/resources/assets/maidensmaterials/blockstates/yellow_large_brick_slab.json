@@ -7,7 +7,7 @@
       "model": "maidensmaterials:block/yellow_large_brick_slab"
     },
     "type=double": {
-      "model": "maidensmaterials:block/yellow_clay_block"
+      "model": "maidensmaterials:block/yellow_large_brick_block"
     }
   }
 }

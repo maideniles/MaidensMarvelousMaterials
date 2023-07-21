@@ -1,7 +1,7 @@
 package com.maideniles.maidensmaterials.event;
 
 import com.maideniles.maidensmaterials.MarvelousMaterials;
-import com.maideniles.maidensmaterials.init.ModTreeGen;
+import com.maideniles.maidensmaterials.world.gen.ore.ModOreGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +11,12 @@ public class ModWorldGenEvents {
     @SubscribeEvent
     public static void ModWorldGenEvents(final BiomeLoadingEvent event) {
 
-        ModTreeGen.generateTrees(event);
+
+
+        ModOreGeneration.generateOres(event);
+        //   ModFlowerGeneration.generateFlowers(event);
+
     }
+
+
 }

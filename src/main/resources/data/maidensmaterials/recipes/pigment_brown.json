@@ -1,0 +1,41 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BFB",
+		"FMF",
+		"BFB"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "maidensmaterials:red_pigment"
+			
+        },
+		
+		"F":
+        {
+            "item": "maidensmaterials:green_pigment"
+        },
+		
+		
+		"M":
+		{
+			"item": "maidensmaterials:mortar_and_pestle"
+			
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:brown_pigment",
+        "count": 8
+    }
+}

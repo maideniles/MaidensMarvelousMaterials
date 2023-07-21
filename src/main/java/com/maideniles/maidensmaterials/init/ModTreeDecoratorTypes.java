@@ -3,6 +3,7 @@ package com.maideniles.maidensmaterials.init;
 import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.util.Registration;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.leaf.*;
+import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.other.ModMushroomDecorator;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.trunk.*;
 import com.mojang.serialization.Codec;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
@@ -97,6 +98,10 @@ public class ModTreeDecoratorTypes  {
     public static final RegistryObject<TreeDecoratorType<CedarTrunkVineDecorator>> CEDAR_TRUNK_VINE =
             (RegistryObject<TreeDecoratorType<CedarTrunkVineDecorator>>) register("cedar_trunk_vine_decorator",
                    CedarTrunkVineDecorator.CODEC);
+
+    public static final RegistryObject<TreeDecoratorType<ModMushroomDecorator>> MUSHROOM =
+            (RegistryObject<TreeDecoratorType<ModMushroomDecorator>>) register("mushroom_decorator",
+                    ModMushroomDecorator.CODEC);
 
 
  private static <T extends TreeDecorator> RegistryObject<?> register(String p_236877_0_, Codec<T> p_236877_1_) {

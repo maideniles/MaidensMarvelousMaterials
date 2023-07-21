@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/door_bottom",
   "textures": {
-    "bottom": "maidensmaterials:block/paulownia_door_3_top",
+    "bottom": "maidensmaterials:block/paulownia_door_3_bottom",
     "top": "maidensmaterials:block/paulownia_door_3_top"
   }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "side": "maidensmaterials:block/stripped_paulownia_top",
+    "side": "maidensmaterials:block/stripped_paulownia_log",
     "end": "maidensmaterials:block/stripped_paulownia_top"
   }
 }

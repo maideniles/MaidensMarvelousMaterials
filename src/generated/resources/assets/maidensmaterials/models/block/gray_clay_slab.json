@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "side": "maidensmaterials:block/gray_clay_block",
+    "bottom": "maidensmaterials:block/gray_clay_block",
+    "top": "maidensmaterials:block/gray_clay_block"
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Wood Fence Recipe",
+    "icon": "maidensmaterials:silverbell_fence",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_fence",
+		"recipe2": "maidensmaterials:poinciana_fence"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_fence",
+		 "recipe2": "maidensmaterials:jade_fence"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_fence",
+		"recipe2": "maidensmaterials:wisteria_fence"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_fence",
+		"recipe2": "maidensmaterials:dogwood_fence"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_fence",
+		 "recipe2": "maidensmaterials:cedar_fence"
+	}
+	
+	
+	
+	
+    ]
+}
