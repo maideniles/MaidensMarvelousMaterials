@@ -3,22 +3,26 @@ package com.maideniles.maidensmaterials;
 
 import com.google.common.collect.Maps;
 import com.maideniles.maidensmaterials.client.RenderLayers;
+import com.maideniles.maidensmaterials.config.MarvelousClientConfig;
+import com.maideniles.maidensmaterials.config.MarvelousCommonConfig;
 import com.maideniles.maidensmaterials.init.*;
-import com.maideniles.maidensmaterials.item.ModChestItem;
 import com.maideniles.maidensmaterials.util.Registration;
-import com.maideniles.maidensmaterials.util.RegistrationListener;
 import com.maideniles.maidensmaterials.world.gen.biome.ModRegion;
 import com.maideniles.maidensmaterials.world.gen.biome.OrnamentalForestSurfaceData;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
@@ -36,7 +40,7 @@ public class MarvelousMaterials {
     public static final Logger LOGGER = LogManager.getLogger();
 
 
-    public static final CreativeModeTab MAIDENS_BLOCKS_GROUP = new CreativeModeTab("maidens_blocks_group") {
+    public static final CreativeModeTab MAIDENS_BLOCKS_GROUP = new CreativeModeTab("maidens_blocks_tab") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(Blocks.AMETHYST_BLOCK);
@@ -74,6 +78,8 @@ public class MarvelousMaterials {
 
         eventBus.addListener(this::setup);
 
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MarvelousClientConfig.SPEC, "maidensmaterials-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MarvelousCommonConfig.SPEC, "maidensmaterials-common.toml");
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -86,7 +92,7 @@ public class MarvelousMaterials {
 
         event.enqueueWork(() -> {
 
-            Regions.register(new ModRegion(new ResourceLocation(MOD_ID, "overworld"), 2));
+            Regions.register(new ModRegion(new ResourceLocation(MOD_ID, "overworld"), MarvelousCommonConfig.ORNAMENTAL_FOREST_WEIGHT.get()));
 
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, OrnamentalForestSurfaceData.makeRules());
 

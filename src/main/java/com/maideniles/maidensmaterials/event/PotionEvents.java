@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.event;
 
 import com.maideniles.maidensmaterials.MarvelousMaterials;
+import com.maideniles.maidensmaterials.config.MarvelousCommonConfig;
 import com.maideniles.maidensmaterials.init.ModBlocks;
 import com.maideniles.maidensmaterials.init.ModEffects;
 import com.maideniles.maidensmaterials.init.ModEnchantments;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -33,7 +35,7 @@ public class PotionEvents {
 
         if (!player.isCreative())
             if (ModBlocks.VALID_BLOCKS.contains(event.getState().getBlock())) {
-                if (rand.nextInt(200) == 0) {
+                if (rand.nextInt(MarvelousCommonConfig.EARTHEN_ESSENCE_DROP_RATE.get()) == 0) {
                     ItemEntity item = new ItemEntity((Level) event.getWorld(), event.getPos().getX() + 0.5,
                             event.getPos().getY(), event.getPos().getZ() + 0.5, new ItemStack((ModItems.EARTHEN_ESSENCE.get()), 1));
                     if (!event.getWorld().isClientSide()) {
@@ -102,6 +104,7 @@ public class PotionEvents {
 
         }
     }
+
 
 
 }

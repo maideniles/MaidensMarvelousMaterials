@@ -1590,52 +1590,52 @@ public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("
 
     //STAINED BOOKSHELVES//
     public static final RegistryObject<Block> RED_STAINED_BOOKSHELF = registerBlock("red_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ORANGE_STAINED_BOOKSHELF = registerBlock("orange_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> YELLOW_STAINED_BOOKSHELF = registerBlock("yellow_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIME_STAINED_BOOKSHELF = registerBlock("lime_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GREEN_STAINED_BOOKSHELF = registerBlock("green_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CYAN_STAINED_BOOKSHELF = registerBlock("cyan_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_BLUE_STAINED_BOOKSHELF = registerBlock("light_blue_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLUE_STAINED_BOOKSHELF = registerBlock("blue_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PURPLE_STAINED_BOOKSHELF = registerBlock("purple_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MAGENTA_STAINED_BOOKSHELF = registerBlock("magenta_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PINK_STAINED_BOOKSHELF = registerBlock("pink_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WHITE_STAINED_BOOKSHELF = registerBlock("white_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_GRAY_STAINED_BOOKSHELF = registerBlock("light_gray_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GRAY_STAINED_BOOKSHELF = registerBlock("gray_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLACK_STAINED_BOOKSHELF = registerBlock("black_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BROWN_STAINED_BOOKSHELF = registerBlock("brown_stained_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     //STAINED STAIRS//
 
@@ -2463,58 +2463,58 @@ public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("
 
     //WOOD BOOKSHELVES//
     public static final RegistryObject<Block> CRABAPPLE_BOOKSHELF = registerBlock("crabapple_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> POINCIANA_BOOKSHELF = registerBlock("poinciana_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABURNUM_BOOKSHELF = registerBlock("laburnum_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JADE_BOOKSHELF = registerBlock("jade_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PAULOWNIA_BOOKSHELF = registerBlock("paulownia_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WISTERIA_BOOKSHELF = registerBlock("wisteria_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JACARANDA_BOOKSHELF = registerBlock("jacaranda_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DOGWOOD_BOOKSHELF = registerBlock("dogwood_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SILVERBELL_BOOKSHELF = registerBlock("silverbell_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CEDAR_BOOKSHELF = registerBlock("cedar_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ACACIA_BOOKSHELF = registerBlock("acacia_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BIRCH_BOOKSHELF = registerBlock("birch_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> OAK_BOOKSHELF = registerBlock("oak_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SPRUCE_BOOKSHELF = registerBlock("spruce_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DARK_OAK_BOOKSHELF = registerBlock("dark_oak_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JUNGLE_BOOKSHELF = registerBlock("jungle_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CRIMSON_BOOKSHELF = registerBlock("crimson_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength( 1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
-            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
     //WOOD STAIRS//

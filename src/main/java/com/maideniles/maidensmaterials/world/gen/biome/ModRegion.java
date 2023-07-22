@@ -24,12 +24,9 @@ public class ModRegion extends Region
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper)
     {
         this.addModifiedVanillaOverworldBiomes(mapper, builder -> {
-            // Simple example:
-            // Replace the Vanilla desert with our hot_red biome
+
             builder.replaceBiome(Biomes.SPARSE_JUNGLE,ModBiomeKeys.ORNAMENTAL_FOREST);
 
-            // More complex example:
-            // Replace specific parameter points for the frozen peaks with our cold_blue biome
 
         });
     }

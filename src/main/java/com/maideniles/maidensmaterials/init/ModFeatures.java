@@ -223,11 +223,6 @@ public class ModFeatures {
                     new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                             new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ORNAMENTAL_MUSHROOM.get())))));
 
-    public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> ORNAMENTAL_MUSHROOM_CAVE_FLOOR =
-            FeatureUtils.register("ornamental_mushroom_cave_floor", Feature.FLOWER,
-                    new RandomPatchConfiguration(26, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ORNAMENTAL_MUSHROOM.get())))));
-
 
     public static final Holder<ConfiguredFeature<SimpleBlockConfiguration, ?>> ORNAMENTAL_MUSHROOM_CAVE =
             FeatureUtils.register("ornamental_mushroom_cave", Feature.SIMPLE_BLOCK,
@@ -291,92 +286,80 @@ public class ModFeatures {
 //ORES//
 
 
+//COMMON ORES//
+public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CITRINE_ORE = FeatureUtils.register("citrine_ore",
+        Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CITRINE_ORE.get().defaultBlockState(), 20));
 
-
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_JASPER_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.JASPER_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_JASPER_ORE.get().defaultBlockState()));
-
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> JASPER_ORE = FeatureUtils.register("jasper_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_JASPER_ORES, 5));
-
-
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_CARNELIAN_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CARNELIAN_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_CARNELIAN_ORE.get().defaultBlockState()));
-
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CARNELIAN_ORE = FeatureUtils.register("carnelian_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_CARNELIAN_ORES, 5));
-
-
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_CITRINE_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CITRINE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_CITRINE_ORE.get().defaultBlockState()));
-
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CITRINE_ORE = FeatureUtils.register("citrine_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_CITRINE_ORES, 5));
-
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_AVENTURINE_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.AVENTURINE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_AVENTURINE_ORE.get().defaultBlockState()));
-
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> AVENTURINE_ORE = FeatureUtils.register("aventurine_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_AVENTURINE_ORES, 5));
-
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_JADE_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.JADE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_JADE_ORE.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_CITRINE_ORE = FeatureUtils.register("deepslate_citrine_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_CITRINE_ORE.get().defaultBlockState(), 16));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> JADE_ORE = FeatureUtils.register("jade_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_JADE_ORES, 5));
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.JADE_ORE.get().defaultBlockState(), 19));
 
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_CHALCOPYRITE_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CHALCOPYRITE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_JADE_ORE = FeatureUtils.register("deepslate_jade_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_JADE_ORE.get().defaultBlockState(), 15));
 
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CHALCOPYRITE_ORE = FeatureUtils.register("chalcopyrite_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_CHALCOPYRITE_ORES, 5));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> JASPER_ORE = FeatureUtils.register("jasper_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.JASPER_ORE.get().defaultBlockState(), 18));
 
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_LABRADORITE_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.LABRADORITE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_LABRADORITE_ORE.get().defaultBlockState()));
-
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> LABRADORITE_ORE = FeatureUtils.register("labradorite_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_LABRADORITE_ORES, 5));
-
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_MOONSTONE_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MOONSTONE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MOONSTONE_ORE.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_JASPER_ORE = FeatureUtils.register("deepslate_jasper_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_JASPER_ORE.get().defaultBlockState(), 14));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MOONSTONE_ORE = FeatureUtils.register("moonstone_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_MOONSTONE_ORES, 5));
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MOONSTONE_ORE.get().defaultBlockState(), 17));
 
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_SODALITE_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.SODALITE_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_SODALITE_ORE.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_MOONSTONE_ORE = FeatureUtils.register("deepslate_moonstone_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MOONSTONE_ORE.get().defaultBlockState(), 13));
 
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> SODALITE_ORE = FeatureUtils.register("sodalite_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_SODALITE_ORES, 5));
+    //UNOMMON//
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> AVENTURINE_ORE = FeatureUtils.register("aventurine_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.AVENTURINE_ORE.get().defaultBlockState(), 16));
 
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_AMETHYST_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.AMETHYST_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_AMETHYST_ORE.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_AVENTURINE_ORE = FeatureUtils.register("deepslate_aventurine_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_AVENTURINE_ORE.get().defaultBlockState(), 12));
 
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> AMETHYST_ORE = FeatureUtils.register("amethyst_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_AMETHYST_ORES, 5));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> LABRADORITE_ORE = FeatureUtils.register("labradorite_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.LABRADORITE_ORE.get().defaultBlockState(), 15));
 
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_ROSE_QUARTZ_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ROSE_QUARTZ_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get().defaultBlockState()));
-
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ROSE_QUARTZ_ORE = FeatureUtils.register("rose_quartz_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_ROSE_QUARTZ_ORES, 5));
-
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_MICA_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MICA_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MICA_ORE.get().defaultBlockState()));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_LABRADORITE_ORE = FeatureUtils.register("deepslate_labradorite_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_LABRADORITE_ORE.get().defaultBlockState(), 11));
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MICA_ORE = FeatureUtils.register("mica_ore",
-            Feature.ORE, new OreConfiguration(OVERWORLD_MICA_ORES, 5));
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MICA_ORE.get().defaultBlockState(), 14));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_MICA_ORE = FeatureUtils.register("deepslate_mica_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MICA_ORE.get().defaultBlockState(), 10));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> ROSE_QUARTZ_ORE = FeatureUtils.register("rose_quartz_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ROSE_QUARTZ_ORE.get().defaultBlockState(), 13));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_ROSE_QUARTZ_ORE = FeatureUtils.register("deepslate_rose_quartz_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get().defaultBlockState(), 9));
+
+//RARE//
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> AMETHYST_ORE = FeatureUtils.register("amethyst_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.AMETHYST_ORE.get().defaultBlockState(), 12));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_AMETHYST_ORE = FeatureUtils.register("deepslate_amethyst_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_AMETHYST_ORE.get().defaultBlockState(), 9));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CARNELIAN_ORE = FeatureUtils.register("carnelian_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CARNELIAN_ORE.get().defaultBlockState(), 11));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_CARNELIAN_ORE = FeatureUtils.register("deepslate_carnelian_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_CARNELIAN_ORE.get().defaultBlockState(), 8));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CHALCOPYRITE_ORE = FeatureUtils.register("chalcopyrite_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CHALCOPYRITE_ORE.get().defaultBlockState(), 10));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_CHALCOPYRITE_ORE = FeatureUtils.register("deepslate_chalcopyrite_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get().defaultBlockState(), 7));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> SODALITE_ORE = FeatureUtils.register("sodalite_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.SODALITE_ORE.get().defaultBlockState(), 9));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_SODALITE_ORE = FeatureUtils.register("deepslate_sodalite_ore",
+            Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_SODALITE_ORE.get().defaultBlockState(), 6));
+
 }
 
