@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "render_type": "cutout_mipped", "textures": {
+        "end": "maidensmaterials:block/acacia_planks",
+        "side": "maidensmaterials:block/acacia_bookshelf"
+    }
+}

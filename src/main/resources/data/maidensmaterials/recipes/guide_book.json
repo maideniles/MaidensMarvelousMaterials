@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:writable_book"
+    },
+	
+	 {
+      "item": "maidensmaterials:purple_pigment"
+    }
+	
+  ],
+  "result": {
+    "item": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "maidensmaterials:maidensmanual"
+    }
+  }
+}

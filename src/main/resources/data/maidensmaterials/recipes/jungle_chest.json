@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPP",
+		"PEP",
+		"PPP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:jungle_planks"
+        },
+		
+		"E":
+		{
+			"item": "maidensmaterials:floral_essence"
+			
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:jungle_chest",
+        "count": 1
+    }
+}

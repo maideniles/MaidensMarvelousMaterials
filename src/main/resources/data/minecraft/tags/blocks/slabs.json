@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+      "maidensmaterials:crabapple_slab",
+   "maidensmaterials:poinciana_slab",
+   "maidensmaterials:laburnum_slab",
+   "maidensmaterials:jade_slab",
+   "maidensmaterials:paulownia_slab",
+   "maidensmaterials:wisteria_slab",
+   "maidensmaterials:dogwood_slab",
+   "maidensmaterials:silverbell_slab",
+   "maidensmaterials:jacaranda_slab",
+   "maidensmaterials:cedar_slab",
+   
+   "maidensmaterials:red_stained_slab",
+   "maidensmaterials:orange_stained_slab",
+   "maidensmaterials:yellow_stained_slab",
+   "maidensmaterials:lime_stained_slab",
+   "maidensmaterials:green_stained_slab",
+   "maidensmaterials:cyan_stained_slab",
+   "maidensmaterials:light_blue_stained_slab",   
+   "maidensmaterials:blue_stained_slab",
+   "maidensmaterials:purple_stained_slab",
+   "maidensmaterials:magenta_stained_slab",
+   "maidensmaterials:pink_stained_slab",
+   "maidensmaterials:white_stained_slab",
+   "maidensmaterials:light_gray_stained_slab",
+   "maidensmaterials:gray_stained_slab",
+   "maidensmaterials:black_stained_slab",
+   "maidensmaterials:brown_stained_slab"
+	
+  ]
+}

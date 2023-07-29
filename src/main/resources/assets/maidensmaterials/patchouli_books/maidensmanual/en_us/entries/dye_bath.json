@@ -1,0 +1,62 @@
+{
+    "name": "Dye Baths Recipe",
+    "icon": "maidensmaterials:textures/item/blue_dye_bath.png",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	
+	
+	
+	 
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:red_dye_bath",
+		"recipe2": "maidensmaterials:orange_dye_bath"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:yellow_dye_bath",
+		 "recipe2": "maidensmaterials:lime_dye_bath"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:green_dye_bath",
+		"recipe2": "maidensmaterials:cyan_dye_bath"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:light_blue_dye_bath",
+		"recipe2": "maidensmaterials:blue_dye_bath"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:purple_dye_bath",
+		 "recipe2": "maidensmaterials:magenta_dye_bath"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:pink_dye_bath",
+		 "recipe2": "maidensmaterials:white_dye_bath"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:light_gray_dye_bath",
+		 "recipe2": "maidensmaterials:gray_dye_bath"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:black_dye_bath",
+		 "recipe2": "maidensmaterials:brown_dye_bath"
+	}
+	
+	
+    ]
+}

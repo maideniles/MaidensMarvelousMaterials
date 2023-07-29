@@ -1,0 +1,28 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "SSS"
+		
+		
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "maidensmaterials:yellow_clay_block"
+        }
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:yellow_clay_slab",
+	"count": 6
+    }
+}

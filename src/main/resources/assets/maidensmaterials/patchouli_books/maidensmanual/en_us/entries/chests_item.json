@@ -1,0 +1,19 @@
+{
+    "name": "Storage Chests",
+    "icon": "maidensmaterials:magenta_stained_chest",
+    "category": "maidensmaterials:chests",
+    "pages": [
+        {
+    "type": "text",
+    "text": " You can make storage chests with all the vanilla woods, the woods in this mod, and all 16 colors!"
+			
+        },
+		
+		 {
+            "type": "spotlight",
+            "item": "maidensmaterials:light_blue_stained_chest",
+			"title": "Light Blue Chest",
+			"text": "To craft these chests, you'll need Floral Essence."
+        }
+    ]
+}

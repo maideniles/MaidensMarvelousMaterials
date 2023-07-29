@@ -1,0 +1,31 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "PPP","PGP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:warped_slab"
+        },
+		
+		"G":
+		{
+			"item": "maidensmaterials:dark_iron_inlay"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:warped_trapdoor_2",
+       "count": 2
+    }
+}

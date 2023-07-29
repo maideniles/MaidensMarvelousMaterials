@@ -1,0 +1,28 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "S  ",
+		"SS ",
+		"SSS"
+    ],
+    
+    "key":
+    {
+        "S":
+        {
+            "item": "maidensmaterials:cyan_clay_block"
+        }
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:cyan_clay_stairs",
+	"count": 4
+    }
+}

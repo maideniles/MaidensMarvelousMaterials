@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+        "maidensmaterials:crabapple_bookshelf",
+   "maidensmaterials:poinciana_bookshelf",
+   "maidensmaterials:laburnum_bookshelf",
+   "maidensmaterials:jade_bookshelf",
+   "maidensmaterials:paulownia_bookshelf",
+   "maidensmaterials:wisteria_bookshelf",
+   "maidensmaterials:dogwood_bookshelf",
+   "maidensmaterials:silverbell_bookshelf",
+   "maidensmaterials:jacaranda_bookshelf",
+   "maidensmaterials:cedar_bookshelf",
+   
+   "maidensmaterials:red_stained_bookshelf",
+   "maidensmaterials:orange_stained_bookshelf",
+   "maidensmaterials:yellow_stained_bookshelf",
+   "maidensmaterials:lime_stained_bookshelf",
+   "maidensmaterials:green_stained_bookshelf",
+   "maidensmaterials:cyan_stained_bookshelf",
+   "maidensmaterials:light_blue_stained_bookshelf",   
+   "maidensmaterials:blue_stained_bookshelf",
+   "maidensmaterials:purple_stained_bookshelf",
+   "maidensmaterials:magenta_stained_bookshelf",
+   "maidensmaterials:pink_stained_bookshelf",
+   "maidensmaterials:white_stained_bookshelf",
+   "maidensmaterials:light_gray_stained_bookshelf",
+   "maidensmaterials:gray_stained_bookshelf",
+   "maidensmaterials:black_stained_bookshelf",
+   "maidensmaterials:brown_stained_bookshelf"
+	
+  ]
+}

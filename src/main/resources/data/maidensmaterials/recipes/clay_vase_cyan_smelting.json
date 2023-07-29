@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient":[ {
+    "item": "maidensmaterials:cyan_clay_vase"
+  }],
+  "result": "maidensmaterials:vase_cyan",
+  "experience": 0.1,
+ 
+  "cookingtime": 40
+ 
+}
