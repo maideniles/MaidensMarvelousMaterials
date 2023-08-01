@@ -63,10 +63,9 @@ public class MarvelousMaterials {
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        Registration.register(eventBus);
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        ModPlacements.register(eventBus);
+        Registration.register(eventBus);
 
         ModPotions.register(eventBus);
         ModEffects.register(eventBus);
@@ -74,9 +73,8 @@ public class MarvelousMaterials {
         ModBiomes.BIOME_REGISTER.register(eventBus);
         ModBiomes.registerBiomes();
 
-
-      //  ModFeatures.FEATURES.register(eventBus);
-      //  ModTreeDecoratorTypes.TREE_DECORATORS.register(eventBus);
+        ModFeatures.register(eventBus);
+        ModPlacements.register(eventBus);
 
         ModTreeDecoratorTypes.register();
         ModEnchantments.register();
@@ -87,6 +85,8 @@ public class MarvelousMaterials {
 
         eventBus.addListener(this::setup);
 
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MarvelousClientConfig.SPEC, "maidensmaterials-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MarvelousCommonConfig.SPEC, "maidensmaterials-common.toml");
 
 
         //VEGETAL FEATURE GEN IN ModBiomeModifier//
@@ -135,8 +135,6 @@ public class MarvelousMaterials {
         ornamental_mushrooms_serializers.register("add_ornamental_mushrooms", ModBiomeModifier.OrnamentalMushroomsModifier::makeCodec);
 
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MarvelousClientConfig.SPEC, "maidensmaterials-client.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MarvelousCommonConfig.SPEC, "maidensmaterials-common.toml");
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

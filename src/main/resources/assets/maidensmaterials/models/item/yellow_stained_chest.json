@@ -1,0 +1,6 @@
+{
+  "parent": "maidensmaterials:block/chest_inventory",
+  "textures": {
+    "chest_tex": "maidensmaterials:model/chest/yellow_stained_chest/yellow_stained_chest"
+  }
+}

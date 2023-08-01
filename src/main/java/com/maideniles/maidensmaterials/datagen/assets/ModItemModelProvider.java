@@ -659,7 +659,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         toBlock(ModBlocks.GRAY_STAINED_BUTTON.get());
         toBlock(ModBlocks.BLACK_STAINED_BUTTON.get());
         toBlock(ModBlocks.BROWN_STAINED_BUTTON.get());
-        //DOORS//
+
+  /*      //DOORS//
         basicItem(Item.byBlock(ModBlocks.RED_STAINED_DOOR_1.get()));
         basicItem(Item.byBlock(ModBlocks.ORANGE_STAINED_DOOR_1.get()));
         basicItem(Item.byBlock(ModBlocks.YELLOW_STAINED_DOOR_1.get()));
@@ -761,7 +762,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(Item.byBlock(ModBlocks.GRAY_STAINED_DOOR_6.get()));
         basicItem(Item.byBlock(ModBlocks.BLACK_STAINED_DOOR_6.get()));
         basicItem(Item.byBlock(ModBlocks.BROWN_STAINED_DOOR_6.get()));
-
+*/
 
         //COLORED CLAY//
         //BLOCKS//
@@ -1237,12 +1238,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     }
 
-
-
-    private ItemModelBuilder generated(String name, ResourceLocation... layers) {
-        return buildItem(name, "item/generated", false, layers);
-    }
-
     private ItemModelBuilder tool(String name, ResourceLocation... layers) {
         return buildItem(name, "item/handheld", false, layers);
     }
@@ -1255,35 +1250,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         if (fullbright) builder = builder.customLoader(ItemLayersModelBuilder::begin).emissive(0).end();
         return builder;
     }
-
-    private void woodenButton(Block button, String variant) {
-        getBuilder(ForgeRegistries.BLOCKS.getKey(button).getPath())
-                .parent(getExistingFile(mcLoc("block/button_inventory")))
-                .texture("texture", "block/wood/planks_" + variant + "_0");
-    }
-
     private void woodenFence(Block fence, String variant) {
         getBuilder(ForgeRegistries.BLOCKS.getKey(fence).getPath())
                 .parent(getExistingFile(mcLoc("block/fence_inventory")))
-                .texture("texture", "block/wood/planks_" + variant + "_0");
+                .texture("texture", "block/"+ variant +"_planks");
     }
-
-
 
     private void toBlock(Block b) {
         toBlockModel(b, ForgeRegistries.BLOCKS.getKey(b).getPath());
     }
 
-    private void woodBlock(Block b, String variant) {
-        woodBlockModel(b, ForgeRegistries.BLOCKS.getKey(b).getPath(), variant);
-    }
-
     private void toBlockModel(Block b, String model) {
         toBlockModel(b, prefix("block/" + model));
-    }
-
-    private void woodBlockModel(Block b, String model, String variant) {
-        toBlockModel(b, prefix("block/wood/" + variant + "/" + model));
     }
 
     private void toBlockModel(Block b, ResourceLocation model) {

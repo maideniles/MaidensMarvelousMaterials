@@ -62,7 +62,7 @@ public class ModOverworldBiomes
         globalOverworldGeneration(biomeBuilder);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_SUGAR_CANE);
-
+/*
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.CRABAPPLE_PLACEMENT);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.CRABAPPLE_VINES_PLACEMENT);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.POINCIANA_PLACEMENT);
@@ -86,10 +86,10 @@ public class ModOverworldBiomes
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.ORNAMENTAL_MUSHROOM_PLACEMENT);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.ORNAMENTAL_FOREST_FLOWERS_PLACEMENT);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.ORNAMENTAL_MUSHROOM_CAVE_PLACEMENT);
+*/
+/*
 
-
-
-/*  //COMMENT OUT BECAUSE MOD ORE GEN CLASS ADDS TO ALL BIOMES--ELIMINATE FEATURE ORDER CYCLE ERROR//
+  //COMMENT OUT BECAUSE MOD ORE GEN CLASS ADDS TO ALL BIOMES--ELIMINATE FEATURE ORDER CYCLE ERROR//
 
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacements.JASPER_ORE_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacements.CARNELIAN_ORE_PLACED);
@@ -103,9 +103,9 @@ public class ModOverworldBiomes
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacements.AMETHYST_ORE_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacements.ROSE_QUARTZ_ORE_PLACED);
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacements.MICA_ORE_PLACED);
+
+
 */
-
-
 
         return biome(Biome.Precipitation.RAIN,
                  2.0F, 0.0F,4445678,15925247, 15925247, calculateSkyColor(0.0F),0x1A937, 0x1A937, spawnBuilder, biomeBuilder, NORMAL_MUSIC);

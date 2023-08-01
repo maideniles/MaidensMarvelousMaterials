@@ -7,6 +7,7 @@ import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.other.Mo
 import com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.trunk.*;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderSet;
+import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.features.TreeFeatures;
@@ -29,6 +30,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -37,9 +39,9 @@ import java.util.List;
 
 public class ModFeatures {
 
+    public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =
+            DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, MarvelousMaterials.MOD_ID);
 
-    //  public static final DeferredRegister<Feature<?>> FEATURES =
-  //          DeferredRegister.create(ForgeRegistries.FEATURES, MarvelousMaterials.MOD_ID);
 
       public static final  Holder<ConfiguredFeature<TreeConfiguration, ?>> CRABAPPLE_CONFIG = FeatureUtils.register("crabapple_tree",
             Feature.TREE,((new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.CRABAPPLE_LOG.get()), new
@@ -365,5 +367,8 @@ public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CITRINE_ORE =
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> DEEPSLATE_SODALITE_ORE = FeatureUtils.register("deepslate_sodalite_ore",
             Feature.ORE, new OreConfiguration(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_SODALITE_ORE.get().defaultBlockState(), 6));
 
+    public static void register(IEventBus eventBus) {
+        CONFIGURED_FEATURES.register(eventBus);
+    }
 }
 

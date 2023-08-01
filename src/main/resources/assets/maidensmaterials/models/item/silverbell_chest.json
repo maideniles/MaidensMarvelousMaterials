@@ -1,0 +1,6 @@
+{
+  "parent": "maidensmaterials:block/chest_inventory",
+  "textures": {
+    "chest_tex": "maidensmaterials:model/chest/silverbell_chest/silverbell_chest"
+  }
+}

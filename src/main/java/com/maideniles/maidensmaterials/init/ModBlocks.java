@@ -1503,7 +1503,7 @@ public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("
 
     public static final RegistryObject<Block> POTTED_ORNAMENTAL_MUSHROOM = registerBlock("potted_ornamental_mushroom",
             () -> new FlowerPotBlock(null, ModBlocks.ORNAMENTAL_MUSHROOM,
-                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()),null);
 
     public static final RegistryObject<Block> WALK_FLOWERS = registerBlock("flower_grass",
             ()-> new FlowerGrassBlock(BlockBehaviour.Properties.of(Material.GRASS).instabreak().noCollission().noOcclusion()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -3398,7 +3398,8 @@ public static final RegistryObject<Block> VASE_ORANGE = registerBlock("vase_oran
     public static final RegistryObject<ModChestBlock> BROWN_STAINED_CHEST = registerBlock("brown_stained_chest",
             ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.BROWN_STAINED_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
+
+    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;
@@ -3420,11 +3421,12 @@ public static final RegistryObject<Block> VASE_ORANGE = registerBlock("vase_oran
                 new Item.Properties().tab(MarvelousMaterials.MAIDENS_BLOCKS_GROUP)));
     }
 
-
-
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
+
+
+
 
 
     public static final List<Block> GRASS= new ArrayList<Block>();

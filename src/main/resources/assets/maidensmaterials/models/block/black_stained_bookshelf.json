@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_column",
-    "render_type": "cutout_mipped", "textures": {
+    "textures": {
         "end": "maidensmaterials:block/black_stained_planks",
         "side": "maidensmaterials:block/black_stained_bookshelf"
     }

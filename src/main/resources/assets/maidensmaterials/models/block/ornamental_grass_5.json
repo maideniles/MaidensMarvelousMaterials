@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
-	"render_type": "cutout_mipped", "textures": {
+	"textures": {
 		"0": "maidensmaterials:block/ornamental_grass_side",
 		"2": "maidensmaterials:block/ornamental_dirt",
 		"4": "maidensmaterials:block/ornamental_grass_top_base",

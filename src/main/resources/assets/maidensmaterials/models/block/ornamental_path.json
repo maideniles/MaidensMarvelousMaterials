@@ -1,5 +1,5 @@
 {   "parent": "block/block",
-    "render_type": "cutout_mipped", "textures": {
+    "textures": {
         "particle": "maidensmaterials:block/ornamental_path",
         "top": "maidensmaterials:block/ornamental_path",
         "side": "maidensmaterials:block/ornamental_path_side",
