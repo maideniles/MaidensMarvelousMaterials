@@ -1,0 +1,6 @@
+{
+  "type": "maidensmaterials:add_ornamental_mushrooms",
+  "biomes": "maidensmaterials:ornamental_forest",
+  "plant": "maidensmaterials:ornamental_mushroom_placement",
+  "step": "vegetal_decoration"
+}

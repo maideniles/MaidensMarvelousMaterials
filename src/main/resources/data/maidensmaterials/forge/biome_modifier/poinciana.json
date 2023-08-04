@@ -1,0 +1,6 @@
+{
+  "type": "maidensmaterials:add_poinciana",
+  "biomes": "maidensmaterials:ornamental_forest",
+  "plant": "maidensmaterials:poinciana_placement",
+  "step": "vegetal_decoration"
+}

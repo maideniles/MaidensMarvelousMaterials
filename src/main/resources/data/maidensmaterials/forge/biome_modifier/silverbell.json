@@ -1,0 +1,6 @@
+{
+  "type": "maidensmaterials:add_silverbell",
+  "biomes": "maidensmaterials:ornamental_forest",
+  "plant": "maidensmaterials:silverbell_placement",
+  "step": "vegetal_decoration"
+}

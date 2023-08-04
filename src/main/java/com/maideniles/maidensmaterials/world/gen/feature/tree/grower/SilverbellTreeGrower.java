@@ -16,9 +16,9 @@ public class SilverbellTreeGrower extends AbstractTreeGrower {
     @org.jetbrains.annotations.Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean p_222911_) {
-        if(pRandom.nextInt(10) ==0) { return ModFeatures.SILVERBELL_CONFIG;}
+        if(pRandom.nextInt(10) ==0) { return ModFeatures.SILVERBELL_CONFIG.getHolder().get();}
 
-           return ModFeatures.SILVERBELL_VINES_CONFIG;
+           return ModFeatures.SILVERBELL_VINES_CONFIG.getHolder().get();
 
     }
 

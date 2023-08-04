@@ -16,9 +16,9 @@ public class PaulowniaTreeGrower extends AbstractTreeGrower {
     @org.jetbrains.annotations.Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean p_222911_) {
-        if(pRandom.nextInt(10) ==0) { return ModFeatures.PAULOWNIA_VINES_CONFIG;}
+        if(pRandom.nextInt(10) ==0) { return ModFeatures.PAULOWNIA_VINES_CONFIG.getHolder().get();}
 
-        return ModFeatures.PAULOWNIA_CONFIG;
+        return ModFeatures.PAULOWNIA_CONFIG.getHolder().get();
 
     }
 

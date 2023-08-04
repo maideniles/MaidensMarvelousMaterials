@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.other;
 
 import com.maideniles.maidensmaterials.blocks.tree.FairyGlowCupBlock;
+import com.maideniles.maidensmaterials.init.ModTreeDecoratorTypes;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -23,7 +24,7 @@ public class ModMushroomDecorator extends TreeDecorator {
     }
 
     protected TreeDecoratorType<?> type() {
-        return TreeDecoratorType.COCOA;
+        return ModTreeDecoratorTypes.MUSHROOM.get();
     }
 
     public void place(TreeDecorator.Context p_226028_) {

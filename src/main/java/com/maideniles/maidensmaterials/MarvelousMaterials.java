@@ -60,12 +60,17 @@ public class MarvelousMaterials {
     };
 
     public MarvelousMaterials() {
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MarvelousClientConfig.SPEC, "maidensmaterials-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MarvelousCommonConfig.SPEC, "maidensmaterials-common.toml");
+
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         Registration.register(eventBus);
+
+
 
         ModPotions.register(eventBus);
         ModEffects.register(eventBus);
@@ -85,8 +90,6 @@ public class MarvelousMaterials {
 
         eventBus.addListener(this::setup);
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MarvelousClientConfig.SPEC, "maidensmaterials-client.toml");
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MarvelousCommonConfig.SPEC, "maidensmaterials-common.toml");
 
 
         //VEGETAL FEATURE GEN IN ModBiomeModifier//

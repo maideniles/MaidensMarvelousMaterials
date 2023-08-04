@@ -22,7 +22,7 @@ public class MarvelousCommonConfig {
     public static ForgeConfigSpec.BooleanValue ORNAMENTAL_MUSHROOMS_ENABLED;
 
 
-    public static ForgeConfigSpec.IntValue CITRINE_STONE_VEINS;
+/*    public static ForgeConfigSpec.IntValue CITRINE_STONE_VEINS;
     public static ForgeConfigSpec.IntValue CITRINE_DEEPSLATE_VEINS;
 
     public static ForgeConfigSpec.IntValue JADE_STONE_VEINS;
@@ -59,7 +59,7 @@ public class MarvelousCommonConfig {
 
     public static ForgeConfigSpec.IntValue SODALITE_STONE_VEINS;
     public static ForgeConfigSpec.IntValue SODALITE_DEEPSLATE_VEINS;
-
+*/
     public static ForgeConfigSpec.IntValue EARTHEN_ESSENCE_DROP_RATE;
 
     public static ForgeConfigSpec.IntValue FLORAL_FORTUNE_DURATION;
@@ -120,6 +120,7 @@ static {
             .defineInRange("earthen_essence_drops", 200, 1, 10000);
 
 //COMMON ORES//
+  /*
     CITRINE_STONE_VEINS = SERVER_BUILDER.comment("Customize veins per chunk for Citrine Ore. Min 1, Max 100")
             .defineInRange("citrine_stone_veins", 18, 1, 100);
 
@@ -196,7 +197,7 @@ static {
     SODALITE_DEEPSLATE_VEINS = SERVER_BUILDER.comment("Customize veins per chunk for Deepslate Sodalite Ore. Min 1, Max 100")
             .defineInRange("sodalite_deepslate_veins", 8, 1, 100);
 
-
+*/
 
 
 

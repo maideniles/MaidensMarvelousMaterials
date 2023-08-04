@@ -17,9 +17,9 @@ public class CrabappleTreeGrower extends AbstractTreeGrower {
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean p_222911_) {
 
-        if(pRandom.nextInt(10) ==0) { return ModFeatures.CRABAPPLE_VINES_CONFIG;}
+        if(pRandom.nextInt(10) ==0) { return ModFeatures.CRABAPPLE_VINES_CONFIG.getHolder().get();}
 
-       return ModFeatures.CRABAPPLE_CONFIG;
+       return ModFeatures.CRABAPPLE_CONFIG.getHolder().get();
    }
 
 }

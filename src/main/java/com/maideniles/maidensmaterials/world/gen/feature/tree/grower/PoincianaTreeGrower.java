@@ -14,8 +14,8 @@ public class PoincianaTreeGrower extends AbstractTreeGrower {
     @org.jetbrains.annotations.Nullable
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean p_222911_) {
-        if(pRandom.nextInt(10) ==0) { return ModFeatures.POINCIANA_VINES_CONFIG;}
+        if(pRandom.nextInt(10) ==0) { return ModFeatures.POINCIANA_VINES_CONFIG.getHolder().get();}
 
-        return ModFeatures.POINCIANA_CONFIG;
+        return ModFeatures.POINCIANA_CONFIG.getHolder().get();
     }
 }

@@ -1,0 +1,6 @@
+{
+  "type": "maidensmaterials:add_laburnum",
+  "biomes": "maidensmaterials:ornamental_forest",
+  "plant": "maidensmaterials:laburnum_placement",
+  "step": "vegetal_decoration"
+}
