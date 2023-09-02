@@ -2,6 +2,7 @@ package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.blockentity.ModChestEntity;
+import com.maideniles.maidensmaterials.blockentity.MortarPestleBlockEntity;
 import com.maideniles.maidensmaterials.client.renderer.blockentity.ModChestRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -33,6 +34,13 @@ public class ModBlockEntities {
                     ModBlocks.MAGENTA_STAINED_CHEST.get(),ModBlocks.PINK_STAINED_CHEST.get(),ModBlocks.WHITE_STAINED_CHEST.get(),
                     ModBlocks.LIGHT_GRAY_STAINED_CHEST.get(),ModBlocks.GRAY_STAINED_CHEST.get(),ModBlocks.BLACK_STAINED_CHEST.get(),
                     ModBlocks.BROWN_STAINED_CHEST.get() ).build(null));
+
+
+
+    public static final RegistryObject<BlockEntityType<MortarPestleBlockEntity>> MORTAR_PESTLE_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("mortar_pestle_block_entity", () ->
+                    BlockEntityType.Builder.of(MortarPestleBlockEntity::new,
+                            ModBlocks.MORTAR_PESTLE.get()).build(null));
 
     @OnlyIn(Dist.CLIENT)
     public static void registerTileEntityRenders() {

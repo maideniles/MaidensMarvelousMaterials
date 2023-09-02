@@ -1,0 +1,13 @@
+{
+  "type": "maidensmaterials:mortar_pestle_mixing",
+  "ingredients": [
+    {
+      "item": "maidensmaterials:crabapple_blossoms"
+    }
+  ],
+  "output": {
+    "item": "maidensmaterials:red_pigment",
+    "count": 4
+  },
+  "grindingTime": 100
+}

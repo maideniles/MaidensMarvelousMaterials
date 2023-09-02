@@ -70,6 +70,9 @@ public class MarvelousMaterials {
         ModBlocks.register(eventBus);
         Registration.register(eventBus);
 
+        ModMenuTypes.register(eventBus);
+
+        ModRecipes.register(eventBus);
 
 
         ModPotions.register(eventBus);

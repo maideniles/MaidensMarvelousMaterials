@@ -4,6 +4,7 @@ package com.maideniles.maidensmaterials.init;
 import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.blocks.*;
 import com.maideniles.maidensmaterials.blocks.chest.ModChestBlock;
+import com.maideniles.maidensmaterials.blocks.mortar_pestle.MortarPestleBlock;
 import com.maideniles.maidensmaterials.blocks.tree.FairyGlowCupBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidenSaplingBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidensLeafBlock;
@@ -34,7 +35,8 @@ public class ModBlocks {
 
    // public static final WoodType CRABAPPLE = WoodType.create(MarvelousMaterials.prefix("crabapple").toString());
 
-
+    public static final RegistryObject<Block> MORTAR_PESTLE = registerBlock("mortar_pestle",
+            () -> new MortarPestleBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f).sound(SoundType.AMETHYST_CLUSTER)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CRABAPPLE_LOG = registerBlock("crabapple_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.0F).randomTicks().sound(SoundType.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);

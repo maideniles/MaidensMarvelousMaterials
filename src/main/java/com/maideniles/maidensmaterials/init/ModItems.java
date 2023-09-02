@@ -1,6 +1,9 @@
 package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MarvelousMaterials;
+import com.maideniles.maidensmaterials.item.BlossomItem;
+import com.maideniles.maidensmaterials.item.GemChunkItem;
+import com.maideniles.maidensmaterials.item.PigmentItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -37,81 +40,81 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
     //BLOSSOMS//
     public static final RegistryObject<Item> CRABAPPLE_BLOSSOMS = ITEMS.register("crabapple_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> POINCIANA_BLOSSOMS = ITEMS.register("poinciana_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> LABURNUM_BLOSSOMS = ITEMS.register("laburnum_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> JADE_BLOSSOMS = ITEMS.register("jade_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> PAULOWNIA_BLOSSOMS = ITEMS.register("paulownia_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> WISTERIA_BLOSSOMS = ITEMS.register("wisteria_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> JACARANDA_BLOSSOMS = ITEMS.register("jacaranda_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> DOGWOOD_BLOSSOMS = ITEMS.register("dogwood_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> SILVERBELL_BLOSSOMS = ITEMS.register("silverbell_blossoms",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new BlossomItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
 
 //COLORED PIGMENTS//
 
     public static final RegistryObject<Item> RED_PIGMENT = ITEMS.register("red_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> ORANGE_PIGMENT = ITEMS.register("orange_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> YELLOW_PIGMENT = ITEMS.register("yellow_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
     public static final RegistryObject<Item> LIME_PIGMENT = ITEMS.register("lime_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> GREEN_PIGMENT = ITEMS.register("green_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> CYAN_PIGMENT = ITEMS.register("cyan_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> LIGHT_BLUE_PIGMENT = ITEMS.register("light_blue_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> BLUE_PIGMENT = ITEMS.register("blue_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> PURPLE_PIGMENT = ITEMS.register("purple_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> MAGENTA_PIGMENT = ITEMS.register("magenta_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> PINK_PIGMENT = ITEMS.register("pink_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> WHITE_PIGMENT = ITEMS.register("white_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> LIGHT_GRAY_PIGMENT = ITEMS.register("light_gray_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> GRAY_PIGMENT = ITEMS.register("gray_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> BLACK_PIGMENT = ITEMS.register("black_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> BROWN_PIGMENT = ITEMS.register("brown_pigment",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new PigmentItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     //COLORED CLAY//
     public static final RegistryObject<Item> RED_CLAY = ITEMS.register("red_clay",
@@ -457,40 +460,40 @@ public class ModItems {
 
     //GEMSTONES//
     public static final RegistryObject<Item> JASPER_CHUNK = ITEMS.register("jasper_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> CARNELIAN_CHUNK = ITEMS.register("carnelian_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> CITRINE_CHUNK = ITEMS.register("citrine_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> AVENTURINE_CHUNK = ITEMS.register("aventurine_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> JADE_CHUNK = ITEMS.register("jade_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> CHALCOPYRITE_CHUNK = ITEMS.register("chalcopyrite_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> LABRADORITE_CHUNK = ITEMS.register("labradorite_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> MOONSTONE_CHUNK = ITEMS.register("moonstone_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> SODALITE_CHUNK = ITEMS.register("sodalite_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> AMETHYST_CHUNK = ITEMS.register("amethyst_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> ROSE_QUARTZ_CHUNK = ITEMS.register("rose_quartz_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
     public static final RegistryObject<Item> MICA_CHUNK = ITEMS.register("mica_chunk",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+            () -> new GemChunkItem(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
 
 
     //FRAGMENTS//
