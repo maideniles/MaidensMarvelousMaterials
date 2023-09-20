@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/sodalite_5_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/sodalite_5"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/sodalite_5_slab_top"
+    }
+  }
+}

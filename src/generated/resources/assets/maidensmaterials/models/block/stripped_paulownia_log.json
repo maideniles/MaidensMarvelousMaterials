@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "render_type": "cutout", "textures": {
+    "end": "maidensmaterials:block/stripped_paulownia_top",
+    "side": "maidensmaterials:block/stripped_paulownia_log"
+  }
+}

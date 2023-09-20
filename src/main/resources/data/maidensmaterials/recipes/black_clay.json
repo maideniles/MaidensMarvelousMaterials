@@ -1,0 +1,33 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PCP",
+		"C C",
+		"PCP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:black_pigment"
+        },
+		
+		
+		
+		"C":
+		{
+			"item": "minecraft:clay_ball"
+		}
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:black_clay",
+        "count": 8
+    }
+}

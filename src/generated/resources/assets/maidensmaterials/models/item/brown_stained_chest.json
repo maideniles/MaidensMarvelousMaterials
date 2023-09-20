@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "textures": {
+    "particle": "maidensmaterials:block/brown_stained_planks"
+  }
+}

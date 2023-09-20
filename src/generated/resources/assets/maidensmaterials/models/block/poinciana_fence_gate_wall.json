@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_wall",
+  "render_type": "cutout", "textures": {
+    "texture": "maidensmaterials:block/poinciana_planks"
+  }
+}

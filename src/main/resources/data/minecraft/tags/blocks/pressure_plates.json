@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+      "maidensmaterials:crabapple_pressure_plate",
+   "maidensmaterials:poinciana_pressure_plate",
+   "maidensmaterials:laburnum_pressure_plate",
+   "maidensmaterials:jade_pressure_plate",
+   "maidensmaterials:paulownia_pressure_plate",
+   "maidensmaterials:wisteria_pressure_plate",
+   "maidensmaterials:dogwood_pressure_plate",
+   "maidensmaterials:silverbell_pressure_plate",
+   "maidensmaterials:jacaranda_pressure_plate",
+   "maidensmaterials:cedar_pressure_plate",
+   
+   "maidensmaterials:red_stained_pressure_plate",
+   "maidensmaterials:orange_stained_pressure_plate",
+   "maidensmaterials:yellow_stained_pressure_plate",
+   "maidensmaterials:lime_stained_pressure_plate",
+   "maidensmaterials:green_stained_pressure_plate",
+   "maidensmaterials:cyan_stained_pressure_plate",
+   "maidensmaterials:light_blue_stained_pressure_plate",   
+   "maidensmaterials:blue_stained_pressure_plate",
+   "maidensmaterials:purple_stained_pressure_plate",
+   "maidensmaterials:magenta_stained_pressure_plate",
+   "maidensmaterials:pink_stained_pressure_plate",
+   "maidensmaterials:white_stained_pressure_plate",
+   "maidensmaterials:light_gray_stained_pressure_plate",
+   "maidensmaterials:gray_stained_pressure_plate",
+   "maidensmaterials:black_stained_pressure_plate",
+   "maidensmaterials:brown_stained_pressure_plate"
+	
+  ]
+}

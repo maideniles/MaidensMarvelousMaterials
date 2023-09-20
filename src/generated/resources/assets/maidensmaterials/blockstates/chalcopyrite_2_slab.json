@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/chalcopyrite_2_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/chalcopyrite_2"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/chalcopyrite_2_slab_top"
+    }
+  }
+}

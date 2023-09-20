@@ -1,0 +1,424 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/acacia_chest/acacia_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/acacia_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/acacia_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/birch_chest/birch_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/birch_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/birch_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/oak_chest/oak_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/oak_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/oak_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/spruce_chest/spruce_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/spruce_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/spruce_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/dark_oak_chest/dark_oak_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/dark_oak_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/dark_oak_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jungle_chest/jungle_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jungle_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jungle_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/crimson_chest/crimson_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/crimson_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/crimson_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/warped_chest/warped_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/warped_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/warped_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/mangrove_chest/mangrove_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/mangrove_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/mangrove_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/crabapple_chest/crabapple_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/crabapple_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/crabapple_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/poinciana_chest/poinciana_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/poinciana_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/poinciana_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/laburnum_chest/laburnum_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/laburnum_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/laburnum_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jade_chest/jade_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jade_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jade_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/paulownia_chest/paulownia_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/paulownia_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/paulownia_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/wisteria_chest/wisteria_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/wisteria_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/wisteria_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jacaranda_chest/jacaranda_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jacaranda_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/jacaranda_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/dogwood_chest/dogwood_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/dogwood_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/dogwood_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/silverbell_chest/silverbell_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/silverbell_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/silverbell_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/cedar_chest/cedar_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/cedar_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/cedar_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/red_stained_chest/red_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/red_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/red_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/orange_stained_chest/orange_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/orange_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/orange_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/yellow_stained_chest/yellow_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/yellow_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/yellow_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/lime_stained_chest/lime_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/lime_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/lime_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/green_stained_chest/green_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/green_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/green_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/cyan_stained_chest/cyan_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/cyan_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/cyan_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/light_blue_stained_chest/light_blue_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/light_blue_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/light_blue_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/blue_stained_chest/blue_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/blue_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/blue_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/purple_stained_chest/purple_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/purple_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/purple_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/magenta_stained_chest/magenta_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/magenta_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/magenta_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/pink_stained_chest/pink_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/pink_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/pink_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/white_stained_chest/white_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/white_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/white_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/light_gray_stained_chest/light_gray_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/light_gray_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/light_gray_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/gray_stained_chest/gray_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/gray_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/gray_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/black_stained_chest/black_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/black_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/black_stained_chest/right"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/brown_stained_chest/brown_stained_chest"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/brown_stained_chest/left"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "maidensmaterials:model/chest/brown_stained_chest/right"
+    }
+  ]
+}

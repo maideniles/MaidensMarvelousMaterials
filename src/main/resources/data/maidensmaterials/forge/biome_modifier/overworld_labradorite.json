@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "maidensmaterials:labradorite_ore_placed_mm",
+  "step": "underground_ores"
+}

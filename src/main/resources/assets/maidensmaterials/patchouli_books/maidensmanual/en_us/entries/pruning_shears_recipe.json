@@ -1,0 +1,18 @@
+{
+    "name": "Pruning Shears Recipe",
+    "icon": "maidensmaterials:textures/item/pruning_shears.png",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	
+        {
+    "type": "crafting",
+    "recipe": "maidensmaterials:pruning_shears"
+	
+	
+			
+			
+			
+        }
+    ]
+}

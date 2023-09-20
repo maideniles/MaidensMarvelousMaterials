@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "render_type": "cutout", "textures": {
+    "particle": "maidensmaterials:block/laburnum_planks"
+  }
+}

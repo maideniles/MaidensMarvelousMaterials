@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "render_type": "cutout", "textures": {
+    "bottom": "maidensmaterials:block/blue_stained_door_3_bottom",
+    "top": "maidensmaterials:block/blue_stained_door_3_top"
+  }
+}

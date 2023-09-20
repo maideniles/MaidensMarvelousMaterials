@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "render_type": "cutout", "textures": {
+    "bottom": "maidensmaterials:block/mangrove_door_6_bottom",
+    "top": "maidensmaterials:block/mangrove_door_6_top"
+  }
+}

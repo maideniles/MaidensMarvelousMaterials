@@ -1,0 +1,39 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+       "FMF",
+	   " F ",
+       "FBF"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "maidensmaterials:labradorite_fragments"
+        },
+		
+		"M":
+		{
+			
+			"item": "maidensmaterials:grout"
+		},
+		
+		"B":
+		{
+			"item": "minecraft:stone"
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:labradorite_4",
+        "count": 16
+    }
+}

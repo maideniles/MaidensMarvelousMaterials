@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [{
+    "item": "maidensmaterials:green_dye_bath"
+  }],
+  "result": "maidensmaterials:green_stain",
+  "experience": 0.1,
+ 
+  "cookingtime": 40
+ 
+}

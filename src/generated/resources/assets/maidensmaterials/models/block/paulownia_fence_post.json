@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "render_type": "cutout", "textures": {
+    "texture": "maidensmaterials:block/paulownia_planks"
+  }
+}

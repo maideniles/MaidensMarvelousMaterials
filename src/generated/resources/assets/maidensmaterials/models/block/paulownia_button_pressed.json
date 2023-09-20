@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "render_type": "cutout", "textures": {
+    "texture": "maidensmaterials:block/paulownia_planks"
+  }
+}

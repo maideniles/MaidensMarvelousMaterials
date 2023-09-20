@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/laburnum_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/laburnum_planks"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/laburnum_slab_top"
+    }
+  }
+}

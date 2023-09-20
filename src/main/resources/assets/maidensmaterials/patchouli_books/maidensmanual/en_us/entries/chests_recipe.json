@@ -1,0 +1,119 @@
+{
+    "name": "Storage Chest Recipes",
+    "icon": "maidensmaterials:textures/block/test_chest.png",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_chest",
+		"recipe2": "maidensmaterials:poinciana_chest"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_chest",
+		 "recipe2": "maidensmaterials:jade_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_chest",
+		"recipe2": "maidensmaterials:wisteria_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_chest",
+		"recipe2": "maidensmaterials:dogwood_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_chest",
+		 "recipe2": "maidensmaterials:cedar_chest"
+	},
+		
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:red_chest",
+		"recipe2": "maidensmaterials:orange_chest"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:yellow_chest",
+		 "recipe2": "maidensmaterials:lime_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:green_chest",
+		"recipe2": "maidensmaterials:cyan_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:light_blue_chest",
+		"recipe2": "maidensmaterials:blue_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:purple_chest",
+		 "recipe2": "maidensmaterials:magenta_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:pink_chest",
+		 "recipe2": "maidensmaterials:white_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:light_gray_chest",
+		 "recipe2": "maidensmaterials:gray_chest"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:black_chest",
+		 "recipe2": "maidensmaterials:brown_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:acacia_chest",
+		 "recipe2": "maidensmaterials:birch_chest"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:oak_chest",
+		 "recipe2": "maidensmaterials:spruce_chest"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:dark_oak_chest",
+		 "recipe2": "maidensmaterials:jungle_chest"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:crimson_chest",
+		 "recipe2": "maidensmaterials:warped_chest"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:mangrove_chest"
+		 
+	}
+	
+	
+	
+	
+    ]
+}

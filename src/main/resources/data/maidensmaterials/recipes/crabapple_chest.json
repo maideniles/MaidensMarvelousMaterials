@@ -1,0 +1,34 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "PPP",
+		"PEP",
+		"PPP"
+    ],
+    
+    "key":
+    {
+        "P":
+        {
+            "item": "maidensmaterials:crabapple_planks"
+        },
+		
+		"E":
+		{
+			"item": "maidensmaterials:floral_essence"
+			
+		}
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:crabapple_chest",
+        "count": 1
+    }
+}

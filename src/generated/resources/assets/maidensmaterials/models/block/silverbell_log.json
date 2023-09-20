@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "render_type": "cutout", "textures": {
+    "end": "maidensmaterials:block/silverbell_top",
+    "side": "maidensmaterials:block/silverbell_log"
+  }
+}

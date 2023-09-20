@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "render_type": "cutout", "textures": {
+    "end": "maidensmaterials:block/wisteria_log",
+    "side": "maidensmaterials:block/wisteria_log"
+  }
+}

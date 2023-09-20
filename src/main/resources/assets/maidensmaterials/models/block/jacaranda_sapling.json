@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "render_type": "cutout", "textures": {
+        "cross": "maidensmaterials:block/jacaranda_sapling"
+    }
+}

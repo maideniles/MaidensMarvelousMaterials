@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/moonstone_3_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/moonstone_3"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/moonstone_3_slab_top"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Ingredients and Combos",
+    "icon": "maidensmaterials:mortar_pestle",
+    "category": "maidensmaterials:mortar_pestle",
+    "pages": [
+		
+	{
+		"type":"spotlight",
+		"item": "maidensmaterials:mortar_pestle",
+		"text": "For Blossoms, Gem Chunks, and Mica Powder:$(br2) Add your item to the Mortar and activate the pestle."		
+	},
+	
+	{
+		"type":"spotlight",
+		"item": "maidensmaterials:mortar_pestle",
+		"text": "For mixed Pigments and Dark Iron Mix:$(br2) Add both items to the Mortar and then activate the Pestle."		
+	}
+       
+    ]
+}

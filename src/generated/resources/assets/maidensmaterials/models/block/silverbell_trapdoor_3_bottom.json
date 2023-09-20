@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_bottom",
+  "render_type": "cutout",  "textures": {
+    "texture": "maidensmaterials:block/silverbell_trapdoor_3"
+  }
+}

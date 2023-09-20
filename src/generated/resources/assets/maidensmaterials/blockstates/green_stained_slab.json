@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/green_stained_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/green_stained_planks"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/green_stained_slab_top"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Wood Planks Recipe",
+    "icon": "maidensmaterials:crabapple_planks",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_planks",
+		"recipe2": "maidensmaterials:poinciana_planks"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_planks",
+		 "recipe2": "maidensmaterials:jade_planks"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_planks",
+		"recipe2": "maidensmaterials:wisteria_planks"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_planks",
+		"recipe2": "maidensmaterials:dogwood_planks"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_planks",
+		 "recipe2": "maidensmaterials:cedar_planks"
+	}
+	
+	
+	
+	
+    ]
+}

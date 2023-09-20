@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/poinciana_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/poinciana_planks"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/poinciana_slab_top"
+    }
+  }
+}

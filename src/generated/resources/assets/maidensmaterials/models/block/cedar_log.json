@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "render_type": "cutout", "textures": {
+    "end": "maidensmaterials:block/cedar_top",
+    "side": "maidensmaterials:block/cedar_log"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "values": [
+	"minecraft:oak_planks",
+	"minecraft:spruce_planks",
+	"minecraft:birch_planks",
+	"minecraft:jungle_planks",
+	"minecraft:acacia_planks",
+	"minecraft:dark_oak_planks",
+	"minecraft:crimson_planks",
+	"minecraft:warped_planks",
+	"minecraft:mangrove_planks",
+	
+	"maidensmaterials:crabapple_planks",
+    "maidensmaterials:poinciana_planks",
+    "maidensmaterials:laburnum_planks",
+    "maidensmaterials:jade_planks",
+    "maidensmaterials:paulownia_planks",
+    "maidensmaterials:wisteria_planks",
+    "maidensmaterials:dogwood_planks",
+    "maidensmaterials:silverbell_planks",
+    "maidensmaterials:jacaranda_planks",
+    "maidensmaterials:cedar_planks",
+   
+    "maidensmaterials:red_stained_planks",
+    "maidensmaterials:orange_stained_planks",
+    "maidensmaterials:yellow_stained_planks",
+    "maidensmaterials:lime_stained_planks",
+    "maidensmaterials:green_stained_planks",
+    "maidensmaterials:cyan_stained_planks",
+    "maidensmaterials:light_blue_stained_planks",   
+    "maidensmaterials:blue_stained_planks",
+    "maidensmaterials:purple_stained_planks",
+    "maidensmaterials:magenta_stained_planks",
+    "maidensmaterials:pink_stained_planks",
+    "maidensmaterials:white_stained_planks",
+    "maidensmaterials:light_gray_stained_planks",
+    "maidensmaterials:gray_stained_planks",
+    "maidensmaterials:black_stained_planks",
+    "maidensmaterials:brown_stained_planks"
+  ]
+}

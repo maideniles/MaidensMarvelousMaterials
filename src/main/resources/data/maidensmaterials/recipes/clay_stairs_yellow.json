@@ -1,0 +1,30 @@
+
+
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "T  ",
+		"TT ",
+		"TTT"
+    ],
+    
+    "key":
+    {
+        "T":
+        {
+            "item": "maidensmaterials:yellow_clay_block"
+        }
+		
+		
+		
+		
+    },
+    
+    "result":
+    {
+        "item": "maidensmaterials:yellow_clay_stairs",
+	"count": 4
+    }
+}

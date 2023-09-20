@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "render_type": "cutout", "textures": {
+    "texture": "maidensmaterials:block/dogwood_planks"
+  }
+}

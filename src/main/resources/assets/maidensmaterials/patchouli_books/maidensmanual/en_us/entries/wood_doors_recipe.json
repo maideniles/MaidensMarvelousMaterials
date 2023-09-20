@@ -1,0 +1,361 @@
+{
+    "name": "Wood Door Recipe",
+    "icon": "maidensmaterials:textures/item/cedar_door_1.png",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_door_1",
+		"recipe2": "maidensmaterials:poinciana_door_1"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_door_1",
+		 "recipe2": "maidensmaterials:jade_door_1"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_door_1",
+		"recipe2": "maidensmaterials:wisteria_door_1"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_door_1",
+		"recipe2": "maidensmaterials:dogwood_door_1"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_door_1",
+		 "recipe2": "maidensmaterials:cedar_door_1"
+	},
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:birch_door_1",
+		 "recipe2": "maidensmaterials:oak_door_1"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:dark_oak_door_1",
+		 "recipe2": "maidensmaterials:spruce_door_1"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jungle_door_1",
+		 "recipe2": "maidensmaterials:warped_door_1"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crimson_door_1",
+		"recipe2": "maidensmaterials:mangrove_door_1"
+		 
+	},
+	
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_door_2",
+		"recipe2": "maidensmaterials:poinciana_door_2"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_door_2",
+		 "recipe2": "maidensmaterials:jade_door_2"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_door_2",
+		"recipe2": "maidensmaterials:wisteria_door_2"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_door_2",
+		"recipe2": "maidensmaterials:dogwood_door_2"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_door_2",
+		 "recipe2": "maidensmaterials:cedar_door_2"
+	},
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:birch_door_2",
+		 "recipe2": "maidensmaterials:oak_door_2"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:dark_oak_door_2",
+		 "recipe2": "maidensmaterials:spruce_door_2"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jungle_door_2",
+		 "recipe2": "maidensmaterials:warped_door_2"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crimson_door_2",
+	"recipe2":"maidensmaterials:mangrove_door_2"
+		 
+	},
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:birch_door_3",
+		 "recipe2": "maidensmaterials:oak_door_3"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:dark_oak_door_3",
+		 "recipe2": "maidensmaterials:spruce_door_3"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jungle_door_3",
+		 "recipe2": "maidensmaterials:warped_door_3"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crimson_door_3",
+	"recipe2": "maidensmaterials:mangrove_door_3"
+		 
+	},
+	
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_door_3",
+		"recipe2": "maidensmaterials:poinciana_door_3"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_door_3",
+		 "recipe2": "maidensmaterials:jade_door_3"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_door_3",
+		"recipe2": "maidensmaterials:wisteria_door_3"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_door_3",
+		"recipe2": "maidensmaterials:dogwood_door_3"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_door_3",
+		 "recipe2": "maidensmaterials:cedar_door_3"
+	},
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:birch_door_4",
+		 "recipe2": "maidensmaterials:oak_door_4"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:dark_oak_door_4",
+		 "recipe2": "maidensmaterials:spruce_door_4"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jungle_door_4",
+		 "recipe2": "maidensmaterials:warped_door_4"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crimson_door_4",
+	"recipe2": "maidensmaterials:mangrove_door_4"
+		 
+	},
+	
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_door_4",
+		"recipe2": "maidensmaterials:poinciana_door_4"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_door_4",
+		 "recipe2": "maidensmaterials:jade_door_4"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_door_4",
+		"recipe2": "maidensmaterials:wisteria_door_4"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_door_4",
+		"recipe2": "maidensmaterials:dogwood_door_4"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_door_4",
+		 "recipe2": "maidensmaterials:cedar_door_4"
+	},
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:birch_door_5",
+		 "recipe2": "maidensmaterials:oak_door_5"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:dark_oak_door_5",
+		 "recipe2": "maidensmaterials:spruce_door_5"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jungle_door_5",
+		 "recipe2": "maidensmaterials:warped_door_5"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crimson_door_5",
+	"recipe2": "maidensmaterials:mangrove_door_5"
+		 
+	},
+	
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_door_5",
+		"recipe2": "maidensmaterials:poinciana_door_5"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_door_5",
+		 "recipe2": "maidensmaterials:jade_door_5"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_door_5",
+		"recipe2": "maidensmaterials:wisteria_door_5"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_door_5",
+		"recipe2": "maidensmaterials:dogwood_door_5"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_door_5",
+		 "recipe2": "maidensmaterials:cedar_door_5"
+	},
+	
+	
+	
+	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_door_6",
+		"recipe2": "maidensmaterials:poinciana_door_6"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_door_6",
+		 "recipe2": "maidensmaterials:jade_door_6"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_door_6",
+		"recipe2": "maidensmaterials:wisteria_door_6"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_door_6",
+		"recipe2": "maidensmaterials:dogwood_door_6"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_door_6",
+		 "recipe2": "maidensmaterials:cedar_door_6"
+	},
+
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:birch_door_6",
+		 "recipe2": "maidensmaterials:oak_door_6"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:dark_oak_door_6",
+		 "recipe2": "maidensmaterials:spruce_door_6"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jungle_door_6",
+		 "recipe2": "maidensmaterials:warped_door_6"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crimson_door_6",
+	"recipe2": "maidensmaterials:mangrove_door_6"
+		 
+	}
+	
+	
+	
+	
+	
+	
+    ]
+}

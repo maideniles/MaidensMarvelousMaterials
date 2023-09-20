@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/labradorite_6_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/labradorite_6"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/labradorite_6_slab_top"
+    }
+  }
+}

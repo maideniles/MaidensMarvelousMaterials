@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_open",
+  "render_type": "cutout", "textures": {
+    "texture": "maidensmaterials:block/wisteria_planks"
+  }
+}

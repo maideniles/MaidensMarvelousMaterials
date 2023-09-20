@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+      "maidensmaterials:crabapple_stairs",
+   "maidensmaterials:poinciana_stairs",
+   "maidensmaterials:laburnum_stairs",
+   "maidensmaterials:jade_stairs",
+   "maidensmaterials:paulownia_stairs",
+   "maidensmaterials:wisteria_stairs",
+   "maidensmaterials:dogwood_stairs",
+   "maidensmaterials:silverbell_stairs",
+   "maidensmaterials:jacaranda_stairs",
+   "maidensmaterials:cedar_stairs",
+   
+   "maidensmaterials:red_stained_stairs",
+   "maidensmaterials:orange_stained_stairs",
+   "maidensmaterials:yellow_stained_stairs",
+   "maidensmaterials:lime_stained_stairs",
+   "maidensmaterials:green_stained_stairs",
+   "maidensmaterials:cyan_stained_stairs",
+   "maidensmaterials:light_blue_stained_stairs",   
+   "maidensmaterials:blue_stained_stairs",
+   "maidensmaterials:purple_stained_stairs",
+   "maidensmaterials:magenta_stained_stairs",
+   "maidensmaterials:pink_stained_stairs",
+   "maidensmaterials:white_stained_stairs",
+   "maidensmaterials:light_gray_stained_stairs",
+   "maidensmaterials:gray_stained_stairs",
+   "maidensmaterials:black_stained_stairs",
+   "maidensmaterials:brown_stained_stairs"
+	
+  ]
+}

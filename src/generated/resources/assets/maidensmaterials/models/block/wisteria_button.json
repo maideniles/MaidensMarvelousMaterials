@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "render_type": "cutout", "textures": {
+    "texture": "maidensmaterials:block/wisteria_planks"
+  }
+}

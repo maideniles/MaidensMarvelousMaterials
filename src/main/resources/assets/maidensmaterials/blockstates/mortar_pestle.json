@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "maidensmaterials:block/mortar_pestle"},
+	"facing=east": {"model": "maidensmaterials:block/mortar_pestle", "y": 90},
+	"facing=south": {"model": "maidensmaterials:block/mortar_pestle", "y": 180},
+	"facing=west": {"model": "maidensmaterials:block/mortar_pestle", "y": 270}
+	
+  }
+  
+}

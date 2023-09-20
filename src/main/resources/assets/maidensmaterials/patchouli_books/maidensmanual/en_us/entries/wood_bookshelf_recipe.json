@@ -1,0 +1,70 @@
+{
+    "name": "Bookshelf Recipes",
+    "icon": "maidensmaterials:dogwood_bookshelf",
+    "category": "maidensmaterials:recipes",
+    "pages": [
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:crabapple_bookshelf",
+		"recipe2": "maidensmaterials:poinciana_bookshelf"
+	},	
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:laburnum_bookshelf",
+		 "recipe2": "maidensmaterials:jade_bookshelf"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:paulownia_bookshelf",
+		"recipe2": "maidensmaterials:wisteria_bookshelf"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:jacaranda_bookshelf",
+		"recipe2": "maidensmaterials:dogwood_bookshelf"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:silverbell_bookshelf",
+		 "recipe2": "maidensmaterials:cedar_bookshelf"
+	},		
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:acacia_bookshelf",
+		 "recipe2": "maidensmaterials:birch_bookshelf"
+	},
+	
+	{
+		"type": "crafting",
+    "recipe": "maidensmaterials:oak_bookshelf",
+		 "recipe2": "maidensmaterials:spruce_bookshelf"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:dark_oak_bookshelf",
+		 "recipe2": "maidensmaterials:jungle_bookshelf"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:crimson_bookshelf",
+		 "recipe2": "maidensmaterials:warped_bookshelf"
+	},
+	
+		{
+		"type": "crafting",
+		"recipe": "maidensmaterials:mangrove_bookshelf"
+	}
+	
+	
+	
+	
+    ]
+}
