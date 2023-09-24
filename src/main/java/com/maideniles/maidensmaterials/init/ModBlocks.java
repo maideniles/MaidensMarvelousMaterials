@@ -1492,10 +1492,10 @@ public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("
             ()-> new OrnamentalGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).strength(0.5f).sound(SoundType.GRASS)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ORNAMENTAL_PATH = registerBlock("ornamental_path",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS).strength(0.5f)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DirtPathBlock(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRASS).noOcclusion().strength(0.5f)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ORNAMENTAL_MUSHROOM = registerBlock("ornamental_mushroom",
-            () -> new FlowerBlock(MobEffects.NIGHT_VISION, 6,Block.Properties.of(Material.PLANT).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new OrnamentalMushroomBlock(MobEffects.NIGHT_VISION, 6,Block.Properties.of(Material.PLANT).noOcclusion().noCollission()),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> FAIRY_GLOW_CUP = registerBlock("fairy_glow_cup",
             ()-> new FairyGlowCupBlock(BlockBehaviour.Properties.of(Material.PLANT).lightLevel((p_50872_) -> {

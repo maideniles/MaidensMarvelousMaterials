@@ -78,9 +78,12 @@ public class OrnamentalGrassBlock extends GrassBlock {
 
         }
 
-        if (item.toString().toLowerCase().contains("shovel") && hasEnchant) {
+        if (item.toString().toLowerCase().contains("shovel") && hasEnchant && level.isEmptyBlock(pos.above())) {
             level.setBlockAndUpdate(pos, ModBlocks.ORNAMENTAL_PATH.get().defaultBlockState());
+            level.playSound(player, pos, SoundEvents.SHOVEL_FLATTEN, SoundSource.BLOCKS, 1.0F, 1.0F);
         }
+
+
 
 
 

@@ -13,7 +13,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -43,14 +42,14 @@ public class MarvelousMaterials {
     public static final CreativeModeTab MAIDENS_BLOCKS_GROUP = new CreativeModeTab("maidens_blocks_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(Blocks.AMETHYST_BLOCK);
+            return new ItemStack(ModBlocks.MAGENTA_BRICK_BLOCK.get());
         }
     };
 
     public static final CreativeModeTab MAIDENS_ITEMS_GROUP = new CreativeModeTab("maidens_items_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(Items.AMETHYST_SHARD);
+            return new ItemStack(ModItems.DOGWOOD_BLOSSOMS.get());
         }
     };
 

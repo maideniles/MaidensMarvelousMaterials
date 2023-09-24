@@ -17,6 +17,7 @@ public class RenderLayers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORNAMENTAL_MUSHROOM.get(),RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_ORNAMENTAL_MUSHROOM.get(), RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.FAIRY_GLOW_CUP.get(), RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORNAMENTAL_PATH.get(), RenderType.cutoutMipped());
 
         //vines
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WALK_FLOWERS.get(), RenderType.cutoutMipped());
