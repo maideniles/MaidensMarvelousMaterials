@@ -4,14 +4,27 @@ import com.maideniles.maidensmaterials.init.ModBlocks;
 import com.maideniles.maidensmaterials.init.ModItems;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockLootTables extends BlockLoot {
 
     @Override
     protected void addTables() {
+
+        //MORTAR & PESTLE//
+        this.dropSelf(ModBlocks.MORTAR_PESTLE.get());
+        this.dropSelf(ModBlocks.MORTAR_PESTLE_PIGMENTS.get());
+        this.dropSelf(ModBlocks.MORTAR_PESTLE_BLOSSOMS.get());
+        this.dropSelf(ModBlocks.MORTAR_PESTLE_CHUNKS.get());
+        this.dropSelf(ModBlocks.MORTAR_PESTLE_OTHER.get());
+
 
     //LOGS//
         this.dropSelf(ModBlocks.CRABAPPLE_LOG.get());
@@ -129,6 +142,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropOther(ModBlocks.JUNGLE_BOOKSHELF.get(), Items.BOOK);
         this.dropOther(ModBlocks.CRIMSON_BOOKSHELF.get(), Items.BOOK);
         this.dropOther(ModBlocks.WARPED_BOOKSHELF.get(), Items.BOOK);
+        this.dropOther(ModBlocks.MANGROVE_BOOKSHELF.get(),Items.BOOK);
         //TREE WOODS//
 
         this.dropSelf(ModBlocks.CRABAPPLE_PLANKS.get());
@@ -282,6 +296,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.JUNGLE_DOOR_1.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.CRIMSON_DOOR_1.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.WARPED_DOOR_1.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.MANGROVE_DOOR_1.get(),BlockLoot::createDoorTable);
 
         this.add(ModBlocks.ACACIA_DOOR_2.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.BIRCH_DOOR_2.get(),BlockLoot::createDoorTable);
@@ -291,6 +306,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.JUNGLE_DOOR_2.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.CRIMSON_DOOR_2.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.WARPED_DOOR_2.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.MANGROVE_DOOR_2.get(),BlockLoot::createDoorTable);
 
         this.add(ModBlocks.ACACIA_DOOR_3.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.BIRCH_DOOR_3.get(),BlockLoot::createDoorTable);
@@ -300,6 +316,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.JUNGLE_DOOR_3.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.CRIMSON_DOOR_3.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.WARPED_DOOR_3.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.MANGROVE_DOOR_3.get(),BlockLoot::createDoorTable);
 
         this.add(ModBlocks.ACACIA_DOOR_4.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.BIRCH_DOOR_4.get(),BlockLoot::createDoorTable);
@@ -309,6 +326,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.JUNGLE_DOOR_4.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.CRIMSON_DOOR_4.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.WARPED_DOOR_4.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.MANGROVE_DOOR_4.get(),BlockLoot::createDoorTable);
 
         this.add(ModBlocks.ACACIA_DOOR_5.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.BIRCH_DOOR_5.get(),BlockLoot::createDoorTable);
@@ -318,6 +336,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.JUNGLE_DOOR_5.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.CRIMSON_DOOR_5.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.WARPED_DOOR_5.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.MANGROVE_DOOR_5.get(),BlockLoot::createDoorTable);
 
         this.add(ModBlocks.ACACIA_DOOR_6.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.BIRCH_DOOR_6.get(),BlockLoot::createDoorTable);
@@ -327,6 +346,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.JUNGLE_DOOR_6.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.CRIMSON_DOOR_6.get(),BlockLoot::createDoorTable);
         this.add(ModBlocks.WARPED_DOOR_6.get(),BlockLoot::createDoorTable);
+        this.add(ModBlocks.MANGROVE_DOOR_6.get(),BlockLoot::createDoorTable);
 
         this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_1.get());
         this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_1.get());
@@ -336,6 +356,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_1.get());
         this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_1.get());
         this.dropSelf(ModBlocks.WARPED_TRAPDOOR_1.get());
+        this.dropSelf(ModBlocks.MANGROVE_TRAPDOOR_1.get());
 
         this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_2.get());
         this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_2.get());
@@ -345,6 +366,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_2.get());
         this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_2.get());
         this.dropSelf(ModBlocks.WARPED_TRAPDOOR_2.get());
+        this.dropSelf(ModBlocks.MANGROVE_TRAPDOOR_2.get());
 
         this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_3.get());
         this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_3.get());
@@ -354,6 +376,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_3.get());
         this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_3.get());
         this.dropSelf(ModBlocks.WARPED_TRAPDOOR_3.get());
+        this.dropSelf(ModBlocks.MANGROVE_TRAPDOOR_3.get());
 
         this.dropSelf(ModBlocks.ACACIA_TRAPDOOR_4.get());
         this.dropSelf(ModBlocks.BIRCH_TRAPDOOR_4.get());
@@ -363,6 +386,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.JUNGLE_TRAPDOOR_4.get());
         this.dropSelf(ModBlocks.CRIMSON_TRAPDOOR_4.get());
         this.dropSelf(ModBlocks.WARPED_TRAPDOOR_4.get());
+        this.dropSelf(ModBlocks.MANGROVE_TRAPDOOR_4.get());
 
 
 
@@ -881,31 +905,36 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.BROWN_LARGE_BRICK_SLAB.get());
 
 //ORES//
-        this.dropOther(ModBlocks.JASPER_ORE.get(), ModItems.JASPER_FRAGMENTS.get());
-        this.dropOther(ModBlocks.CARNELIAN_ORE.get(), ModItems.CARNELIAN_FRAGMENTS.get());
-        this.dropOther(ModBlocks.CITRINE_ORE.get(), ModItems.CITRINE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.AVENTURINE_ORE.get(), ModItems.AVENTURINE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.JADE_ORE.get(), ModItems.JADE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.CHALCOPYRITE_ORE.get(), ModItems.CHALCOPYRITE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.LABRADORITE_ORE.get(), ModItems.LABRADORITE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.MOONSTONE_ORE.get(), ModItems.MOONSTONE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.SODALITE_ORE.get(), ModItems.SODALITE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.AMETHYST_ORE.get(), ModItems.AMETHYST_FRAGMENTS.get());
-        this.dropOther(ModBlocks.ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ_FRAGMENTS.get());
-        this.dropOther(ModBlocks.MICA_ORE.get(), ModItems.MICA_FRAGMENTS.get());
 
-        this.dropOther(ModBlocks.DEEPSLATE_JASPER_ORE.get(), ModItems.JASPER_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_CARNELIAN_ORE.get(), ModItems.CARNELIAN_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_CITRINE_ORE.get(), ModItems.CITRINE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_AVENTURINE_ORE.get(), ModItems.AVENTURINE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_JADE_ORE.get(), ModItems.JADE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get(), ModItems.CHALCOPYRITE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_LABRADORITE_ORE.get(), ModItems.LABRADORITE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_MOONSTONE_ORE.get(), ModItems.MOONSTONE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_SODALITE_ORE.get(), ModItems.SODALITE_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_AMETHYST_ORE.get(), ModItems.AMETHYST_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get(), ModItems.ROSE_QUARTZ_FRAGMENTS.get());
-        this.dropOther(ModBlocks.DEEPSLATE_MICA_ORE.get(), ModItems.MICA_FRAGMENTS.get());
+
+        add(ModBlocks.JASPER_ORE.get(), createSilkTouchDispatchTable(ModBlocks.JASPER_ORE.get() ,applyExplosionCondition(ModItems.JASPER_CHUNK.get(), LootItem.lootTableItem(ModItems.JASPER_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.CARNELIAN_ORE.get(), createSilkTouchDispatchTable(ModBlocks.CARNELIAN_ORE.get() ,applyExplosionCondition(ModItems.CARNELIAN_CHUNK.get(), LootItem.lootTableItem(ModItems.CARNELIAN_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.CITRINE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.CITRINE_ORE.get() ,applyExplosionCondition(ModItems.CITRINE_CHUNK.get(), LootItem.lootTableItem(ModItems.CITRINE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.AVENTURINE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.AVENTURINE_ORE.get() ,applyExplosionCondition(ModItems.AVENTURINE_CHUNK.get(), LootItem.lootTableItem(ModItems.AVENTURINE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.JADE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.JADE_ORE.get() ,applyExplosionCondition(ModItems.JADE_CHUNK.get(), LootItem.lootTableItem(ModItems.JADE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.CHALCOPYRITE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.CHALCOPYRITE_ORE.get() ,applyExplosionCondition(ModItems.CHALCOPYRITE_CHUNK.get(), LootItem.lootTableItem(ModItems.CHALCOPYRITE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.LABRADORITE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.LABRADORITE_ORE.get() ,applyExplosionCondition(ModItems.LABRADORITE_CHUNK.get(), LootItem.lootTableItem(ModItems.LABRADORITE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.MOONSTONE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.MOONSTONE_ORE.get() ,applyExplosionCondition(ModItems.MOONSTONE_CHUNK.get(), LootItem.lootTableItem(ModItems.MOONSTONE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.SODALITE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.SODALITE_ORE.get() ,applyExplosionCondition(ModItems.SODALITE_CHUNK.get(), LootItem.lootTableItem(ModItems.SODALITE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.AMETHYST_ORE.get(), createSilkTouchDispatchTable(ModBlocks.AMETHYST_ORE.get() ,applyExplosionCondition(ModItems.AMETHYST_CHUNK.get(), LootItem.lootTableItem(ModItems.AMETHYST_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.ROSE_QUARTZ_ORE.get(), createSilkTouchDispatchTable(ModBlocks.ROSE_QUARTZ_ORE.get() ,applyExplosionCondition(ModItems.ROSE_QUARTZ_CHUNK.get(), LootItem.lootTableItem(ModItems.ROSE_QUARTZ_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.MICA_ORE.get(), createSilkTouchDispatchTable(ModBlocks.MICA_ORE.get() ,applyExplosionCondition(ModItems.MICA_CHUNK.get(), LootItem.lootTableItem(ModItems.MICA_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+
+        add(ModBlocks.DEEPSLATE_JASPER_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_JASPER_ORE.get() ,applyExplosionCondition(ModItems.JASPER_CHUNK.get(), LootItem.lootTableItem(ModItems.JASPER_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_CARNELIAN_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_CARNELIAN_ORE.get() ,applyExplosionCondition(ModItems.CARNELIAN_CHUNK.get(), LootItem.lootTableItem(ModItems.CARNELIAN_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_CITRINE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_CITRINE_ORE.get() ,applyExplosionCondition(ModItems.CITRINE_CHUNK.get(), LootItem.lootTableItem(ModItems.CITRINE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_AVENTURINE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_AVENTURINE_ORE.get() ,applyExplosionCondition(ModItems.AVENTURINE_CHUNK.get(), LootItem.lootTableItem(ModItems.AVENTURINE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_JADE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_JADE_ORE.get() ,applyExplosionCondition(ModItems.JADE_CHUNK.get(), LootItem.lootTableItem(ModItems.JADE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_CHALCOPYRITE_ORE.get() ,applyExplosionCondition(ModItems.CHALCOPYRITE_CHUNK.get(), LootItem.lootTableItem(ModItems.CHALCOPYRITE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_LABRADORITE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_LABRADORITE_ORE.get() ,applyExplosionCondition(ModItems.LABRADORITE_CHUNK.get(), LootItem.lootTableItem(ModItems.LABRADORITE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_MOONSTONE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_MOONSTONE_ORE.get() ,applyExplosionCondition(ModItems.MOONSTONE_CHUNK.get(), LootItem.lootTableItem(ModItems.MOONSTONE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_SODALITE_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_SODALITE_ORE.get() ,applyExplosionCondition(ModItems.SODALITE_CHUNK.get(), LootItem.lootTableItem(ModItems.SODALITE_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_AMETHYST_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_AMETHYST_ORE.get() ,applyExplosionCondition(ModItems.AMETHYST_CHUNK.get(), LootItem.lootTableItem(ModItems.AMETHYST_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_ROSE_QUARTZ_ORE.get() ,applyExplosionCondition(ModItems.ROSE_QUARTZ_CHUNK.get(), LootItem.lootTableItem(ModItems.ROSE_QUARTZ_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+        add(ModBlocks.DEEPSLATE_MICA_ORE.get(), createSilkTouchDispatchTable(ModBlocks.DEEPSLATE_MICA_ORE.get() ,applyExplosionCondition(ModItems.MICA_CHUNK.get(), LootItem.lootTableItem(ModItems.MICA_CHUNK.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)))));
+
+
+
 
 //GEM BLOCKS//
         this.dropSelf(ModBlocks.JASPER_BLOCK.get());
@@ -1197,6 +1226,7 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.DOGWOOD_CHEST.get());
         this.dropSelf(ModBlocks.SILVERBELL_CHEST.get());
         this.dropSelf(ModBlocks.CEDAR_CHEST.get());
+        this.dropSelf(ModBlocks.MANGROVE_CHEST.get());
 
         this.dropSelf(ModBlocks.RED_STAINED_CHEST.get());
         this.dropSelf(ModBlocks.ORANGE_STAINED_CHEST.get());
@@ -1217,6 +1247,10 @@ public class ModBlockLootTables extends BlockLoot {
 
 
 
+    }
+
+    private void registerEmpty(Block b) {
+        add(b, LootTable.lootTable());
     }
 
     @Override

@@ -1,0 +1,68 @@
+{
+
+	"variants": {
+
+		"chunk=0,facing=north": {"model":  "maidensmaterials:block/mortar_jasper_chunk"},
+		"chunk=0,facing=east": {"model":  "maidensmaterials:block/mortar_jasper_chunk", "y": 90},
+		"chunk=0,facing=south": {"model":  "maidensmaterials:block/mortar_jasper_chunk", "y": 180},
+		"chunk=0,facing=west": {"model":  "maidensmaterials:block/mortar_jasper_chunk", "y": 270},	
+
+		"chunk=1,facing=north": {"model":  "maidensmaterials:block/mortar_carnelian_chunk"},
+		"chunk=1,facing=east": {"model":  "maidensmaterials:block/mortar_carnelian_chunk", "y": 90},
+		"chunk=1,facing=south": {"model":  "maidensmaterials:block/mortar_carnelian_chunk", "y": 180},
+		"chunk=1,facing=west": {"model":  "maidensmaterials:block/mortar_carnelian_chunk", "y": 270},	
+		
+		"chunk=2,facing=north": {"model":  "maidensmaterials:block/mortar_citrine_chunk"},
+		"chunk=2,facing=east": {"model":  "maidensmaterials:block/mortar_citrine_chunk", "y": 90},
+		"chunk=2,facing=south": {"model":  "maidensmaterials:block/mortar_citrine_chunk", "y": 180},
+		"chunk=2,facing=west": {"model":  "maidensmaterials:block/mortar_citrine_chunk", "y": 270},	
+		
+		"chunk=3,facing=north": {"model":  "maidensmaterials:block/mortar_aventurine_chunk"},
+		"chunk=3,facing=east": {"model":  "maidensmaterials:block/mortar_aventurine_chunk", "y": 90},
+		"chunk=3,facing=south": {"model":  "maidensmaterials:block/mortar_aventurine_chunk", "y": 180},
+		"chunk=3,facing=west": {"model":  "maidensmaterials:block/mortar_aventurine_chunk", "y": 270},			
+		
+		"chunk=4,facing=north": {"model":  "maidensmaterials:block/mortar_jade_chunk"},
+		"chunk=4,facing=east": {"model":  "maidensmaterials:block/mortar_jade_chunk", "y": 90},
+		"chunk=4,facing=south": {"model":  "maidensmaterials:block/mortar_jade_chunk", "y": 180},
+		"chunk=4,facing=west": {"model":  "maidensmaterials:block/mortar_jade_chunk", "y": 270},
+
+		"chunk=5,facing=north": {"model":  "maidensmaterials:block/mortar_chalcopyrite_chunk"},
+		"chunk=5,facing=east": {"model":  "maidensmaterials:block/mortar_chalcopyrite_chunk", "y": 90},
+		"chunk=5,facing=south": {"model":  "maidensmaterials:block/mortar_chalcopyrite_chunk", "y": 180},
+		"chunk=5,facing=west": {"model":  "maidensmaterials:block/mortar_chalcopyrite_chunk", "y": 270},			
+		
+		"chunk=6,facing=north": {"model":  "maidensmaterials:block/mortar_labradorite_chunk"},
+		"chunk=6,facing=east": {"model":  "maidensmaterials:block/mortar_labradorite_chunk", "y": 90},
+		"chunk=6,facing=south": {"model":  "maidensmaterials:block/mortar_labradorite_chunk", "y": 180},
+		"chunk=6,facing=west": {"model":  "maidensmaterials:block/mortar_labradorite_chunk", "y": 270},	
+		
+		"chunk=7,facing=north": {"model":  "maidensmaterials:block/mortar_moonstone_chunk"},
+		"chunk=7,facing=east": {"model":  "maidensmaterials:block/mortar_moonstone_chunk", "y": 90},
+		"chunk=7,facing=south": {"model":  "maidensmaterials:block/mortar_moonstone_chunk", "y": 180},
+		"chunk=7,facing=west": {"model":  "maidensmaterials:block/mortar_moonstone_chunk", "y": 270},	
+		
+		"chunk=8,facing=north": {"model":  "maidensmaterials:block/mortar_sodalite_chunk"},
+		"chunk=8,facing=east": {"model":  "maidensmaterials:block/mortar_sodalite_chunk", "y": 90},
+		"chunk=8,facing=south": {"model":  "maidensmaterials:block/mortar_sodalite_chunk", "y": 180},
+		"chunk=8,facing=west": {"model":  "maidensmaterials:block/mortar_sodalite_chunk", "y": 270},	
+		
+		"chunk=9,facing=north": {"model":  "maidensmaterials:block/mortar_amethyst_chunk"},
+		"chunk=9,facing=east": {"model":  "maidensmaterials:block/mortar_amethyst_chunk", "y": 90},
+		"chunk=9,facing=south": {"model":  "maidensmaterials:block/mortar_amethyst_chunk", "y": 180},
+		"chunk=9,facing=west": {"model":  "maidensmaterials:block/mortar_amethyst_chunk", "y": 270},
+
+		"chunk=10,facing=north": {"model":  "maidensmaterials:block/mortar_rose_quartz_chunk"},
+		"chunk=10,facing=east": {"model":  "maidensmaterials:block/mortar_rose_quartz_chunk", "y": 90},
+		"chunk=10,facing=south": {"model":  "maidensmaterials:block/mortar_rose_quartz_chunk", "y": 180},
+		"chunk=10,facing=west": {"model":  "maidensmaterials:block/mortar_rose_quartz_chunk", "y": 270},	
+
+		"chunk=11,facing=north": {"model":  "maidensmaterials:block/mortar_mica_chunk"},
+		"chunk=11,facing=east": {"model":  "maidensmaterials:block/mortar_mica_chunk", "y": 90},
+		"chunk=11,facing=south": {"model":  "maidensmaterials:block/mortar_mica_chunk", "y": 180},
+		"chunk=11,facing=west": {"model":  "maidensmaterials:block/mortar_mica_chunk", "y": 270}		
+		
+		}
+
+
+}

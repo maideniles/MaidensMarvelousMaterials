@@ -36,6 +36,7 @@ public class ItemStackTileEntityRenderer extends BlockEntityWithoutLevelRenderer
          makeInstance(map,ModBlocks.JUNGLE_CHEST);
          makeInstance(map,ModBlocks.CRIMSON_CHEST);
          makeInstance(map,ModBlocks.WARPED_CHEST);
+         makeInstance(map, ModBlocks.MANGROVE_CHEST);
 //FOREST WOODS//
          makeInstance(map,ModBlocks.CRABAPPLE_CHEST);
          makeInstance(map,ModBlocks.POINCIANA_CHEST);

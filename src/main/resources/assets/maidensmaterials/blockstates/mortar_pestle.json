@@ -1,10 +1,10 @@
 {
-    "variants": {
-       "facing=south": { "model": "maidensmaterials:block/mortar_pestle" },
-       "facing=west": { "model": "maidensmaterials:block/mortar_pestle", "y": 90 },
-       "facing=north": { "model": "maidensmaterials:block/mortar_pestle", "y": 180 },
-       "facing=east": { "model": "maidensmaterials:block/mortar_pestle", "y": 270 },
-	   "facing=up": { "model": "maidensmaterials:block/mortar_pestle" },
-	   "facing=down": { "model": "maidensmaterials:block/mortar_pestle" }
-    }
+  "variants": {
+    "facing=north": { "model": "maidensmaterials:block/mortar_pestle"},
+	"facing=east": {"model": "maidensmaterials:block/mortar_pestle", "y": 90},
+	"facing=south": {"model": "maidensmaterials:block/mortar_pestle", "y": 180},
+	"facing=west": {"model": "maidensmaterials:block/mortar_pestle", "y": 270}
+	
+  }
+  
 }

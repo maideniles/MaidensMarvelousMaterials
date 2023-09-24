@@ -1,21 +1,19 @@
 {
-    "name": "Mortar & Pestle",
-    "icon": "maidensmaterials:mortar_and_pestle",
-    "category": "maidensmaterials:items",
+    "name": "How to Use",
+    "icon": "maidensmaterials:mortar_pestle",
+    "category": "maidensmaterials:mortar_pestle",
     "pages": [
 	
 	{
-		"type": "text",
-		
-		"text": "For all of your grinding needs, look no further than Maiden's Mortar & Pestle.$(br2) You'll need one of these babies in order to  grind the blossoms into pigments, or Gemstone Chunks into Fragments."
+		"type":"spotlight",
+		"item": "maidensmaterials:mortar_pestle",
+		"text": "To add an item to the Mortar, right-click on the block with the item. $(br2) To activate the Pestle, right-click on the block with an empty hand."
 	},
 	
 	{
 		"type":"spotlight",
-		"item": "maidensmaterials:mortar_and_pestle",
-		"text": "It will require a bit of iron to make this, but it will last you for many uses before it needs to be replaced."
-		
-		
+		"item": "maidensmaterials:mortar_pestle",
+		"text": "Once the Pestle is activated, you'll hear it grind for a few seconds.$(br2) When it's finished, the Mortar will eject your new item and it's ready for another mixture."		
 	}
        
     ]

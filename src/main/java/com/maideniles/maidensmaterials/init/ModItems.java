@@ -23,8 +23,7 @@ public class ModItems {
     public static final RegistryObject<Item> FLORAL_POTION_FOR_BOOK = ITEMS.register("floral_potion_item",
             () -> new Item(new Item.Properties().tab(null)));
     //TOOLS//
-    public static final RegistryObject<Item> MORTAR_AND_PESTLE = ITEMS.register("mortar_and_pestle",
-            () -> new Item(new Item.Properties().tab(MarvelousMaterials.MAIDENS_ITEMS_GROUP)));
+
 
 
     //IMPLEMENTS//

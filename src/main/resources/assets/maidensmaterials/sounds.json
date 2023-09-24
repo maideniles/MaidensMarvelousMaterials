@@ -22,6 +22,15 @@
 	"category": "neutral",
 	"subtitle": "maidensmaterials.fairy_fly_eat",
 	"sounds": ["maidensmaterials:fairy_fly_eat"]
-	}
+	},
+	
+	     "mortar_pestle_grind": {
+    "sounds": [
+      {
+        "name": "maidensmaterials:mortar_pestle_grind",
+        "stream": true
+      }
+    ]
+  }
 
 }

@@ -248,7 +248,8 @@
    "maidensmaterials:rose_quartz_2_slab",
    "maidensmaterials:mica_2_slab",
    
-     "maidensmaterials:jade_1_slab",
+   "maidensmaterials:jasper_1_slab",
+   "maidensmaterials:jade_1_slab",
    "maidensmaterials:carnelian_1_slab",
    "maidensmaterials:citrine_1_slab",
    "maidensmaterials:aventurine_1_slab",
@@ -425,7 +426,10 @@
    "maidensmaterials:light_gray_large_brick_slab",
    "maidensmaterials:gray_large_brick_slab",
    "maidensmaterials:black_large_brick_slab",
-   "maidensmaterials:brown_large_brick_slab"
+   "maidensmaterials:brown_large_brick_slab",
+   
+   "maidensmaterials:floral_essence_block",
+   "maidensmaterials:earthen_essence_block"
    
    
    

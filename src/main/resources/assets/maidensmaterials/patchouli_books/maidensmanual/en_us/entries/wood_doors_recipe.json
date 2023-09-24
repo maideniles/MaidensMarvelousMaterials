@@ -55,7 +55,8 @@
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:crimson_door_1"
+    "recipe": "maidensmaterials:crimson_door_1",
+		"recipe2": "maidensmaterials:mangrove_door_1"
 		 
 	},
 	
@@ -112,7 +113,8 @@
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:crimson_door_2"
+    "recipe": "maidensmaterials:crimson_door_2",
+	"recipe2":"maidensmaterials:mangrove_door_2"
 		 
 	},
 	
@@ -137,7 +139,8 @@
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:crimson_door_3"
+    "recipe": "maidensmaterials:crimson_door_3",
+	"recipe2": "maidensmaterials:mangrove_door_3"
 		 
 	},
 	
@@ -194,7 +197,8 @@
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:crimson_door_4"
+    "recipe": "maidensmaterials:crimson_door_4",
+	"recipe2": "maidensmaterials:mangrove_door_4"
 		 
 	},
 	
@@ -251,7 +255,8 @@
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:crimson_door_5"
+    "recipe": "maidensmaterials:crimson_door_5",
+	"recipe2": "maidensmaterials:mangrove_door_5"
 		 
 	},
 	
@@ -342,7 +347,8 @@
 	
 	{
 		"type": "crafting",
-    "recipe": "maidensmaterials:crimson_door_6"
+    "recipe": "maidensmaterials:crimson_door_6",
+	"recipe2": "maidensmaterials:mangrove_door_6"
 		 
 	}
 	

@@ -30,6 +30,7 @@ public class ModChestRenderer<T extends ModChestEntity> extends ChestRenderer<T>
         builder.put(ModBlocks. JUNGLE_CHEST.get(), chestMaterial("jungle_chest"));
         builder.put(ModBlocks. CRIMSON_CHEST.get(), chestMaterial("crimson_chest"));
         builder.put(ModBlocks. WARPED_CHEST.get(), chestMaterial("warped_chest"));
+        builder.put(ModBlocks. MANGROVE_CHEST.get(), chestMaterial("mangrove_chest"));
 //FOREST WOODS//
         builder.put(ModBlocks. CRABAPPLE_CHEST.get(), chestMaterial("crabapple_chest"));
         builder.put(ModBlocks. POINCIANA_CHEST.get(), chestMaterial("poinciana_chest"));

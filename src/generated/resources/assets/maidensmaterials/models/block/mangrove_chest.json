@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:builtin/entity",
+  "render_type": "cutout_mipped", "textures": {
+    "particle": "maidensmaterials:block/mangrove_planks"
+  }
+}

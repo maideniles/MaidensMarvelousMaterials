@@ -29,7 +29,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         // basicItem(ModItems.MARVELOUS_MANUAL.get());
 
         //TOOLS//
-        tool(String.valueOf(ModItems.MORTAR_AND_PESTLE.get()));
+
 
         tool(String.valueOf(ModItems.PRUNING_SHEARS.get()));
 

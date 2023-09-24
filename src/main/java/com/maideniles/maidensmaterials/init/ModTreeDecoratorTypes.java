@@ -15,8 +15,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModTreeDecoratorTypes  {
 
-  //  public static final DeferredRegister<TreeDecoratorType<?>> TREE_DECORATORS
- //           = DeferredRegister.create(ForgeRegistries.TREE_DECORATOR_TYPES, MarvelousMaterials.MOD_ID);
+    public static final DeferredRegister<TreeDecoratorType<?>> TREE_DECORATORS
+            = DeferredRegister.create(ForgeRegistries.TREE_DECORATOR_TYPES, MarvelousMaterials.MOD_ID);
 
 
     public static final RegistryObject<TreeDecoratorType<CrabappleLeafVineDecorator>> CRABAPPLE_LEAF_VINE =
@@ -119,5 +119,7 @@ public class ModTreeDecoratorTypes  {
 
 
 
-    public static void register(){}
+    public static void register(IEventBus eventBus) {
+        TREE_DECORATORS.register(eventBus);
+    }
 }

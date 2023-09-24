@@ -1,0 +1,69 @@
+{
+
+	"variants": {
+
+		"blossom=0,facing=north": {"model":  "maidensmaterials:block/mortar_crabapple_blossom"},
+		"blossom=0,facing=east": {"model":  "maidensmaterials:block/mortar_crabapple_blossom", "y": 90},
+		"blossom=0,facing=south": {"model":  "maidensmaterials:block/mortar_crabapple_blossom", "y": 180},
+		"blossom=0,facing=west": {"model":  "maidensmaterials:block/mortar_crabapple_blossom", "y": 270},		
+		
+		"blossom=1,facing=north": {"model":  "maidensmaterials:block/mortar_poinciana_blossom"},
+		"blossom=1,facing=east": {"model":  "maidensmaterials:block/mortar_poinciana_blossom", "y": 90},
+		"blossom=1,facing=south": {"model":  "maidensmaterials:block/mortar_poinciana_blossom", "y": 180},
+		"blossom=1,facing=west": {"model":  "maidensmaterials:block/mortar_poinciana_blossom", "y": 270},		
+		
+		"blossom=2,facing=north": {"model":  "maidensmaterials:block/mortar_laburnum_blossom"},
+		"blossom=2,facing=east": {"model":  "maidensmaterials:block/mortar_laburnum_blossom", "y": 90},
+		"blossom=2,facing=south": {"model":  "maidensmaterials:block/mortar_laburnum_blossom", "y": 180},
+		"blossom=2,facing=west": {"model":  "maidensmaterials:block/mortar_laburnum_blossom", "y": 270},		
+		
+		"blossom=3,facing=north": {"model":  "maidensmaterials:block/mortar_jade_blossom"},
+		"blossom=3,facing=east": {"model":  "maidensmaterials:block/mortar_jade_blossom", "y": 90},
+		"blossom=3,facing=south": {"model":  "maidensmaterials:block/mortar_jade_blossom", "y": 180},
+		"blossom=3,facing=west": {"model":  "maidensmaterials:block/mortar_jade_blossom", "y": 270},		
+		
+		"blossom=4,facing=north": {"model":  "maidensmaterials:block/mortar_paulownia_blossom"},
+		"blossom=4,facing=east": {"model":  "maidensmaterials:block/mortar_paulownia_blossom", "y": 90},
+		"blossom=4,facing=south": {"model":  "maidensmaterials:block/mortar_paulownia_blossom", "y": 180},
+		"blossom=4,facing=west": {"model":  "maidensmaterials:block/mortar_paulownia_blossom", "y": 270},		
+		
+		"blossom=5,facing=north": {"model":  "maidensmaterials:block/mortar_wisteria_blossom"},
+		"blossom=5,facing=east": {"model":  "maidensmaterials:block/mortar_wisteria_blossom", "y": 90},
+		"blossom=5,facing=south": {"model":  "maidensmaterials:block/mortar_wisteria_blossom", "y": 180},
+		"blossom=5,facing=west": {"model":  "maidensmaterials:block/mortar_wisteria_blossom", "y": 270},		
+		
+		"blossom=6,facing=north": {"model":  "maidensmaterials:block/mortar_jacaranda_blossom"},
+		"blossom=6,facing=east": {"model":  "maidensmaterials:block/mortar_jacaranda_blossom", "y": 90},
+		"blossom=6,facing=south": {"model":  "maidensmaterials:block/mortar_jacaranda_blossom", "y": 180},
+		"blossom=6,facing=west": {"model":  "maidensmaterials:block/mortar_jacaranda_blossom", "y": 270},		
+		
+		"blossom=7,facing=north": {"model":  "maidensmaterials:block/mortar_dogwood_blossom"},
+		"blossom=7,facing=east": {"model":  "maidensmaterials:block/mortar_dogwood_blossom", "y": 90},
+		"blossom=7,facing=south": {"model":  "maidensmaterials:block/mortar_dogwood_blossom", "y": 180},
+		"blossom=7,facing=west": {"model":  "maidensmaterials:block/mortar_dogwood_blossom", "y": 270},		
+		
+		"blossom=8,facing=north": {"model":  "maidensmaterials:block/mortar_silverbell_blossom"},
+		"blossom=8,facing=east": {"model":  "maidensmaterials:block/mortar_silverbell_blossom", "y": 90},
+		"blossom=8,facing=south": {"model":  "maidensmaterials:block/mortar_silverbell_blossom", "y": 180},
+		"blossom=8,facing=west": {"model":  "maidensmaterials:block/mortar_silverbell_blossom", "y": 270},		
+		
+		"blossom=9,facing=north": {"model":  "maidensmaterials:block/mortar_mica_powder"},
+		"blossom=9,facing=east": {"model":  "maidensmaterials:block/mortar_mica_powder", "y": 90},
+		"blossom=9,facing=south": {"model":  "maidensmaterials:block/mortar_mica_powder", "y": 180},
+		"blossom=9,facing=west": {"model":  "maidensmaterials:block/mortar_mica_powder", "y": 270},		
+		
+		"blossom=10,facing=north": {"model":  "maidensmaterials:block/mortar_mica_combo1"},
+		"blossom=10,facing=east": {"model":  "maidensmaterials:block/mortar_mica_combo1", "y": 90},
+		"blossom=10,facing=south": {"model":  "maidensmaterials:block/mortar_mica_combo1", "y": 180},
+		"blossom=10,facing=west": {"model":  "maidensmaterials:block/mortar_mica_combo1", "y": 270},		
+		
+		"blossom=11,facing=north": {"model":  "maidensmaterials:block/mortar_mica_combo2"},
+		"blossom=11,facing=east": {"model":  "maidensmaterials:block/mortar_mica_combo2", "y": 90},
+		"blossom=11,facing=south": {"model":  "maidensmaterials:block/mortar_mica_combo2", "y": 180},
+		"blossom=11,facing=west": {"model":  "maidensmaterials:block/mortar_mica_combo2", "y": 270}
+		
+	
+		}
+
+
+}

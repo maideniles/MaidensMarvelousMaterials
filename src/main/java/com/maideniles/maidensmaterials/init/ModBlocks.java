@@ -5,6 +5,10 @@ import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.blocks.*;
 import com.maideniles.maidensmaterials.blocks.chest.ModChestBlock;
 import com.maideniles.maidensmaterials.blocks.mortar_pestle.MortarPestleBlock;
+import com.maideniles.maidensmaterials.blocks.mortar_pestle.blossom.MortarPestleBlossomBlock;
+import com.maideniles.maidensmaterials.blocks.mortar_pestle.chunk.MortarPestleChunkBlock;
+import com.maideniles.maidensmaterials.blocks.mortar_pestle.other.MortarPestleOtherBlock;
+import com.maideniles.maidensmaterials.blocks.mortar_pestle.pigment.MortarPestlePigmentBlock;
 import com.maideniles.maidensmaterials.blocks.tree.FairyGlowCupBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidenSaplingBlock;
 import com.maideniles.maidensmaterials.blocks.tree.MaidensLeafBlock;
@@ -12,6 +16,7 @@ import com.maideniles.maidensmaterials.blocks.tree.vine.CrabappleVineBlock;
 import com.maideniles.maidensmaterials.blocks.tree.vine.PoincianaVineBlock;
 import com.maideniles.maidensmaterials.blocks.vase.VaseBlock;
 import com.maideniles.maidensmaterials.world.gen.feature.tree.grower.*;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -35,8 +40,23 @@ public class ModBlocks {
 
    // public static final WoodType CRABAPPLE = WoodType.create(MarvelousMaterials.prefix("crabapple").toString());
 
+//MORTAR PESTLE VARIANTS
+
     public static final RegistryObject<Block> MORTAR_PESTLE = registerBlock("mortar_pestle",
-            () -> new MortarPestleBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f).sound(SoundType.AMETHYST_CLUSTER)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () -> new MortarPestleBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f).sound(SoundType.COPPER)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MORTAR_PESTLE_PIGMENTS = registerBlock("mortar_pestle_pigments",
+            () -> new MortarPestlePigmentBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f).sound(SoundType.COPPER)),null);
+
+    public static final RegistryObject<Block> MORTAR_PESTLE_CHUNKS = registerBlock("mortar_pestle_chunks",
+            () -> new MortarPestleChunkBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f).sound(SoundType.COPPER)),null);
+
+    public static final RegistryObject<Block> MORTAR_PESTLE_BLOSSOMS = registerBlock("mortar_pestle_blossoms",
+            () -> new MortarPestleBlossomBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f).sound(SoundType.COPPER)),null);
+
+    public static final RegistryObject<Block> MORTAR_PESTLE_OTHER = registerBlock("mortar_pestle_other",
+            () -> new MortarPestleOtherBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0f).sound(SoundType.COPPER)),null);
+
 
     public static final RegistryObject<Block> CRABAPPLE_LOG = registerBlock("crabapple_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.0F).randomTicks().sound(SoundType.WOOD)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -408,150 +428,150 @@ public class ModBlocks {
     //CLAY STAIRS//
 
     public static final RegistryObject<Block> RED_CLAY_STAIRS = registerBlock("red_clay_stairs",
-            ()-> new StairBlock(ModBlocks.RED_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.RED_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ORANGE_CLAY_STAIRS = registerBlock("orange_clay_stairs",
-            ()-> new StairBlock(ModBlocks.ORANGE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.ORANGE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> YELLOW_CLAY_STAIRS = registerBlock("yellow_clay_stairs",
-            ()-> new StairBlock(ModBlocks.YELLOW_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.YELLOW_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIME_CLAY_STAIRS = registerBlock("lime_clay_stairs",
-            ()-> new StairBlock(ModBlocks.LIME_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIME_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GREEN_CLAY_STAIRS = registerBlock("green_clay_stairs",
-            ()-> new StairBlock(ModBlocks.GREEN_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GREEN_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CYAN_CLAY_STAIRS = registerBlock("cyan_clay_stairs",
-            ()-> new StairBlock(ModBlocks.CYAN_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.CYAN_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_BLUE_CLAY_STAIRS = registerBlock("light_blue_clay_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLUE_CLAY_STAIRS = registerBlock("blue_clay_stairs",
-            ()-> new StairBlock(ModBlocks.BLUE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLUE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PURPLE_CLAY_STAIRS = registerBlock("purple_clay_stairs",
-            ()-> new StairBlock(ModBlocks.PURPLE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PURPLE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MAGENTA_CLAY_STAIRS = registerBlock("magenta_clay_stairs",
-            ()-> new StairBlock(ModBlocks.MAGENTA_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.MAGENTA_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PINK_CLAY_STAIRS = registerBlock("pink_clay_stairs",
-            ()-> new StairBlock(ModBlocks.PINK_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PINK_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WHITE_CLAY_STAIRS = registerBlock("white_clay_stairs",
-            ()-> new StairBlock(ModBlocks.WHITE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.WHITE_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_GRAY_CLAY_STAIRS = registerBlock("light_gray_clay_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GRAY_CLAY_STAIRS = registerBlock("gray_clay_stairs",
-            ()-> new StairBlock(ModBlocks.GRAY_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GRAY_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLACK_CLAY_STAIRS = registerBlock("black_clay_stairs",
-            ()-> new StairBlock(ModBlocks.BLACK_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLACK_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BROWN_CLAY_STAIRS = registerBlock("brown_clay_stairs",
-            ()-> new StairBlock(ModBlocks.BROWN_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BROWN_CLAY_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
     public static final RegistryObject<Block> RED_BRICK_STAIRS = registerBlock("red_brick_stairs",
-            ()-> new StairBlock(ModBlocks.RED_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.RED_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ORANGE_BRICK_STAIRS = registerBlock("orange_brick_stairs",
-            ()-> new StairBlock(ModBlocks.ORANGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.ORANGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> YELLOW_BRICK_STAIRS = registerBlock("yellow_brick_stairs",
-            ()-> new StairBlock(ModBlocks.YELLOW_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.YELLOW_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIME_BRICK_STAIRS = registerBlock("lime_brick_stairs",
-            ()-> new StairBlock(ModBlocks.LIME_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIME_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GREEN_BRICK_STAIRS = registerBlock("green_brick_stairs",
-            ()-> new StairBlock(ModBlocks.GREEN_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GREEN_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CYAN_BRICK_STAIRS = registerBlock("cyan_brick_stairs",
-            ()-> new StairBlock(ModBlocks.CYAN_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.CYAN_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_BLUE_BRICK_STAIRS = registerBlock("light_blue_brick_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLUE_BRICK_STAIRS = registerBlock("blue_brick_stairs",
-            ()-> new StairBlock(ModBlocks.BLUE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLUE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PURPLE_BRICK_STAIRS = registerBlock("purple_brick_stairs",
-            ()-> new StairBlock(ModBlocks.PURPLE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PURPLE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MAGENTA_BRICK_STAIRS = registerBlock("magenta_brick_stairs",
-            ()-> new StairBlock(ModBlocks.MAGENTA_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.MAGENTA_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PINK_BRICK_STAIRS = registerBlock("pink_brick_stairs",
-            ()-> new StairBlock(ModBlocks.PINK_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PINK_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WHITE_BRICK_STAIRS = registerBlock("white_brick_stairs",
-            ()-> new StairBlock(ModBlocks.WHITE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.WHITE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_GRAY_BRICK_STAIRS = registerBlock("light_gray_brick_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GRAY_BRICK_STAIRS = registerBlock("gray_brick_stairs",
-            ()-> new StairBlock(ModBlocks.GRAY_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GRAY_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLACK_BRICK_STAIRS = registerBlock("black_brick_stairs",
-            ()-> new StairBlock(ModBlocks.BLACK_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLACK_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BROWN_BRICK_STAIRS = registerBlock("brown_brick_stairs",
-            ()-> new StairBlock(ModBlocks.BROWN_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BROWN_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
     public static final RegistryObject<Block> RED_LARGE_BRICK_STAIRS = registerBlock("red_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.RED_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.RED_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ORANGE_LARGE_BRICK_STAIRS = registerBlock("orange_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.ORANGE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.ORANGE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> YELLOW_LARGE_BRICK_STAIRS = registerBlock("yellow_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.YELLOW_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.YELLOW_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIME_LARGE_BRICK_STAIRS = registerBlock("lime_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.LIME_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIME_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GREEN_LARGE_BRICK_STAIRS = registerBlock("green_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.GREEN_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GREEN_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CYAN_LARGE_BRICK_STAIRS = registerBlock("cyan_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.CYAN_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.CYAN_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_BLUE_LARGE_BRICK_STAIRS = registerBlock("light_blue_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_BLUE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLUE_LARGE_BRICK_STAIRS = registerBlock("blue_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.BLUE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLUE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PURPLE_LARGE_BRICK_STAIRS = registerBlock("purple_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.PURPLE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PURPLE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MAGENTA_LARGE_BRICK_STAIRS = registerBlock("magenta_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.MAGENTA_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.MAGENTA_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> PINK_LARGE_BRICK_STAIRS = registerBlock("pink_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.PINK_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.PINK_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WHITE_LARGE_BRICK_STAIRS = registerBlock("white_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.WHITE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.WHITE_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LIGHT_GRAY_LARGE_BRICK_STAIRS = registerBlock("light_gray_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.LIGHT_GRAY_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> GRAY_LARGE_BRICK_STAIRS = registerBlock("gray_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.GRAY_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.GRAY_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BLACK_LARGE_BRICK_STAIRS = registerBlock("black_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.BLACK_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BLACK_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> BROWN_LARGE_BRICK_STAIRS = registerBlock("brown_large_brick_stairs",
-            ()-> new StairBlock(ModBlocks.BROWN_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new StairBlock(ModBlocks.BROWN_LARGE_BRICK_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 //CLAY SLABS//
 
@@ -707,77 +727,101 @@ public class ModBlocks {
 //GEMSTONE ORES//
 
     public static final RegistryObject<Block> JASPER_ORE = registerBlock("jasper_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CARNELIAN_ORE = registerBlock("carnelian_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> AVENTURINE_ORE = registerBlock("aventurine_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JADE_ORE = registerBlock("jade_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> CHALCOPYRITE_ORE = registerBlock("chalcopyrite_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABRADORITE_ORE = registerBlock("labradorite_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_ORE = registerBlock("moonstone_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SODALITE_ORE = registerBlock("sodalite_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> AMETHYST_ORE = registerBlock("amethyst_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ROSE_QUARTZ_ORE = registerBlock("rose_quartz_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MICA_ORE = registerBlock("mica_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 //DEEPSLATE ORES//
 public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("deepslate_jasper_ore",
-        ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+        ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_CARNELIAN_ORE = registerBlock("deepslate_carnelian_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_AVENTURINE_ORE = registerBlock("deepslate_aventurine_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_JADE_ORE = registerBlock("deepslate_jade_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_CHALCOPYRITE_ORE = registerBlock("deepslate_chalcopyrite_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_LABRADORITE_ORE = registerBlock("deepslate_labradorite_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_MOONSTONE_ORE = registerBlock("deepslate_moonstone_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_SODALITE_ORE = registerBlock("deepslate_sodalite_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_AMETHYST_ORE = registerBlock("deepslate_amethyst_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_ROSE_QUARTZ_ORE = registerBlock("deepslate_rose_quartz_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> DEEPSLATE_MICA_ORE = registerBlock("deepslate_mica_ore",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            ()-> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.CLAY).strength(3.0f, 1.0f).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
 //GEMSTONE BLOCKS//
@@ -1043,442 +1087,462 @@ public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("
 
     //GEM STAIRS//
 
-    public static final RegistryObject<Block> AMETHYST_1_STAIRS = registerBlock("amethyst_1_stairs",
-            () ->new StairBlock(ModBlocks.AMETHYST_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> AVENTURINE_1_STAIRS = registerBlock("aventurine_1_stairs" ,
-            () ->new StairBlock(ModBlocks.AVENTURINE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CARNELIAN_1_STAIRS = registerBlock("carnelian_1_stairs",
-            () ->new StairBlock(ModBlocks.CARNELIAN_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CHALCOPYRITE_1_STAIRS = registerBlock("chalcopyrite_1_stairs",
-            () ->new StairBlock(ModBlocks.CHALCOPYRITE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CITRINE_1_STAIRS = registerBlock("citrine_1_stairs",
-            () ->new StairBlock(ModBlocks.CITRINE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_1_STAIRS = registerBlock("jade_1_stairs",
-            () ->new StairBlock(ModBlocks.JADE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_1_STAIRS = registerBlock("jasper_1_stairs",
-            () ->new StairBlock(ModBlocks.JASPER_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.JASPER_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CARNELIAN_1_STAIRS = registerBlock("carnelian_1_stairs",
+            () ->new StairBlock(ModBlocks.CARNELIAN_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_1_STAIRS = registerBlock("citrine_1_stairs",
+            () ->new StairBlock(ModBlocks.CITRINE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_1_STAIRS = registerBlock("aventurine_1_stairs" ,
+            () ->new StairBlock(ModBlocks.AVENTURINE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_1_STAIRS = registerBlock("jade_1_stairs",
+            () ->new StairBlock(ModBlocks.JADE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_1_STAIRS = registerBlock("chalcopyrite_1_stairs",
+            () ->new StairBlock(ModBlocks.CHALCOPYRITE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABRADORITE_1_STAIRS = registerBlock("labradorite_1_stairs",
-            () ->new StairBlock(ModBlocks.LABRADORITE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.LABRADORITE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> MICA_1_STAIRS = registerBlock("mica_1_stairs",
-            () ->new StairBlock(ModBlocks.MICA_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+   public static final RegistryObject<Block> MOONSTONE_1_STAIRS = registerBlock( "moonstone_1_stairs",
+            () ->new StairBlock(ModBlocks.MOONSTONE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> MOONSTONE_1_STAIRS = registerBlock( "moonstone_1_stairs",
-            () ->new StairBlock(ModBlocks.MOONSTONE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+   public static final RegistryObject<Block> SODALITE_1_STAIRS = registerBlock("sodalite_1_stairs",
+            () ->new StairBlock(ModBlocks.SODALITE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+   public static final RegistryObject<Block> AMETHYST_1_STAIRS = registerBlock("amethyst_1_stairs",
+            () ->new StairBlock(ModBlocks.AMETHYST_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> ROSE_QUARTZ_1_STAIRS = registerBlock("rose_quartz_1_stairs",
-            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> SODALITE_1_STAIRS = registerBlock("sodalite_1_stairs",
-            () ->new StairBlock(ModBlocks.SODALITE_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_1_STAIRS = registerBlock("mica_1_stairs",
+            () ->new StairBlock(ModBlocks.MICA_1.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_2_STAIRS = registerBlock("amethyst_2_stairs",
-            () ->new StairBlock(ModBlocks.AMETHYST_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_2_STAIRS = registerBlock("aventurine_2_stairs" ,
-            () ->new StairBlock(ModBlocks.AVENTURINE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CARNELIAN_2_STAIRS = registerBlock("carnelian_2_stairs",
-            () ->new StairBlock(ModBlocks.CARNELIAN_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CHALCOPYRITE_2_STAIRS = registerBlock("chalcopyrite_2_stairs",
-            () ->new StairBlock(ModBlocks.CHALCOPYRITE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CITRINE_2_STAIRS = registerBlock("citrine_2_stairs",
-            () ->new StairBlock(ModBlocks.CITRINE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_2_STAIRS = registerBlock("jade_2_stairs",
-            () ->new StairBlock(ModBlocks.JADE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_2_STAIRS = registerBlock("jasper_2_stairs",
-            () ->new StairBlock(ModBlocks.JASPER_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.JASPER_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CARNELIAN_2_STAIRS = registerBlock("carnelian_2_stairs",
+            () ->new StairBlock(ModBlocks.CARNELIAN_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_2_STAIRS = registerBlock("citrine_2_stairs",
+            () ->new StairBlock(ModBlocks.CITRINE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_2_STAIRS = registerBlock("aventurine_2_stairs" ,
+            () ->new StairBlock(ModBlocks.AVENTURINE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_2_STAIRS = registerBlock("jade_2_stairs",
+            () ->new StairBlock(ModBlocks.JADE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_2_STAIRS = registerBlock("chalcopyrite_2_stairs",
+            () ->new StairBlock(ModBlocks.CHALCOPYRITE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABRADORITE_2_STAIRS = registerBlock("labradorite_2_stairs",
-            () ->new StairBlock(ModBlocks.LABRADORITE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_2_STAIRS = registerBlock("mica_2_stairs",
-            () ->new StairBlock(ModBlocks.MICA_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.LABRADORITE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_2_STAIRS = registerBlock( "moonstone_2_stairs",
-            () ->new StairBlock(ModBlocks.MOONSTONE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> ROSE_QUARTZ_2_STAIRS = registerBlock("rose_quartz_2_stairs",
-            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.MOONSTONE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SODALITE_2_STAIRS = registerBlock("sodalite_2_stairs",
-            () ->new StairBlock(ModBlocks.SODALITE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.SODALITE_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_3_STAIRS = registerBlock("amethyst_3_stairs",
-            () ->new StairBlock(ModBlocks.AMETHYST_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> AMETHYST_2_STAIRS = registerBlock("amethyst_2_stairs",
+            () ->new StairBlock(ModBlocks.AMETHYST_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_3_STAIRS = registerBlock("aventurine_3_stairs" ,
-            () ->new StairBlock(ModBlocks.AVENTURINE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_2_STAIRS = registerBlock("rose_quartz_2_stairs",
+            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_3_STAIRS = registerBlock("carnelian_3_stairs",
-            () ->new StairBlock(ModBlocks.CARNELIAN_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_2_STAIRS = registerBlock("mica_2_stairs",
+            () ->new StairBlock(ModBlocks.MICA_2.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_3_STAIRS = registerBlock("chalcopyrite_3_stairs",
-            () ->new StairBlock(ModBlocks.CHALCOPYRITE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CITRINE_3_STAIRS = registerBlock("citrine_3_stairs",
-            () ->new StairBlock(ModBlocks.CITRINE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_3_STAIRS = registerBlock("jade_3_stairs",
-            () ->new StairBlock(ModBlocks.JADE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_3_STAIRS = registerBlock("jasper_3_stairs",
-            () ->new StairBlock(ModBlocks.JASPER_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.JASPER_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CARNELIAN_3_STAIRS = registerBlock("carnelian_3_stairs",
+            () ->new StairBlock(ModBlocks.CARNELIAN_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_3_STAIRS = registerBlock("citrine_3_stairs",
+            () ->new StairBlock(ModBlocks.CITRINE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_3_STAIRS = registerBlock("aventurine_3_stairs" ,
+            () ->new StairBlock(ModBlocks.AVENTURINE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_3_STAIRS = registerBlock("jade_3_stairs",
+            () ->new StairBlock(ModBlocks.JADE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_3_STAIRS = registerBlock("chalcopyrite_3_stairs",
+            () ->new StairBlock(ModBlocks.CHALCOPYRITE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABRADORITE_3_STAIRS = registerBlock("labradorite_3_stairs",
-            () ->new StairBlock(ModBlocks.LABRADORITE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_3_STAIRS = registerBlock("mica_3_stairs",
-            () ->new StairBlock(ModBlocks.MICA_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.LABRADORITE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_3_STAIRS = registerBlock( "moonstone_3_stairs",
-            () ->new StairBlock(ModBlocks.MOONSTONE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> ROSE_QUARTZ_3_STAIRS = registerBlock("rose_quartz_3_stairs",
-            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.MOONSTONE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SODALITE_3_STAIRS = registerBlock("sodalite_3_stairs",
-            () ->new StairBlock(ModBlocks.SODALITE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.SODALITE_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_4_STAIRS = registerBlock("amethyst_4_stairs",
-            () ->new StairBlock(ModBlocks.AMETHYST_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> AMETHYST_3_STAIRS = registerBlock("amethyst_3_stairs",
+            () ->new StairBlock(ModBlocks.AMETHYST_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_4_STAIRS = registerBlock("aventurine_4_stairs" ,
-            () ->new StairBlock(ModBlocks.AVENTURINE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_3_STAIRS = registerBlock("rose_quartz_3_stairs",
+            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_4_STAIRS = registerBlock("carnelian_4_stairs",
-            () ->new StairBlock(ModBlocks.CARNELIAN_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_3_STAIRS = registerBlock("mica_3_stairs",
+            () ->new StairBlock(ModBlocks.MICA_3.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_4_STAIRS = registerBlock("chalcopyrite_4_stairs",
-            () ->new StairBlock(ModBlocks.CHALCOPYRITE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CITRINE_4_STAIRS = registerBlock("citrine_4_stairs",
-            () ->new StairBlock(ModBlocks.CITRINE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_4_STAIRS = registerBlock("jade_4_stairs",
-            () ->new StairBlock(ModBlocks.JADE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_4_STAIRS = registerBlock("jasper_4_stairs",
-            () ->new StairBlock(ModBlocks.JASPER_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.JASPER_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CARNELIAN_4_STAIRS = registerBlock("carnelian_4_stairs",
+            () ->new StairBlock(ModBlocks.CARNELIAN_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_4_STAIRS = registerBlock("citrine_4_stairs",
+            () ->new StairBlock(ModBlocks.CITRINE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_4_STAIRS = registerBlock("aventurine_4_stairs" ,
+            () ->new StairBlock(ModBlocks.AVENTURINE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_4_STAIRS = registerBlock("jade_4_stairs",
+            () ->new StairBlock(ModBlocks.JADE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_4_STAIRS = registerBlock("chalcopyrite_4_stairs",
+            () ->new StairBlock(ModBlocks.CHALCOPYRITE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABRADORITE_4_STAIRS = registerBlock("labradorite_4_stairs",
-            () ->new StairBlock(ModBlocks.LABRADORITE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_4_STAIRS = registerBlock("mica_4_stairs",
-            () ->new StairBlock(ModBlocks.MICA_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.LABRADORITE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_4_STAIRS = registerBlock( "moonstone_4_stairs",
-            () ->new StairBlock(ModBlocks.MOONSTONE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> ROSE_QUARTZ_4_STAIRS = registerBlock("rose_quartz_4_stairs",
-            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.MOONSTONE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SODALITE_4_STAIRS = registerBlock("sodalite_4_stairs",
-            () ->new StairBlock(ModBlocks.SODALITE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.SODALITE_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_5_STAIRS = registerBlock("amethyst_5_stairs",
-            () ->new StairBlock(ModBlocks.AMETHYST_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> AMETHYST_4_STAIRS = registerBlock("amethyst_4_stairs",
+            () ->new StairBlock(ModBlocks.AMETHYST_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_5_STAIRS = registerBlock("aventurine_5_stairs" ,
-            () ->new StairBlock(ModBlocks.AVENTURINE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_4_STAIRS = registerBlock("rose_quartz_4_stairs",
+            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_5_STAIRS = registerBlock("carnelian_5_stairs",
-            () ->new StairBlock(ModBlocks.CARNELIAN_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_4_STAIRS = registerBlock("mica_4_stairs",
+            () ->new StairBlock(ModBlocks.MICA_4.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_5_STAIRS = registerBlock("chalcopyrite_5_stairs",
-            () ->new StairBlock(ModBlocks.CHALCOPYRITE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CITRINE_5_STAIRS = registerBlock("citrine_5_stairs",
-            () ->new StairBlock(ModBlocks.CITRINE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_5_STAIRS = registerBlock("jade_5_stairs",
-            () ->new StairBlock(ModBlocks.JADE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_5_STAIRS = registerBlock("jasper_5_stairs",
-            () ->new StairBlock(ModBlocks.JASPER_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.JASPER_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CARNELIAN_5_STAIRS = registerBlock("carnelian_5_stairs",
+            () ->new StairBlock(ModBlocks.CARNELIAN_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_5_STAIRS = registerBlock("citrine_5_stairs",
+            () ->new StairBlock(ModBlocks.CITRINE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_5_STAIRS = registerBlock("aventurine_5_stairs" ,
+            () ->new StairBlock(ModBlocks.AVENTURINE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_5_STAIRS = registerBlock("jade_5_stairs",
+            () ->new StairBlock(ModBlocks.JADE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_5_STAIRS = registerBlock("chalcopyrite_5_stairs",
+            () ->new StairBlock(ModBlocks.CHALCOPYRITE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABRADORITE_5_STAIRS = registerBlock("labradorite_5_stairs",
-            () ->new StairBlock(ModBlocks.LABRADORITE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_5_STAIRS = registerBlock("mica_5_stairs",
-            () ->new StairBlock(ModBlocks.MICA_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.LABRADORITE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_5_STAIRS = registerBlock( "moonstone_5_stairs",
-            () ->new StairBlock(ModBlocks.MOONSTONE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> ROSE_QUARTZ_5_STAIRS = registerBlock("rose_quartz_5_stairs",
-            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.MOONSTONE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SODALITE_5_STAIRS = registerBlock("sodalite_5_stairs",
-            () ->new StairBlock(ModBlocks.SODALITE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.SODALITE_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_6_STAIRS = registerBlock("amethyst_6_stairs",
-            () ->new StairBlock(ModBlocks.AMETHYST_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> AMETHYST_5_STAIRS = registerBlock("amethyst_5_stairs",
+            () ->new StairBlock(ModBlocks.AMETHYST_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_6_STAIRS = registerBlock("aventurine_6_stairs" ,
-            () ->new StairBlock(ModBlocks.AVENTURINE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_5_STAIRS = registerBlock("rose_quartz_5_stairs",
+            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_6_STAIRS = registerBlock("carnelian_6_stairs",
-            () ->new StairBlock(ModBlocks.CARNELIAN_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_5_STAIRS = registerBlock("mica_5_stairs",
+            () ->new StairBlock(ModBlocks.MICA_5.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_6_STAIRS = registerBlock("chalcopyrite_6_stairs",
-            () ->new StairBlock(ModBlocks.CHALCOPYRITE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CITRINE_6_STAIRS = registerBlock("citrine_6_stairs",
-            () ->new StairBlock(ModBlocks.CITRINE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_6_STAIRS = registerBlock("jade_6_stairs",
-            () ->new StairBlock(ModBlocks.JADE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_6_STAIRS = registerBlock("jasper_6_stairs",
-            () ->new StairBlock(ModBlocks.JASPER_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.JASPER_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CARNELIAN_6_STAIRS = registerBlock("carnelian_6_stairs",
+            () ->new StairBlock(ModBlocks.CARNELIAN_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_6_STAIRS = registerBlock("citrine_6_stairs",
+            () ->new StairBlock(ModBlocks.CITRINE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_6_STAIRS = registerBlock("aventurine_6_stairs" ,
+            () ->new StairBlock(ModBlocks.AVENTURINE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_6_STAIRS = registerBlock("jade_6_stairs",
+            () ->new StairBlock(ModBlocks.JADE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+     public static final RegistryObject<Block> CHALCOPYRITE_6_STAIRS = registerBlock("chalcopyrite_6_stairs",
+            () ->new StairBlock(ModBlocks.CHALCOPYRITE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> LABRADORITE_6_STAIRS = registerBlock("labradorite_6_stairs",
-            () ->new StairBlock(ModBlocks.LABRADORITE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_6_STAIRS = registerBlock("mica_6_stairs",
-            () ->new StairBlock(ModBlocks.MICA_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.LABRADORITE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_6_STAIRS = registerBlock( "moonstone_6_stairs",
-            () ->new StairBlock(ModBlocks.MOONSTONE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> ROSE_QUARTZ_6_STAIRS = registerBlock("rose_quartz_6_stairs",
-            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.MOONSTONE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> SODALITE_6_STAIRS = registerBlock("sodalite_6_stairs",
-            () ->new StairBlock(ModBlocks.SODALITE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+            () ->new StairBlock(ModBlocks.SODALITE_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AMETHYST_6_STAIRS = registerBlock("amethyst_6_stairs",
+            () ->new StairBlock(ModBlocks.AMETHYST_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> ROSE_QUARTZ_6_STAIRS = registerBlock("rose_quartz_6_stairs",
+            () ->new StairBlock(ModBlocks.ROSE_QUARTZ_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MICA_6_STAIRS = registerBlock("mica_6_stairs",
+            () ->new StairBlock(ModBlocks.MICA_6.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.0F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
-    public static final RegistryObject<Block> AMETHYST_1_SLAB = registerBlock("amethyst_1_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_1_SLAB = registerBlock("aventurine_1_slab" ,
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CARNELIAN_1_SLAB = registerBlock("carnelian_1_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CHALCOPYRITE_1_SLAB = registerBlock("chalcopyrite_1_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CITRINE_1_SLAB = registerBlock("citrine_1_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_1_SLAB = registerBlock("jade_1_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_1_SLAB = registerBlock("jasper_1_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.JASPER_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> CARNELIAN_1_SLAB = registerBlock("carnelian_1_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_1_SLAB = registerBlock("citrine_1_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_1_SLAB = registerBlock("aventurine_1_slab" ,
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_1_SLAB = registerBlock("jade_1_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_1_SLAB = registerBlock("chalcopyrite_1_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> LABRADORITE_1_SLAB = registerBlock("labradorite_1_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.LABRADORITE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_1_SLAB = registerBlock("mica_1_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_1_SLAB = registerBlock( "moonstone_1_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.MOONSTONE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ROSE_QUARTZ_1_SLAB = registerBlock("rose_quartz_1_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
     public static final RegistryObject<Block> SODALITE_1_SLAB = registerBlock("sodalite_1_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.SODALITE_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+     public static final RegistryObject<Block> AMETHYST_1_SLAB = registerBlock("amethyst_1_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_2_SLAB = registerBlock("amethyst_2_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_1_SLAB = registerBlock("rose_quartz_1_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_2_SLAB = registerBlock("aventurine_2_slab" ,
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_1_SLAB = registerBlock("mica_1_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_1.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_2_SLAB = registerBlock("carnelian_2_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_2_SLAB = registerBlock("chalcopyrite_2_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CITRINE_2_SLAB = registerBlock("citrine_2_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_2_SLAB = registerBlock("jade_2_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_2_SLAB = registerBlock("jasper_2_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.JASPER_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> CARNELIAN_2_SLAB = registerBlock("carnelian_2_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_2_SLAB = registerBlock("citrine_2_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_2_SLAB = registerBlock("aventurine_2_slab" ,
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_2_SLAB = registerBlock("jade_2_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_2_SLAB = registerBlock("chalcopyrite_2_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> LABRADORITE_2_SLAB = registerBlock("labradorite_2_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.LABRADORITE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_2_SLAB = registerBlock("mica_2_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_2_SLAB = registerBlock( "moonstone_2_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.MOONSTONE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ROSE_QUARTZ_2_SLAB = registerBlock("rose_quartz_2_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
     public static final RegistryObject<Block> SODALITE_2_SLAB = registerBlock("sodalite_2_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.SODALITE_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_3_SLAB = registerBlock("amethyst_3_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> AMETHYST_2_SLAB = registerBlock("amethyst_2_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_3_SLAB = registerBlock("aventurine_3_slab" ,
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_2_SLAB = registerBlock("rose_quartz_2_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_3_SLAB = registerBlock("carnelian_3_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_2_SLAB = registerBlock("mica_2_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_2.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_3_SLAB = registerBlock("chalcopyrite_3_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CITRINE_3_SLAB = registerBlock("citrine_3_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_3_SLAB = registerBlock("jade_3_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_3_SLAB = registerBlock("jasper_3_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.JASPER_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> CARNELIAN_3_SLAB = registerBlock("carnelian_3_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_3_SLAB = registerBlock("citrine_3_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_3_SLAB = registerBlock("aventurine_3_slab" ,
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_3_SLAB = registerBlock("jade_3_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_3_SLAB = registerBlock("chalcopyrite_3_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> LABRADORITE_3_SLAB = registerBlock("labradorite_3_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.LABRADORITE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_3_SLAB = registerBlock("mica_3_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_3_SLAB = registerBlock( "moonstone_3_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.MOONSTONE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ROSE_QUARTZ_3_SLAB = registerBlock("rose_quartz_3_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
     public static final RegistryObject<Block> SODALITE_3_SLAB = registerBlock("sodalite_3_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.SODALITE_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> AMETHYST_3_SLAB = registerBlock("amethyst_3_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_4_SLAB = registerBlock("amethyst_4_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_3_SLAB = registerBlock("rose_quartz_3_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_4_SLAB = registerBlock("aventurine_4_slab" ,
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_3_SLAB = registerBlock("mica_3_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_3.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_4_SLAB = registerBlock("carnelian_4_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_4_SLAB = registerBlock("chalcopyrite_4_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CITRINE_4_SLAB = registerBlock("citrine_4_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_4_SLAB = registerBlock("jade_4_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_4_SLAB = registerBlock("jasper_4_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.JASPER_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> CARNELIAN_4_SLAB = registerBlock("carnelian_4_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_4_SLAB = registerBlock("citrine_4_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_4_SLAB = registerBlock("aventurine_4_slab" ,
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_4_SLAB = registerBlock("chalcopyrite_4_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_4_SLAB = registerBlock("jade_4_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> LABRADORITE_4_SLAB = registerBlock("labradorite_4_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.LABRADORITE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_4_SLAB = registerBlock("mica_4_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_4_SLAB = registerBlock( "moonstone_4_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.MOONSTONE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ROSE_QUARTZ_4_SLAB = registerBlock("rose_quartz_4_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
     public static final RegistryObject<Block> SODALITE_4_SLAB = registerBlock("sodalite_4_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.SODALITE_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> AMETHYST_4_SLAB = registerBlock("amethyst_4_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_5_SLAB = registerBlock("amethyst_5_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_4_SLAB = registerBlock("rose_quartz_4_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_5_SLAB = registerBlock("aventurine_5_slab" ,
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_4_SLAB = registerBlock("mica_4_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_4.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_5_SLAB = registerBlock("carnelian_5_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_5_SLAB = registerBlock("chalcopyrite_5_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CITRINE_5_SLAB = registerBlock("citrine_5_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_5_SLAB = registerBlock("jade_5_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_5_SLAB = registerBlock("jasper_5_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.JASPER_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> CARNELIAN_5_SLAB = registerBlock("carnelian_5_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_5_SLAB = registerBlock("citrine_5_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_5_SLAB = registerBlock("aventurine_5_slab" ,
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_5_SLAB = registerBlock("jade_5_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_5_SLAB = registerBlock("chalcopyrite_5_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> LABRADORITE_5_SLAB = registerBlock("labradorite_5_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.LABRADORITE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_5_SLAB = registerBlock("mica_5_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_5_SLAB = registerBlock( "moonstone_5_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.MOONSTONE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ROSE_QUARTZ_5_SLAB = registerBlock("rose_quartz_5_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
     public static final RegistryObject<Block> SODALITE_5_SLAB = registerBlock("sodalite_5_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.SODALITE_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> AMETHYST_5_SLAB = registerBlock("amethyst_5_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AMETHYST_6_SLAB = registerBlock("amethyst_6_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> ROSE_QUARTZ_5_SLAB = registerBlock("rose_quartz_5_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> AVENTURINE_6_SLAB = registerBlock("aventurine_6_slab" ,
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_5_SLAB = registerBlock("mica_5_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_5.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CARNELIAN_6_SLAB = registerBlock("carnelian_6_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> CHALCOPYRITE_6_SLAB = registerBlock("chalcopyrite_6_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> CITRINE_6_SLAB = registerBlock("citrine_6_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> JADE_6_SLAB = registerBlock("jade_6_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> JASPER_6_SLAB = registerBlock("jasper_6_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.JASPER_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> CARNELIAN_6_SLAB = registerBlock("carnelian_6_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CARNELIAN_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CITRINE_6_SLAB = registerBlock("citrine_6_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CITRINE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AVENTURINE_6_SLAB = registerBlock("aventurine_6_slab" ,
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AVENTURINE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> JADE_6_SLAB = registerBlock("jade_6_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.JADE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> CHALCOPYRITE_6_SLAB = registerBlock("chalcopyrite_6_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.CHALCOPYRITE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> LABRADORITE_6_SLAB = registerBlock("labradorite_6_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.LABRADORITE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
-
-    public static final RegistryObject<Block> MICA_6_SLAB = registerBlock("mica_6_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> MOONSTONE_6_SLAB = registerBlock( "moonstone_6_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.MOONSTONE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> SODALITE_6_SLAB = registerBlock("sodalite_6_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.SODALITE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> AMETHYST_6_SLAB = registerBlock("amethyst_6_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.AMETHYST_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> ROSE_QUARTZ_6_SLAB = registerBlock("rose_quartz_6_slab",
             () ->new SlabBlock(Block.Properties.copy(ModBlocks.ROSE_QUARTZ_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> SODALITE_6_SLAB = registerBlock("sodalite_6_slab",
-            () ->new SlabBlock(Block.Properties.copy(ModBlocks.SODALITE_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<Block> MICA_6_SLAB = registerBlock("mica_6_slab",
+            () ->new SlabBlock(Block.Properties.copy(ModBlocks.MICA_6.get())),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
 
@@ -2518,6 +2582,9 @@ public static final RegistryObject<Block> DEEPSLATE_JASPER_ORE = registerBlock("
     public static final RegistryObject<Block> WARPED_BOOKSHELF = registerBlock("warped_bookshelf",
             ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> MANGROVE_BOOKSHELF = registerBlock("mangrove_bookshelf",
+            ()-> new MaidensBookshelfBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1.5f)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
 
     //WOOD STAIRS//
 public static final RegistryObject<Block> CRABAPPLE_STAIRS = registerBlock("crabapple_stairs",
@@ -2758,8 +2825,12 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
     public static final RegistryObject<Block> WARPED_DOOR_1 = registerBlock("warped_door_1",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ACACIA_DOOR_2 = registerBlock("acacia_door_2",
+    public static final RegistryObject<Block> MANGROVE_DOOR_1 = registerBlock("mangrove_door_1",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
+
+
 
     //DOOR 2//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_2 = registerBlock("crabapple_door_2",
@@ -2792,6 +2863,9 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
     public static final RegistryObject<Block> CEDAR_DOOR_2 = registerBlock("cedar_door_2",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> ACACIA_DOOR_2 = registerBlock("acacia_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> BIRCH_DOOR_2 = registerBlock("birch_door_2",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
@@ -2811,6 +2885,9 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WARPED_DOOR_2 = registerBlock("warped_door_2",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_DOOR_2 = registerBlock("mangrove_door_2",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     //DOOR 3//
@@ -2868,6 +2945,9 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
     public static final RegistryObject<Block> WARPED_DOOR_3 = registerBlock("warped_door_3",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> MANGROVE_DOOR_3 = registerBlock("mangrove_door_3",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
 
     //DOOR 4//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_4 = registerBlock("crabapple_door_4",
@@ -2923,6 +3003,11 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
 
     public static final RegistryObject<Block> WARPED_DOOR_4 = registerBlock("warped_door_4",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_DOOR_4 = registerBlock("mangrove_door_4",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
     //DOOR 5//
     public static final RegistryObject<Block> CRABAPPLE_DOOR_5 = registerBlock("crabapple_door_5",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -2976,6 +3061,9 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WARPED_DOOR_5 = registerBlock("warped_door_5",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_DOOR_5 = registerBlock("mangrove_door_5",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
@@ -3035,6 +3123,10 @@ public static final RegistryObject<Block> CRABAPPLE_DOOR_1 = registerBlock("crab
     public static final RegistryObject<Block> WARPED_DOOR_6 = registerBlock("warped_door_6",
             ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> MANGROVE_DOOR_6 = registerBlock("mangrove_door_6",
+            ()-> new DoorBlock(Block.Properties.copy(Blocks.OAK_DOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
     //TRAPDOORS//
 
 //TRAPDOOR 1//
@@ -3092,7 +3184,7 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
     public static final RegistryObject<Block> WARPED_TRAPDOOR_1 = registerBlock("warped_trapdoor_1",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
-    public static final RegistryObject<Block> ACACIA_TRAPDOOR_2 = registerBlock("acacia_trapdoor_2",
+    public static final RegistryObject<Block> MANGROVE_TRAPDOOR_1 = registerBlock("mangrove_trapdoor_1",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
@@ -3127,6 +3219,9 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
     public static final RegistryObject<Block> CEDAR_TRAPDOOR_2 = registerBlock("cedar_trapdoor_2",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> ACACIA_TRAPDOOR_2 = registerBlock("acacia_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     public static final RegistryObject<Block> BIRCH_TRAPDOOR_2 = registerBlock("birch_trapdoor_2",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
@@ -3146,6 +3241,9 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WARPED_TRAPDOOR_2 = registerBlock("warped_trapdoor_2",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_TRAPDOOR_2 = registerBlock("mangrove_trapdoor_2",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     //TRAPDOOR 3//
@@ -3203,6 +3301,9 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
     public static final RegistryObject<Block> WARPED_TRAPDOOR_3 = registerBlock("warped_trapdoor_3",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
+    public static final RegistryObject<Block> MANGROVE_TRAPDOOR_3 = registerBlock("mangrove_trapdoor_3",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
     //TRAPDOOR 4//
     public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_4 = registerBlock("crabapple_trapdoor_4",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
@@ -3257,6 +3358,9 @@ public static final RegistryObject<Block> CRABAPPLE_TRAPDOOR_1 = registerBlock("
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
     public static final RegistryObject<Block> WARPED_TRAPDOOR_4 = registerBlock("warped_trapdoor_4",
+            ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+    public static final RegistryObject<Block> MANGROVE_TRAPDOOR_4 = registerBlock("mangrove_trapdoor_4",
             ()-> new TrapDoorBlock(Block.Properties.copy(Blocks.OAK_TRAPDOOR).strength(0.5F, 2.0F)), MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
 
 
@@ -3329,6 +3433,10 @@ public static final RegistryObject<Block> VASE_ORANGE = registerBlock("vase_oran
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
     public static final RegistryObject<ModChestBlock> WARPED_CHEST = registerBlock("warped_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+    public static final RegistryObject<ModChestBlock> MANGROVE_CHEST = registerBlock("mangrove_chest",
+            () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);
+
+
     //FOREST WOODS//
     public static final RegistryObject<ModChestBlock> CRABAPPLE_CHEST = registerBlock("crabapple_chest",
             ()-> new ModChestBlock(Block.Properties.copy(ModBlocks.CRABAPPLE_PLANKS.get()).strength(0.5F)),MarvelousMaterials.MAIDENS_BLOCKS_GROUP);

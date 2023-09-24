@@ -1,0 +1,36 @@
+{
+
+	"variants": {
+
+
+		"item=0,facing=north": {"model":  "maidensmaterials:block/mortar_mica_frag"},
+		"item=0,facing=east": {"model":  "maidensmaterials:block/mortar_mica_frag", "y": 90},
+		"item=0,facing=south": {"model":  "maidensmaterials:block/mortar_mica_frag", "y": 180},
+		"item=0,facing=west": {"model":  "maidensmaterials:block/mortar_mica_frag", "y": 270},		
+		
+		"item=1,facing=north": {"model":  "maidensmaterials:block/mortar_charcoal"},
+		"item=1,facing=east": {"model":  "maidensmaterials:block/mortar_charcoal", "y": 90},
+		"item=1,facing=south": {"model":  "maidensmaterials:block/mortar_charcoal", "y": 180},
+		"item=1,facing=west": {"model":  "maidensmaterials:block/mortar_charcoal", "y": 270},		
+		
+
+		"item=2,facing=north": {"model":  "maidensmaterials:block/mortar_nugget"},
+		"item=2,facing=east": {"model":  "maidensmaterials:block/mortar_nugget", "y": 90},
+		"item=2,facing=south": {"model":  "maidensmaterials:block/mortar_nugget", "y": 180},
+		"item=2,facing=west": {"model":  "maidensmaterials:block/mortar_nugget", "y": 270},		
+		
+		"item=3,facing=north": {"model":  "maidensmaterials:block/mortar_coal"},
+		"item=3,facing=east": {"model":  "maidensmaterials:block/mortar_coal", "y": 90},
+		"item=3,facing=south": {"model":  "maidensmaterials:block/mortar_coal", "y": 180},
+		"item=3,facing=west": {"model":  "maidensmaterials:block/mortar_coal", "y": 270},		
+		
+		"item=4,facing=north": {"model":  "maidensmaterials:block/mortar_dark_iron"},
+		"item=4,facing=east": {"model":  "maidensmaterials:block/mortar_dark_iron", "y": 90},
+		"item=4,facing=south": {"model":  "maidensmaterials:block/mortar_dark_iron", "y": 180},
+		"item=4,facing=west": {"model":  "maidensmaterials:block/mortar_dark_iron", "y": 270}
+		
+	
+		}
+
+
+}

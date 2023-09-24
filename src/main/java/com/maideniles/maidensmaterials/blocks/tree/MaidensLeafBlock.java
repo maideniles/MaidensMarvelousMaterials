@@ -8,6 +8,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -41,6 +42,8 @@ public class MaidensLeafBlock extends LeavesBlock {
         return SHAPE;
     }
 
+
+
     public InteractionResult use(BlockState state, Level p_57276_, BlockPos p_57277_, Player player, InteractionHand p_57279_, BlockHitResult p_57280_) {
 
         Block leaves = state.getBlock();
@@ -49,7 +52,11 @@ public class MaidensLeafBlock extends LeavesBlock {
 
         if (shears.is(ModItems.PRUNING_SHEARS.get()) || player.hasEffect(ModEffects.FLORAL_FORTUNE_EFFECT.get())) {
 
-            shears.setDamageValue(1);
+
+            shears.hurtAndBreak(1, player, (p_41303_) -> {
+                p_41303_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
+            });
+
 
             if(leaves == ModBlocks.CRABAPPLE_LEAVES.get()) {
                 popResource(p_57276_, p_57277_, new ItemStack(ModItems.CRABAPPLE_BLOSSOMS.get(), 1));

@@ -15,6 +15,8 @@ public class MaidensBookshelfBlock extends Block {
     }
 
 
+
+
     @Override
     public float getEnchantPowerBonus(BlockState state, LevelReader world, BlockPos pos) {
         return 1;

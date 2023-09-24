@@ -1,0 +1,132 @@
+{
+
+	"variants": {
+
+		
+		"pigment=0,facing=north": {"model":  "maidensmaterials:block/mortar_red_pigment"},
+		"pigment=0,facing=east": {"model":  "maidensmaterials:block/mortar_red_pigment", "y": 90},
+		"pigment=0,facing=south": {"model":  "maidensmaterials:block/mortar_red_pigment", "y": 180},
+		"pigment=0,facing=west": {"model":  "maidensmaterials:block/mortar_red_pigment", "y": 270},		
+		
+		"pigment=1,facing=north": {"model":  "maidensmaterials:block/mortar_yellow_pigment"},
+		"pigment=1,facing=east": {"model":  "maidensmaterials:block/mortar_yellow_pigment", "y": 90},
+		"pigment=1,facing=south": {"model":  "maidensmaterials:block/mortar_yellow_pigment", "y": 180},
+		"pigment=1,facing=west": {"model":  "maidensmaterials:block/mortar_yellow_pigment", "y": 270},		
+		
+		
+		"pigment=2,facing=north": {"model":  "maidensmaterials:block/mortar_green_pigment"},
+		"pigment=2,facing=east": {"model":  "maidensmaterials:block/mortar_green_pigment", "y": 90},
+		"pigment=2,facing=south": {"model":  "maidensmaterials:block/mortar_green_pigment", "y": 180},
+		"pigment=2,facing=west": {"model":  "maidensmaterials:block/mortar_green_pigment", "y": 270},		
+		
+	
+		"pigment=3,facing=north": {"model":  "maidensmaterials:block/mortar_blue_pigment"},
+		"pigment=3,facing=east": {"model":  "maidensmaterials:block/mortar_blue_pigment", "y": 90},
+		"pigment=3,facing=south": {"model":  "maidensmaterials:block/mortar_blue_pigment", "y": 180},
+		"pigment=3,facing=west": {"model":  "maidensmaterials:block/mortar_blue_pigment", "y": 270},
+		
+		"pigment=4,facing=north": {"model":  "maidensmaterials:block/mortar_purple_pigment"},
+		"pigment=4,facing=east": {"model":  "maidensmaterials:block/mortar_purple_pigment", "y": 90},
+		"pigment=4,facing=south": {"model":  "maidensmaterials:block/mortar_purple_pigment", "y": 180},
+		"pigment=4,facing=west": {"model":  "maidensmaterials:block/mortar_purple_pigment", "y": 270},		
+
+		
+		"pigment=5,facing=north": {"model":  "maidensmaterials:block/mortar_pink_pigment"},
+		"pigment=5,facing=east": {"model":  "maidensmaterials:block/mortar_pink_pigment", "y": 90},
+		"pigment=5,facing=south": {"model":  "maidensmaterials:block/mortar_pink_pigment", "y": 180},
+		"pigment=5,facing=west": {"model":  "maidensmaterials:block/mortar_pink_pigment", "y": 270},	
+		
+	
+		"pigment=6,facing=north": {"model":  "maidensmaterials:block/mortar_white_pigment"},
+		"pigment=6,facing=east": {"model":  "maidensmaterials:block/mortar_white_pigment", "y": 90},
+		"pigment=6,facing=south": {"model":  "maidensmaterials:block/mortar_white_pigment", "y": 180},
+		"pigment=6,facing=west": {"model":  "maidensmaterials:block/mortar_white_pigment", "y": 270},		
+		
+		
+		"pigment=7,facing=north": {"model":  "maidensmaterials:block/mortar_black_pigment"},
+		"pigment=7,facing=east": {"model":  "maidensmaterials:block/mortar_black_pigment", "y": 90},
+		"pigment=7,facing=south": {"model":  "maidensmaterials:block/mortar_black_pigment", "y": 180},
+		"pigment=7,facing=west": {"model":  "maidensmaterials:block/mortar_black_pigment", "y": 270},		
+			
+
+		"pigment=8,facing=north": {"model":  "maidensmaterials:block/mortar_lime_combo1"},
+		"pigment=8,facing=east": {"model":  "maidensmaterials:block/mortar_lime_combo1", "y": 90},
+		"pigment=8,facing=south": {"model":  "maidensmaterials:block/mortar_lime_combo1", "y": 180},
+		"pigment=8,facing=west": {"model":  "maidensmaterials:block/mortar_lime_combo1", "y": 270},		
+
+
+		"pigment=9,facing=north": {"model":  "maidensmaterials:block/mortar_lime_combo2"},
+		"pigment=9,facing=east": {"model":  "maidensmaterials:block/mortar_lime_combo2", "y": 90},
+		"pigment=9,facing=south": {"model":  "maidensmaterials:block/mortar_lime_combo2", "y": 180},
+		"pigment=9,facing=west": {"model":  "maidensmaterials:block/mortar_lime_combo2", "y": 270},	
+
+	
+		"pigment=10,facing=north": {"model":  "maidensmaterials:block/mortar_light_blue_combo1"},
+		"pigment=10,facing=east": {"model":  "maidensmaterials:block/mortar_light_blue_combo1", "y": 90},
+		"pigment=10,facing=south": {"model":  "maidensmaterials:block/mortar_light_blue_combo1", "y": 180},
+		"pigment=10,facing=west": {"model":  "maidensmaterials:block/mortar_light_blue_combo1", "y": 270},	
+		
+		"pigment=11,facing=north": {"model":  "maidensmaterials:block/mortar_light_blue_combo2"},
+		"pigment=11,facing=east": {"model":  "maidensmaterials:block/mortar_light_blue_combo2", "y": 90},
+		"pigment=11,facing=south": {"model":  "maidensmaterials:block/mortar_light_blue_combo2", "y": 180},
+		"pigment=11,facing=west": {"model":  "maidensmaterials:block/mortar_light_blue_combo2", "y": 270},	
+
+
+
+		"pigment=12,facing=north": {"model":  "maidensmaterials:block/mortar_magenta_combo1"},
+		"pigment=12,facing=east": {"model":  "maidensmaterials:block/mortar_magenta_combo1", "y": 90},
+		"pigment=12,facing=south": {"model":  "maidensmaterials:block/mortar_magenta_combo1", "y": 180},
+		"pigment=12,facing=west": {"model":  "maidensmaterials:block/mortar_magenta_combo1", "y": 270},	
+		
+		"pigment=13,facing=north": {"model":  "maidensmaterials:block/mortar_magenta_combo2"},
+		"pigment=13,facing=east": {"model":  "maidensmaterials:block/mortar_magenta_combo2", "y": 90},
+		"pigment=13,facing=south": {"model":  "maidensmaterials:block/mortar_magenta_combo2", "y": 180},
+		"pigment=13,facing=west": {"model":  "maidensmaterials:block/mortar_magenta_combo2", "y": 270},	
+
+		
+		"pigment=14,facing=north": {"model":  "maidensmaterials:block/mortar_light_gray_combo1"},
+		"pigment=14,facing=east": {"model":  "maidensmaterials:block/mortar_light_gray_combo1", "y": 90},
+		"pigment=14,facing=south": {"model":  "maidensmaterials:block/mortar_light_gray_combo1", "y": 180},
+		"pigment=14,facing=west": {"model":  "maidensmaterials:block/mortar_light_gray_combo1", "y": 270},	
+		
+		"pigment=15,facing=north": {"model":  "maidensmaterials:block/mortar_light_gray_combo2"},
+		"pigment=15,facing=east": {"model":  "maidensmaterials:block/mortar_light_gray_combo2", "y": 90},
+		"pigment=15,facing=south": {"model":  "maidensmaterials:block/mortar_light_gray_combo2", "y": 180},
+		"pigment=15,facing=west": {"model":  "maidensmaterials:block/mortar_light_gray_combo2", "y": 270},	
+		
+		
+		"pigment=16,facing=north": {"model":  "maidensmaterials:block/mortar_gray_combo1"},
+		"pigment=16,facing=east": {"model":  "maidensmaterials:block/mortar_gray_combo1", "y": 90},
+		"pigment=16,facing=south": {"model":  "maidensmaterials:block/mortar_gray_combo1", "y": 180},
+		"pigment=16,facing=west": {"model":  "maidensmaterials:block/mortar_gray_combo1", "y": 270},	
+		
+		"pigment=17,facing=north": {"model":  "maidensmaterials:block/mortar_gray_combo2"},
+		"pigment=17,facing=east": {"model":  "maidensmaterials:block/mortar_gray_combo2", "y": 90},
+		"pigment=17,facing=south": {"model":  "maidensmaterials:block/mortar_gray_combo2", "y": 180},
+		"pigment=17,facing=west": {"model":  "maidensmaterials:block/mortar_gray_combo2", "y": 270},	
+	
+	
+		"pigment=18,facing=north": {"model":  "maidensmaterials:block/mortar_brown_combo1"},
+		"pigment=18,facing=east": {"model":  "maidensmaterials:block/mortar_brown_combo1", "y": 90},
+		"pigment=18,facing=south": {"model":  "maidensmaterials:block/mortar_brown_combo1", "y": 180},
+		"pigment=18,facing=west": {"model":  "maidensmaterials:block/mortar_brown_combo1", "y": 270},	
+		
+		"pigment=19,facing=north": {"model":  "maidensmaterials:block/mortar_brown_combo2"},
+		"pigment=19,facing=east": {"model":  "maidensmaterials:block/mortar_brown_combo2", "y": 90},
+		"pigment=19,facing=south": {"model":  "maidensmaterials:block/mortar_brown_combo2", "y": 180},
+		"pigment=19,facing=west": {"model":  "maidensmaterials:block/mortar_brown_combo2", "y": 270},	
+	
+
+		"pigment=20,facing=north": {"model":  "maidensmaterials:block/mortar_gray_pigment"},
+		"pigment=20,facing=east": {"model":  "maidensmaterials:block/mortar_gray_pigment", "y": 90},
+		"pigment=20,facing=south": {"model":  "maidensmaterials:block/mortar_gray_pigment", "y": 180},
+		"pigment=20,facing=west": {"model":  "maidensmaterials:block/mortar_gray_pigment", "y": 270}
+		
+	
+		
+	
+
+		}
+
+
+}

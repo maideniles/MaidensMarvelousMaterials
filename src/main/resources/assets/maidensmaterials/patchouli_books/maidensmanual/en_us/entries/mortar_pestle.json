@@ -1,13 +1,13 @@
 {
     "name": "Mortar & Pestle Recipe",
-    "icon": "maidensmaterials:textures/item/mortar_and_pestle.png",
+    "icon": "maidensmaterials:mortar_pestle",
     "category": "maidensmaterials:recipes",
     "pages": [
 	
 	
         {
     "type": "crafting",
-    "recipe": "maidensmaterials:m_n_p"
+    "recipe": "maidensmaterials:mortar_pestle"
 	
 	
 			

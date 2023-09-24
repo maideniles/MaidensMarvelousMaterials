@@ -11,6 +11,7 @@ import com.maideniles.maidensmaterials.world.gen.biome.ModBiomes;
 import com.maideniles.maidensmaterials.world.gen.biome.ModRegion;
 import com.maideniles.maidensmaterials.world.gen.biome.OrnamentalForestSurfaceData;
 import com.mojang.serialization.Codec;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,7 +19,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.common.world.BiomeModifier;
@@ -41,6 +46,8 @@ import java.util.Locale;
 @Mod(MarvelousMaterials.MOD_ID)
 public class MarvelousMaterials {
     public static final String MOD_ID = "maidensmaterials";
+
+
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
 
@@ -48,16 +55,18 @@ public class MarvelousMaterials {
     public static final CreativeModeTab MAIDENS_BLOCKS_GROUP = new CreativeModeTab("maidens_blocks_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(Blocks.AMETHYST_BLOCK);
+            return new ItemStack(ModBlocks.MAGENTA_BRICK_BLOCK.get());
         }
     };
 
     public static final CreativeModeTab MAIDENS_ITEMS_GROUP = new CreativeModeTab("maidens_items_tab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(Items.AMETHYST_SHARD);
+            return new ItemStack(ModItems.DOGWOOD_BLOSSOMS.get());
         }
     };
+
+
 
     public MarvelousMaterials() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MarvelousClientConfig.SPEC, "maidensmaterials-client.toml");
@@ -70,11 +79,11 @@ public class MarvelousMaterials {
         ModBlocks.register(eventBus);
         Registration.register(eventBus);
 
-        ModMenuTypes.register(eventBus);
-
-        ModRecipes.register(eventBus);
 
 
+
+
+        ModSoundEvents.register(eventBus);
         ModPotions.register(eventBus);
         ModEffects.register(eventBus);
 
@@ -83,8 +92,9 @@ public class MarvelousMaterials {
 
         ModFeatures.register(eventBus);
         ModPlacements.register(eventBus);
+      //  ModTreePlacements.register(eventBus);
 
-        ModTreeDecoratorTypes.register();
+        ModTreeDecoratorTypes.register(eventBus);
         ModEnchantments.register();
 
         ModBlockEntities.BLOCK_ENTITIES.register(eventBus);
@@ -191,6 +201,49 @@ public class MarvelousMaterials {
             AxeItem.STRIPPABLES.put(ModBlocks.DOGWOOD_WOOD.get(), ModBlocks.STRIPPED_DOGWOOD_WOOD.get());
             AxeItem.STRIPPABLES.put(ModBlocks.SILVERBELL_WOOD.get(), ModBlocks.STRIPPED_SILVERBELL_WOOD.get());
             AxeItem.STRIPPABLES.put(ModBlocks.CEDAR_WOOD.get(), ModBlocks.STRIPPED_CEDAR_WOOD.get());
+
+            ComposterBlock.COMPOSTABLES.put(ModItems.CRABAPPLE_BLOSSOMS.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.POINCIANA_BLOSSOMS.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.LABURNUM_BLOSSOMS.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.JADE_BLOSSOMS.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.PAULOWNIA_BLOSSOMS.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.WISTERIA_BLOSSOMS.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.JACARANDA_BLOSSOMS.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.DOGWOOD_BLOSSOMS.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.SILVERBELL_BLOSSOMS.get(),0.65F);
+
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.CRABAPPLE_LEAVES.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.POINCIANA_LEAVES.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.LABURNUM_LEAVES.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.JADE_LEAVES.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PAULOWNIA_LEAVES.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WISTERIA_LEAVES.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.JACARANDA_LEAVES.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.DOGWOOD_LEAVES.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.SILVERBELL_LEAVES.get(),0.3F);
+
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.CRABAPPLE_SAPLING.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.POINCIANA_SAPLING.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.LABURNUM_SAPLING.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.JADE_SAPLING.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PAULOWNIA_SAPLING.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WISTERIA_SAPLING.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.JACARANDA_SAPLING.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.DOGWOOD_SAPLING.get(),0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.SILVERBELL_SAPLING.get(),0.3F);
+
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.CRABAPPLE_VINE.get(), 0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.POINCIANA_VINE.get(),0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.LABURNUM_VINE.get(),0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.JADE_VINE.get(),0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.PAULOWNIA_VINE.get(),0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.WISTERIA_VINE.get(),0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.JACARANDA_VINE.get(),0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.DOGWOOD_VINE.get(),0.5F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.SILVERBELL_VINE.get(),0.5F);
+
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.FAIRY_GLOW_CUP.get(),0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModBlocks.ORNAMENTAL_MUSHROOM.get(),0.65F);
 
         });
         // some preinit code

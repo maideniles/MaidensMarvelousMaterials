@@ -13,14 +13,14 @@
 	{
 		"type": "spotlight",
 		"item": "maidensmaterials:dark_iron_mix",
-		"text": "Let's start with some dark iron mix.$(br2) This requires some charcoal and iron nuggets."
+		"text": "Let's start with some dark iron mix.$(br2) This requires throwing a piece of charcoal and an iron nugget into the Mortar & Pestle."
 		
 	},
 	
 	{
 		"type": "spotlight",
 		"item": "maidensmaterials:dark_iron_ingot",
-		"text": "Once you have mixed it all up, just pop it in the furnace. Now you now have Dark Iron Ingots!"
+		"text": "Once you have mixed it all up, just pop the mixture into a furnace. Now you now have Dark Iron Ingots!"
 		
 	},
 	

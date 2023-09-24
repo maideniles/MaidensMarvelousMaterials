@@ -1,7 +1,16 @@
 {
-  "replace": false,
   "values": [
-    "maidensmaterials:crabapple_sapling",
+    "minecraft:oak_sapling",
+    "minecraft:spruce_sapling",
+    "minecraft:birch_sapling",
+    "minecraft:jungle_sapling",
+    "minecraft:acacia_sapling",
+    "minecraft:dark_oak_sapling",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:mangrove_propagule",
+	
+	"maidensmaterials:crabapple_sapling",
 	"maidensmaterials:poinciana_sapling",
 	"maidensmaterials:laburnum_sapling",
 	"maidensmaterials:jade_sapling",
@@ -11,11 +20,5 @@
 	"maidensmaterials:dogwood_sapling",
 	"maidensmaterials:silverbell_sapling",
 	"maidensmaterials:cedar_sapling"
-
-	
-	
-	
-	
-	
   ]
 }

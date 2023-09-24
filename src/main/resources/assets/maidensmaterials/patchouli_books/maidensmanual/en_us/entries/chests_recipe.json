@@ -104,6 +104,12 @@
 		"type": "crafting",
      "recipe": "maidensmaterials:crimson_chest",
 		 "recipe2": "maidensmaterials:warped_chest"
+	},
+	
+	{
+		"type": "crafting",
+     "recipe": "maidensmaterials:mangrove_chest"
+		 
 	}
 	
 	

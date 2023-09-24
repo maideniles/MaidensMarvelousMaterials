@@ -2,7 +2,6 @@ package com.maideniles.maidensmaterials.init;
 
 import com.maideniles.maidensmaterials.MarvelousMaterials;
 import com.maideniles.maidensmaterials.blockentity.ModChestEntity;
-import com.maideniles.maidensmaterials.blockentity.MortarPestleBlockEntity;
 import com.maideniles.maidensmaterials.client.renderer.blockentity.ModChestRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -21,7 +20,7 @@ public class ModBlockEntities {
             BlockEntityType.Builder.of(ModChestEntity::new,
                     ModBlocks.ACACIA_CHEST.get(),ModBlocks.BIRCH_CHEST.get(),ModBlocks.OAK_CHEST.get(),
                     ModBlocks.SPRUCE_CHEST.get(),ModBlocks.DARK_OAK_CHEST.get(), ModBlocks.JUNGLE_CHEST.get(),
-                    ModBlocks.CRIMSON_CHEST.get(),ModBlocks.WARPED_CHEST.get(),
+                    ModBlocks.CRIMSON_CHEST.get(),ModBlocks.WARPED_CHEST.get(),ModBlocks.MANGROVE_CHEST.get(),
 
                     ModBlocks.CRABAPPLE_CHEST.get(),ModBlocks.POINCIANA_CHEST.get(),ModBlocks.LABURNUM_CHEST.get(),
                     ModBlocks.JADE_CHEST.get(),ModBlocks.PAULOWNIA_CHEST.get(),ModBlocks.WISTERIA_CHEST.get(),
@@ -37,10 +36,7 @@ public class ModBlockEntities {
 
 
 
-    public static final RegistryObject<BlockEntityType<MortarPestleBlockEntity>> MORTAR_PESTLE_BLOCK_ENTITY =
-            BLOCK_ENTITIES.register("mortar_pestle_block_entity", () ->
-                    BlockEntityType.Builder.of(MortarPestleBlockEntity::new,
-                            ModBlocks.MORTAR_PESTLE.get()).build(null));
+
 
     @OnlyIn(Dist.CLIENT)
     public static void registerTileEntityRenders() {

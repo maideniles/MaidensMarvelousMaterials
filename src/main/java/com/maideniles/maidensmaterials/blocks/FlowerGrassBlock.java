@@ -1,10 +1,17 @@
 package com.maideniles.maidensmaterials.blocks;
 
 
+import com.maideniles.maidensmaterials.blocks.mortar_pestle.other.MortarPestleOtherBlock;
 import com.maideniles.maidensmaterials.init.ModBlocks;
+import com.maideniles.maidensmaterials.init.ModItems;
+import com.maideniles.maidensmaterials.init.ModSoundEvents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -57,6 +64,7 @@ public class FlowerGrassBlock extends BushBlock {
         if(blockstate == Blocks.AIR.defaultBlockState()){
             level.setBlockAndUpdate(pos,Blocks.AIR.defaultBlockState());
         }
+        this.doDelay(level,pos);
     }
 
     @Override
@@ -67,23 +75,20 @@ public class FlowerGrassBlock extends BushBlock {
         return this.mayPlaceOn(levelReader.getBlockState(blockpos), levelReader, blockpos);
     }
 
-    @Override
-    public boolean isRandomlyTicking(BlockState p_49921_) {
-        return true;
+
+
+    private int getDelay() {
+        return  200;
     }
 
-    public int tickRate(Level level) {
-        return 3;
-    }
+    public void doDelay(Level level, BlockPos pos){
+        level.scheduleTick(pos, this, this.getDelay());
+       }
 
-    public void tick(BlockState state, ServerLevel level, BlockPos pos, Random rand) {
+    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource rand) {
         if (state.getBlock() == this) {
             level.setBlockAndUpdate(pos,Blocks.AIR.defaultBlockState());
         }
-
-
-
-
     }
 
 

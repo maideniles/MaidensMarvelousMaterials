@@ -56,6 +56,11 @@
 		"type": "crafting",
      "recipe": "maidensmaterials:crimson_bookshelf",
 		 "recipe2": "maidensmaterials:warped_bookshelf"
+	},
+	
+		{
+		"type": "crafting",
+		"recipe": "maidensmaterials:mangrove_bookshelf"
 	}
 	
 	

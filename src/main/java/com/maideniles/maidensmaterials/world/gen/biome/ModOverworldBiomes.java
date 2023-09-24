@@ -62,31 +62,11 @@ public class ModOverworldBiomes
         globalOverworldGeneration(biomeBuilder);
 
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_SUGAR_CANE);
-/*
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.CRABAPPLE_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.CRABAPPLE_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.POINCIANA_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.POINCIANA_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.LABURNUM_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.LABURNUM_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.JADE_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.JADE_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.PAULOWNIA_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.PAULOWNIA_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.WISTERIA_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.WISTERIA_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.JACARANDA_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.JACARANDA_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.DOGWOOD_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.DOGWOOD_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.SILVERBELL_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.SILVERBELL_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.CEDAR_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.CEDAR_VINES_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.ORNAMENTAL_MUSHROOM_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.ORNAMENTAL_FOREST_FLOWERS_PLACEMENT.getHolder().get());
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacements.ORNAMENTAL_MUSHROOM_CAVE_PLACEMENT.getHolder().get());
-*/
+      //  biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacements.AMETHYST_ORE_PLACED.getHolder().get());
+
+
+
+
 
 
   //COMMENT OUT BECAUSE MOD ORE GEN CLASS ADDS TO ALL BIOMES--ELIMINATE FEATURE ORDER CYCLE ERROR//

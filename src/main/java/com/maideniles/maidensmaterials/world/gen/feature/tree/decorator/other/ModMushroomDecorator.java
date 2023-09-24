@@ -1,6 +1,7 @@
 package com.maideniles.maidensmaterials.world.gen.feature.tree.decorator.other;
 
 import com.maideniles.maidensmaterials.blocks.tree.FairyGlowCupBlock;
+import com.maideniles.maidensmaterials.init.ModBlocks;
 import com.maideniles.maidensmaterials.init.ModTreeDecoratorTypes;
 import com.mojang.serialization.Codec;
 import net.minecraft.core.BlockPos;
@@ -40,7 +41,7 @@ public class ModMushroomDecorator extends TreeDecorator {
                         Direction direction1 = direction.getOpposite();
                         BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
                         if (p_226028_.isAir(blockpos)) {
-                            p_226028_.setBlock(blockpos, Blocks.COCOA.defaultBlockState().setValue(FairyGlowCupBlock.AGE, Integer.valueOf(randomsource.nextInt(3))).setValue(FairyGlowCupBlock.FACING, direction));
+                            p_226028_.setBlock(blockpos, ModBlocks.FAIRY_GLOW_CUP.get().defaultBlockState().setValue(FairyGlowCupBlock.AGE, Integer.valueOf(randomsource.nextInt(3))).setValue(FairyGlowCupBlock.FACING, direction));
                         }
                     }
                 }

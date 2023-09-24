@@ -6,7 +6,7 @@
     "pattern":
     [
         "PCP",
-		"CMC",
+		"C C",
 		"PCP"
     ],
     
@@ -17,11 +17,7 @@
             "item": "maidensmaterials:blue_pigment"
         },
 		
-		"M":
-		{
-			"item": "maidensmaterials:mortar_and_pestle"
-			
-		},
+		
 		
 		"C":
 		{

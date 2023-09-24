@@ -60,6 +60,11 @@
 		"recipe2": "maidensmaterials:warped_trapdoor_1"
 	},
 	
+	{
+		"type": "crafting",
+		"recipe": "maidensmaterials:mangrove_trapdoor_1"
+	},
+	
 	
 	
 	{
@@ -115,6 +120,11 @@
 		"type": "crafting",
     "recipe": "maidensmaterials:crimson_trapdoor_2",
 		"recipe2": "maidensmaterials:warped_trapdoor_2"
+	},
+	
+		{
+		"type": "crafting",
+		"recipe": "maidensmaterials:mangrove_trapdoor_2"
 	},
 	
 	
@@ -174,6 +184,10 @@
 		"recipe2": "maidensmaterials:warped_trapdoor_3"
 	},
 	
+		{
+		"type": "crafting",
+		"recipe": "maidensmaterials:mangrove_trapdoor_3"
+	},
 	
 	
 	{
@@ -229,6 +243,11 @@
 		"type": "crafting",
     "recipe": "maidensmaterials:crimson_trapdoor_4",
 		"recipe2": "maidensmaterials:warped_trapdoor_4"
+	},
+	
+		{
+		"type": "crafting",
+		"recipe": "maidensmaterials:mangrove_trapdoor_4"
 	}
 		
 	
