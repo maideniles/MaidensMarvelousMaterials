@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/rose_quartz_1_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/rose_quartz_1"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/rose_quartz_1_slab_top"
+    }
+  }
+}

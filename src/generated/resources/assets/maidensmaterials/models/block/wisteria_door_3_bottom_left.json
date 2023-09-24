@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "render_type": "cutout_mipped", "textures": {
+    "bottom": "maidensmaterials:block/wisteria_door_3_bottom",
+    "top": "maidensmaterials:block/wisteria_door_3_top"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/jade_5_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/jade_5"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/jade_5_slab_top"
+    }
+  }
+}

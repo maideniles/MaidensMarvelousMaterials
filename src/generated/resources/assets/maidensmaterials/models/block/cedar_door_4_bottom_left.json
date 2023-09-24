@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "render_type": "cutout_mipped", "textures": {
+    "bottom": "maidensmaterials:block/cedar_door_4_bottom",
+    "top": "maidensmaterials:block/cedar_door_4_top"
+  }
+}

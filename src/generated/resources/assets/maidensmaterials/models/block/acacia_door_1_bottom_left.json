@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "render_type": "cutout_mipped", "textures": {
+    "bottom": "maidensmaterials:block/acacia_door_1_bottom",
+    "top": "maidensmaterials:block/acacia_door_1_top"
+  }
+}

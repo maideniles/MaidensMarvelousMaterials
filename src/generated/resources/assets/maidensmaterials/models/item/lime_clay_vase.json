@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "maidensmaterials:item/lime_clay_vase"
+  }
+}

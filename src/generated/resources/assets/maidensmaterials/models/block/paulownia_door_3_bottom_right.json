@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "render_type": "cutout_mipped", "textures": {
+    "bottom": "maidensmaterials:block/paulownia_door_3_bottom",
+    "top": "maidensmaterials:block/paulownia_door_3_top"
+  }
+}

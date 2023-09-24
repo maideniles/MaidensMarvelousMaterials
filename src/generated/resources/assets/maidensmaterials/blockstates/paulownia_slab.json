@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/paulownia_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/paulownia_planks"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/paulownia_slab_top"
+    }
+  }
+}

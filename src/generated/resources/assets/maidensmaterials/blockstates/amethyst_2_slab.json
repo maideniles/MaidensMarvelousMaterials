@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/amethyst_2_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/amethyst_2"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/amethyst_2_slab_top"
+    }
+  }
+}

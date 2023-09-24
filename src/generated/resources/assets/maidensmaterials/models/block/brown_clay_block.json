@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "maidensmaterials:block/brown_clay_block"
+  }
+}

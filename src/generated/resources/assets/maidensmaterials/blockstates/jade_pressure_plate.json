@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "maidensmaterials:block/jade_pressure_plate"
+    },
+    "powered=true": {
+      "model": "maidensmaterials:block/jade_pressure_plate_down"
+    }
+  }
+}

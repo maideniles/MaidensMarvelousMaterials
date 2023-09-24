@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "maidensmaterials:block/cedar_slab"
+    },
+    "type=double": {
+      "model": "maidensmaterials:block/cedar_planks"
+    },
+    "type=top": {
+      "model": "maidensmaterials:block/cedar_slab_top"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "maidensmaterials:block/light_gray_large_brick_block"
+  }
+}

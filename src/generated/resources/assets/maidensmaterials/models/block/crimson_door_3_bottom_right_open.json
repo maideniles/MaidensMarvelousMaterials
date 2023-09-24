@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "render_type": "cutout_mipped", "textures": {
+    "bottom": "maidensmaterials:block/crimson_door_3_bottom",
+    "top": "maidensmaterials:block/crimson_door_3_top"
+  }
+}
